@@ -4,13 +4,13 @@ import java.util.Random;
 
 import com.artemis.Component;
 import com.artemis.Entity;
-import com.artemis.PooledComponentBenchmark;
 import com.artemis.systems.VoidEntitySystem;
-import com.github.esfbench.JmhSettings;
 
 public final class EntityDeleterSystem extends VoidEntitySystem {
 
-	int[] ids = new int[JmhSettings.ENTITY_COUNT];
+	int[] ids; // = new int[ENTITY_COUNT];
+	
+	private static int ENTITY_COUNT = 0;
 	
 	int counter;
 	int index;
@@ -18,17 +18,19 @@ public final class EntityDeleterSystem extends VoidEntitySystem {
 	private Class<? extends Component> c1;
 	private Class<? extends Component> c2;
 
-	public EntityDeleterSystem(long seed, Class<? extends Component> c1, Class<? extends Component> c2) {
+	public EntityDeleterSystem(long seed, int entityCount, Class<? extends Component> c1, Class<? extends Component> c2) {
 		this.c1 = c1;
 		this.c2 = c2;
 		Random rng = new Random(seed);
+		ENTITY_COUNT = entityCount;
+		ids = new int[ENTITY_COUNT];
 		for (int i = 0; ids.length > i; i++)
-			ids[i] = (int)(rng.nextFloat() * PooledComponentBenchmark.ENTITY_COUNT);
+			ids[i] = (int)(rng.nextFloat() * ENTITY_COUNT);
 	}
 	
 	@Override
 	protected void initialize() {
-		for (int i = 0; PooledComponentBenchmark.ENTITY_COUNT > i; i++)
+		for (int i = 0; ENTITY_COUNT > i; i++)
 			createEntity();
 	}
 	
@@ -42,7 +44,7 @@ public final class EntityDeleterSystem extends VoidEntitySystem {
 		if (counter == 100) {
 			Entity e = world.getEntity(ids[index++]);
 			world.deleteEntity(e);
-			index = index % PooledComponentBenchmark.ENTITY_COUNT;
+			index = index % ENTITY_COUNT;
 			counter = 0;
 		} else if (counter == 1) { // need to wait one round to reclaim entities
 			createEntity();

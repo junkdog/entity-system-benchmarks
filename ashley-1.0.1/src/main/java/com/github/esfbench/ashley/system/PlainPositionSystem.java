@@ -1,11 +1,11 @@
-package com.artemis.system;
+package com.github.esfbench.ashley.system;
 
 
 import org.openjdk.jmh.infra.Blackhole;
 
-import com.artemis.component.PlainPosition;
 import com.badlogic.ashley.core.Family;
 import com.badlogic.ashley.systems.IteratingSystem;
+import com.github.esfbench.ashley.component.PlainPosition;
 
 public class PlainPositionSystem extends IteratingSystem {
 

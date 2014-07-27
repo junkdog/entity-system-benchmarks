@@ -42,7 +42,7 @@ public class PlainComponentBenchmark extends JmhSettings {
 	public void init() {
 		worldPlain = new World();
 		worldPlain.setSystem(new PlainPositionSystem());
-		worldPlain.setSystem(new EntityDeleterSystem(JmhSettings.SEED, PlainPosition.class, PlainStructComponentA.class));
+		worldPlain.setSystem(new EntityDeleterSystem(JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
 		worldPlain.initialize();
 	}		
 	

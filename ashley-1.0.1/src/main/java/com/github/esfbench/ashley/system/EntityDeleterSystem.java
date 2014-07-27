@@ -1,8 +1,4 @@
-package com.artemis.system;
-
-import static com.github.esfbench.JmhSettings.ENTITY_COUNT;
-
-import java.util.Random;
+package com.github.esfbench.ashley.system;
 
 import com.badlogic.ashley.core.Component;
 import com.badlogic.ashley.core.Engine;
@@ -14,7 +10,9 @@ import com.github.esfbench.JmhSettings;
 
 public final class EntityDeleterSystem extends EntitySystem {
 
-	int[] ids = new int[ENTITY_COUNT];
+	public static int ENTITY_COUNT;
+	
+	int[] ids;
 	
 	int counter;
 	int index;
@@ -26,10 +24,12 @@ public final class EntityDeleterSystem extends EntitySystem {
 	
 	private IntMap<Entity> entities = new IntMap<Entity>();
 
-	public EntityDeleterSystem(long seed, Class<? extends Component> c1, Class<? extends Component> c2) {
+	public EntityDeleterSystem(long seed, int entityCount, Class<? extends Component> c1, Class<? extends Component> c2) {
 		this.c1 = c1;
 		this.c2 = c2;
-		Random rng = new Random(seed);
+	
+		ENTITY_COUNT = entityCount;
+		ids = new int[ENTITY_COUNT];
 		
 		// ashley is backed up am IntMap, hence we only need to track ids
 //		for (int i = 0; ids.length > i; i++)

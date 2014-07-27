@@ -42,7 +42,7 @@ public class PooledComponentBenchmark extends JmhSettings {
 	public void init() {
 		worldPooled = new World();
 		worldPooled.setSystem(new PooledPositionSystem());
-		worldPooled.setSystem(new EntityDeleterSystem(SEED, PooledPosition.class, PlainStructComponentA.class));
+		worldPooled.setSystem(new EntityDeleterSystem(SEED, entityCount, PooledPosition.class, PlainStructComponentA.class));
 		worldPooled.initialize();
 	}		
 	

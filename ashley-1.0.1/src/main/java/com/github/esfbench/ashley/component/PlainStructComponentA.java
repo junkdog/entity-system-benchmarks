@@ -1,4 +1,4 @@
-package com.artemis.component;
+package com.github.esfbench.ashley.component;
 
 import com.badlogic.ashley.core.Component;
 

@@ -42,7 +42,7 @@ public class PackedComponentBenchmark extends JmhSettings {
 	public void init() {
 		worldPacked = new World();
 		worldPacked.setSystem(new PositionSystem());
-		worldPacked.setSystem(new EntityDeleterSystem(JmhSettings.SEED, Position.class, StructComponentA.class));
+		worldPacked.setSystem(new EntityDeleterSystem(JmhSettings.SEED, entityCount, Position.class, StructComponentA.class));
 		worldPacked.initialize();
 	}		
 	

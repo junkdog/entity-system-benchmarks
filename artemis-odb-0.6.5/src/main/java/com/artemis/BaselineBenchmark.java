@@ -41,7 +41,7 @@ public class BaselineBenchmark extends JmhSettings {
 	@Setup
 	public void init() {
 		worldBaseline = new World();
-		worldBaseline.setSystem(new EntityDeleterSystem(SEED, PlainPosition.class, PlainStructComponentA.class));
+		worldBaseline.setSystem(new EntityDeleterSystem(SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
 		worldBaseline.setSystem(new BaselinePositionSystem());
 		worldBaseline.initialize();
 	}		

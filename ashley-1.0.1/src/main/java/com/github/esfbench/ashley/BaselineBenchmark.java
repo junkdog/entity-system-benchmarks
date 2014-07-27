@@ -23,32 +23,31 @@
  * questions.
  */
 
-package com.artemis;
+package com.github.esfbench.ashley;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 
-import com.artemis.component.PlainPosition;
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.system.EntityDeleterSystem;
-import com.artemis.system.PlainPositionSystem;
 import com.badlogic.ashley.core.Engine;
 import com.github.esfbench.JmhSettings;
+import com.github.esfbench.ashley.component.PlainPosition;
+import com.github.esfbench.ashley.component.PlainStructComponentA;
+import com.github.esfbench.ashley.system.BaselinePositionSystem;
+import com.github.esfbench.ashley.system.EntityDeleterSystem;
 
-public class PlainComponentBenchmark extends JmhSettings {
+public class BaselineBenchmark extends JmhSettings {
 	
 	private Engine engine;
-
+	
 	@Setup
 	public void init() {
 		engine = new Engine();
-		engine.addSystem(new PlainPositionSystem());
-		engine.addSystem(new EntityDeleterSystem(JmhSettings.SEED, PlainPosition.class, PlainStructComponentA.class));
-//		worldPlain.initialize();
+		engine.addSystem(new EntityDeleterSystem(SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
+		engine.addSystem(new BaselinePositionSystem());
 	}		
 	
 	@Benchmark
-	public void plain_engine() {
+	public void baseline_world() {
 		engine.update(0);
 	}
 }

@@ -1,4 +1,4 @@
-package com.artemis.component;
+package com.github.esfbench.ashley.component;
 
 import com.badlogic.ashley.core.Component;
 import com.github.esfbench.util.Vec2f;
