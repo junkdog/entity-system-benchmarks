@@ -17,12 +17,10 @@ import org.openjdk.jmh.annotations.Warmup;
 @State(Scope.Thread)
 @BenchmarkMode(Mode.AverageTime)
 @Threads(1)
-//@Fork(3)
 @Fork(1)
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
-@Warmup(iterations = 1, time = 1, timeUnit = TimeUnit.SECONDS)
-@Measurement(iterations = 2, time = 1, timeUnit = TimeUnit.SECONDS)
-//@Measurement(iterations = 5, time = 15, timeUnit = TimeUnit.SECONDS)
+@Warmup(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
+@Measurement(iterations = 3, time = 10, timeUnit = TimeUnit.SECONDS)
 public class JmhSettings {
 	
 	@Param({"1024", "4096", "16384", "65536"})
