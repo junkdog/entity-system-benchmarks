@@ -32,7 +32,7 @@ baseline | artemis-0.6.5 | 1024 | avgt | 2.925 | 0.042 | us/op
 pooled | artemis-0.6.5 | 1024 | avgt | 5.407 | 0.767 | us/op
 plain | artemis-0.6.5 | 1024 | avgt | 5.885 | 0.311 | us/op
 plain | artemis-0.4.0 | 1024 | avgt | 6.544 | 2.655 | us/op
-baseline | ashley-1.0.1 | 1024 | avgt | 7.25 | 1.676 | us/op
+baseline | ashley-1.0.1 | 1024 | avgt | 7.250 | 1.676 | us/op
 packed | artemis-0.6.5 | 1024 | avgt | 8.397 | 0.334 | us/op
 plain | ashley-1.0.1 | 1024 | avgt | 24.445 | 4.16 | us/op
 
