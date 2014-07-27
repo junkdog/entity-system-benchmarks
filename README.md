@@ -9,7 +9,7 @@
 
 #### All benchmarks:
 - Have a position update system.
-- A Entity deleter system: each 100th tick an entity is deleted and a new entity is creted the next tick.
+- An Entity Deleter system: each 100th tick an entity is deleted and a new entity is creted the next tick.
 - Runs with 1024, 4096, 16384 and 65536 entities.
  
 #### Benchmark types:
