@@ -39,13 +39,13 @@ plain | ashley-1.0.1 | 1024 | avgt | 24.445 | 4.16 | us/op
 Benchmark | Framework | (entityCount) | Mode | Score | error | Units
 ----------|-----------|---------------|------|-------|-------|-------
 baseline | artemis-0.4.0 | 4096 | avgt | 11.525 | 1.14 | us/op
-baseline | artemis-0.6.5 | 4096 | avgt | 11.8 | 0.55 | us/op
+baseline | artemis-0.6.5 | 4096 | avgt | 11.800 | 0.55 | us/op
 pooled | artemis-0.6.5 | 4096 | avgt | 25.946 | 0.418 | us/op
 plain | artemis-0.6.5 | 4096 | avgt | 31.141 | 5.907 | us/op
 packed | artemis-0.6.5 | 4096 | avgt | 32.997 | 1.05 | us/op
 baseline | ashley-1.0.1 | 4096 | avgt | 33.353 | 47.442 | us/op
 plain | artemis-0.4.0 | 4096 | avgt | 35.647 | 11.871 | us/op
-plain | ashley-1.0.1 | 4096 | avgt | 76.84 | 8.491 | us/op
+plain | ashley-1.0.1 | 4096 | avgt | 76.840 | 8.491 | us/op
 
 Benchmark | Framework | (entityCount) | Mode | Score | error | Units
 ----------|-----------|---------------|------|-------|-------|-------
