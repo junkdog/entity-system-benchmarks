@@ -7,9 +7,13 @@
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>artemis-odb-0-6-5-benchmark</artifactId>
+	<artifactId>artemis-odb-0-4-0-benchmark</artifactId>
 	<packaging>jar</packaging>
-	<name>artemis-odb-0.6.5-benchmarks</name>
+	<name>artemis-odb-0.4.0-benchmarks</name>
+
+	<properties>
+		<artemis.version>0.4.0</artemis.version>
+	</properties>
 
 	<dependencies>
 		<dependency>
@@ -19,35 +23,9 @@
 		</dependency>
 		<!-- For @PackedWeaver and @PooledWeaver components -->
 		<dependency>
-			<groupId>net.onedaybeard.artemis</groupId>
-			<artifactId>artemis-odb-test</artifactId>
-			<version>${artemis.version}</version>
-		</dependency>
-		<dependency>
 			<groupId>com.github.esfbench</groupId>
 			<artifactId>common</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>net.onedaybeard.artemis</groupId>
-				<artifactId>artemis-odb-maven-plugin</artifactId>
-				<version>${artemis.version}</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>artemis</goal>
-						</goals>
-						<configuration>
-							<ideFriendlyPacking>false</ideFriendlyPacking>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
-
 </project>
