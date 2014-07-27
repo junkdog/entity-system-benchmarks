@@ -31,7 +31,7 @@ Benchmark | Framework | (entityCount) | Mode | Score | error | Units
 baseline | artemis-0.4.0 | 1024 | avgt | 2.915 | 0.287 | us/op
 baseline | artemis-0.6.5 | 1024 | avgt | 2.925 | 0.042 | us/op
 baseline | ashley-1.0.1 | 1024 | avgt | 7.250 | 1.676 | us/op
-baseline | gdx-artemis-0.5.0 | 1024 | avgt | 2.925 | 0.042 | us/op
+baseline | gdx-artemis-0.5.0 | 1024 | avgt | 2.940 | 0.100 | us/op
 plain | artemis-0.4.0 | 1024 | avgt | 6.544 | 2.655 | us/op
 plain | artemis-0.6.5 | 1024 | avgt | 5.885 | 0.311 | us/op
 plain | ashley-1.0.1 | 1024 | avgt | 24.445 | 4.16 | us/op
