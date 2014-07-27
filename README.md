@@ -21,8 +21,6 @@
 
 ## (Preliminary) Benchmarks
 
-Lower score is better.
-
 Still missing:
 - Pooling with ashley
 - More ESF:s - entreri, gdx-artemis, etc.
@@ -30,6 +28,7 @@ Still missing:
 As usual, writing microbenchmarks is tricky business - take the numbers with a grain of salt. These benchmarks should not be interpreted as benchmarking each framework as a whole.
 
 
+**Lower score is better.**
 
 Benchmark | Framework | (entityCount) | Mode | Score | error | Units
 ----------|-----------|---------------|------|-------|-------|-------
