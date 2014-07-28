@@ -13,10 +13,10 @@
 - Runs with 1024, 4096, 16384 and 65536 entities.
  
 #### Benchmark types:
-- *baseline:* position isn't updated
-- *plain:* position component is the default component type, except gdx-artemis which always pools components.
-- *pooled:* pooling all components. Only artemis-odb > 0.5.0 atm and gdx-artemis.
-- *packed:* packed components (backed by a Bytebuffer). Only artemis-odb > 0.5.0 atm.
+- **baseline:** position isn't updated
+- **plain:** position component is the default component type, except gdx-artemis which always pools components.
+- **pooled:** pooling all components. Only artemis-odb > 0.5.0 atm and gdx-artemis.
+- **packed:** packed components (backed by a Bytebuffer). Only artemis-odb > 0.5.0 atm.
 
 
 ## (Preliminary) Benchmarks
