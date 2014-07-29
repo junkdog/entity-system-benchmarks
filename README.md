@@ -23,7 +23,8 @@
 
 Still missing:
 - Pooling with ashley
-- More ESF:s - entreri, gdx-artemis, etc.
+- More ESF:s - [entreri](https://bitbucket.org/mludwig/entreri) (others?)
+- more benchmarks ?
  
 As usual, writing microbenchmarks is tricky business - take the numbers with a grain of salt. These benchmarks should not be interpreted as benchmarking each framework as a whole.
 
