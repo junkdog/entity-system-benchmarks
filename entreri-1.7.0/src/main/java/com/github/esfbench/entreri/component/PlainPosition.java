@@ -1,6 +1,6 @@
-package com.artemis.component;
+package com.github.esfbench.entreri.component;
 
-import com.artemis.Component;
+import com.github.esfbench.entreri.Component;
 import com.github.esfbench.util.Vec2f;
 
 public class PlainPosition extends Component

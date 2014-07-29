@@ -1,11 +1,11 @@
-package com.artemis.system;
+package com.github.esfbench.entreri.system;
 
 
 import java.util.Random;
 
-import com.artemis.Component;
-import com.artemis.Entity;
-import com.artemis.systems.VoidEntitySystem;
+import com.github.esfbench.entreri.Component;
+import com.github.esfbench.entreri.Entity;
+import com.github.esfbench.entreri.systems.VoidEntitySystem;
 
 public final class EntityDeleterSystem extends VoidEntitySystem {
 

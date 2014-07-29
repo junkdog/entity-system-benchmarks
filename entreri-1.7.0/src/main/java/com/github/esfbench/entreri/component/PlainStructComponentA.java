@@ -1,6 +1,6 @@
-package com.artemis.component;
+package com.github.esfbench.entreri.component;
 
-import com.artemis.Component;
+import com.github.esfbench.entreri.Component;
 
 public class PlainStructComponentA extends Component {
 	public float x, y, z;

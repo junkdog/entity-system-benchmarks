@@ -23,16 +23,16 @@
  * questions.
  */
 
-package com.artemis;
+package com.github.esfbench.entreri;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 
-import com.artemis.component.PlainPosition;
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.system.BaselinePositionSystem;
-import com.artemis.system.EntityDeleterSystem;
 import com.github.esfbench.JmhSettings;
+import com.github.esfbench.entreri.component.PlainPosition;
+import com.github.esfbench.entreri.component.PlainStructComponentA;
+import com.github.esfbench.entreri.system.BaselinePositionSystem;
+import com.github.esfbench.entreri.system.EntityDeleterSystem;
 
 public class BaselineBenchmark extends JmhSettings {
 	
