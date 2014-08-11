@@ -32,7 +32,7 @@ As usual, writing microbenchmarks is tricky business - take the numbers with a g
 
 **Lower score is better.**
 
-**Benchmarks don't yet include Ashley 1.1.0. Expect it to fare significantly better in the benchmarks**
+**Benchmarks don't yet include Ashley 1.1.0. Expect it to fare significantly better than 1.0.1 in the benchmarks**
 
 Benchmark | Framework | (entityCount) | Mode | Score | error | Units
 ----------|-----------|---------------|------|-------|-------|-------
