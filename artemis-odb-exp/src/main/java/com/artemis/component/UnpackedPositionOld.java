@@ -36,10 +36,9 @@ public class UnpackedPositionOld extends PackedComponent implements
 	}
 
 	@Override
-	protected PackedComponent forEntity(Entity e) {
-		enscureCapacity(e.getId());
+	protected void forEntity(Entity e) {
+		ensureCapacity(e.getId());
 		this.$stride = $_SIZE_OF * e.getId();
-		return this;
 	}
 
 	@Override
@@ -85,8 +84,8 @@ public class UnpackedPositionOld extends PackedComponent implements
 		$data.putFloat($stride + 4, v.y);
 	}
 
-//	@Override
-	protected void enscureCapacity(int id) {
-		if (($data.capacity() - $_SIZE_OF) <= $stride) $grow();
+	@Override
+	protected void ensureCapacity(int id) {
+		if (($data.capacity() - $_SIZE_OF) <= (id * $_SIZE_OF)) $grow();
 	}
 }

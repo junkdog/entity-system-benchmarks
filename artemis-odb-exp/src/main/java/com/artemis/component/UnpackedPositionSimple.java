@@ -1,15 +1,9 @@
 package com.artemis.component;
 
 import java.nio.ByteBuffer;
-import java.util.IdentityHashMap;
-import java.util.Map;
 
 import com.artemis.Entity;
 import com.artemis.PackedComponent;
-import com.artemis.PackedComponent.DisposedWithWorld;
-import com.artemis.World;
-import com.artemis.util.Vec2f;
-import com.artemis.utils.Bag;
 
 public class UnpackedPositionSimple extends PackedComponent {
 
@@ -19,10 +13,8 @@ public class UnpackedPositionSimple extends PackedComponent {
 	
 
 	@Override
-	protected PackedComponent forEntity(Entity e) {
+	protected void forEntity(Entity e) {
 		this.$stride = $_SIZE_OF * e.getId();
-		if (($data.capacity() - $_SIZE_OF) <= $stride) $grow();
-		return this;
 	}
 
 	@Override
@@ -56,5 +48,10 @@ public class UnpackedPositionSimple extends PackedComponent {
 	
 	public void y(float value) {
 		$data.putFloat($stride + 4, value);
+	}
+
+	@Override
+	protected void ensureCapacity(int id) {
+		if (($data.capacity() - $_SIZE_OF) <= (id * $_SIZE_OF)) $grow();
 	}
 }
