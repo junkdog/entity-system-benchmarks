@@ -23,6 +23,7 @@
 
 Still missing:
 - Pooling with ashley
+- Ashley 1.1.0
 - More ESF:s - [entreri](https://bitbucket.org/mludwig/entreri) (others?)
 - more benchmarks ?
  
@@ -30,6 +31,8 @@ As usual, writing microbenchmarks is tricky business - take the numbers with a g
 
 
 **Lower score is better.**
+
+**Benchmarks don't yet include Ashley 1.1.0. Expect it to fare significantly better in the benchmarks**
 
 Benchmark | Framework | (entityCount) | Mode | Score | error | Units
 ----------|-----------|---------------|------|-------|-------|-------
