@@ -13,7 +13,17 @@
 
 	<properties>
 		<artemis.version>0.6.6-SNAPSHOT</artemis.version>
+		<optimizeSystems>false</optimizeSystems>
 	</properties>
+
+	<profiles>
+		<profile>
+			<id>fast</id>
+			<properties>
+				<optimizeSystems>true</optimizeSystems>
+			</properties>
+		</profile>
+	</profiles>
 
 	<dependencies>
 		<dependency>
@@ -47,6 +57,7 @@
 						</goals>
 						<configuration>
 							<ideFriendlyPacking>false</ideFriendlyPacking>
+							<optimizeEntitySystems>${optimizeSystems}</optimizeEntitySystems>
 						</configuration>
 					</execution>
 				</executions>
