@@ -28,7 +28,8 @@ public class JmhSettings {
 	
 	public static int ENTITY_COUNT = 0;
 	
-	public static final long SEED = System.currentTimeMillis();
+//	public static final long SEED = System.currentTimeMillis();
+	public static final long SEED = 420 + 4;
 	
 	@Setup
 	public void globalInit() {
