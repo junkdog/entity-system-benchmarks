@@ -1,7 +1,5 @@
 package com.artemis.system;
 
-import org.openjdk.jmh.infra.Blackhole;
-
 import com.artemis.Aspect;
 import com.artemis.Entity;
 import com.artemis.component.Comp1;

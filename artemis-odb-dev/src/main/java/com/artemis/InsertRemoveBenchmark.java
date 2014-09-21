@@ -25,10 +25,7 @@
 
 package com.artemis;
 
-import java.lang.invoke.MethodHandle;
-import java.lang.invoke.MethodHandles;
-import java.lang.invoke.MethodType;
-import java.lang.reflect.Constructor;
+import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 import org.openjdk.jmh.annotations.Benchmark;
@@ -42,12 +39,7 @@ import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.annotations.State;
 import org.openjdk.jmh.annotations.Threads;
 import org.openjdk.jmh.annotations.Warmup;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.RunnerException;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-import com.artemis.component.Comp1;
-import com.artemis.component.PComp1;
 import com.artemis.system.CompSystemA;
 import com.artemis.system.CompSystemB;
 import com.artemis.system.CompSystemC;
@@ -65,12 +57,6 @@ import com.github.esfbench.JmhSettings;
 public class InsertRemoveBenchmark extends JmhSettings {
 	
 	private World world;
-	private Constructor<Comp1> constructor;
-	private MethodHandle constructorHandle;
-	private MethodHandle constructorHandlePacked;
-	private Constructor<PComp1> constructorPacked;
-	private MethodHandle constructorUnreflectHandle;
-	private MethodHandle constructorHandleUnreflectPacked;
 	
 	@Setup
 	public void init() throws Exception{
@@ -83,13 +69,6 @@ public class InsertRemoveBenchmark extends JmhSettings {
 		world.setSystem(new CompSystemC());
 		world.setSystem(new CompSystemD());
 		world.initialize();
-		
-		constructor = Comp1.class.getConstructor();
-		constructorPacked = PComp1.class.getConstructor(World.class);
-		constructorHandle = MethodHandles.lookup().findConstructor(Comp1.class, MethodType.methodType(void.class));
-		constructorUnreflectHandle = MethodHandles.lookup().unreflectConstructor(constructor);
-		constructorHandlePacked = MethodHandles.lookup().findConstructor(PComp1.class, MethodType.methodType(void.class, World.class));
-		constructorHandleUnreflectPacked = MethodHandles.lookup().unreflectConstructor(constructorPacked);
 	}		
 	
 	@Benchmark
@@ -97,58 +76,24 @@ public class InsertRemoveBenchmark extends JmhSettings {
 		world.process();
 	}
 	
-	@Benchmark
-	public Comp1 create_reflect() throws Throwable {
-		return constructor.newInstance();
-	}
-	
-	@Benchmark
-	public Comp1 create_plain() throws Throwable {
-		return new Comp1();
-	}
-	
-	@Benchmark
-	public Comp1 create_handle() throws Throwable {
-		return (Comp1)constructorHandle.invokeExact();
-	}
-	
-	@Benchmark
-	public Comp1 create_handle_unreflect() throws Throwable {
-		return (Comp1)constructorUnreflectHandle.invokeExact();
-	}
-	
-	@Benchmark
-	public PComp1 create_reflect_packed() throws Throwable {
-		return constructorPacked.newInstance(world);
-	}
-	
-	@Benchmark
-	public PComp1 create_handle_packed() throws Throwable {
-		return (PComp1)constructorHandlePacked.invokeExact(world);
-	}
-	
-	@Benchmark
-	public PComp1 create_handle_unreflect_packed() throws Throwable {
-		return (PComp1)constructorHandleUnreflectPacked.invokeExact(world);
-	}
-	
-	public static void main(String[] args) throws RunnerException {
-		new Runner(
-			new OptionsBuilder()
-//				.include(".*insert_remove.*")
-				.include(".*create_plain.*")
+	public static void main(String[] args) throws Exception {
+//		new Runner(
+//			new OptionsBuilder()
+////				.include(".*insert_remove.*")
+//				.include(".*insert.*")
 //				.param("entityCount", "1024", "4096")
-				.param("entityCount", "1024")
-				.build())
-		.run();
+////				.param("entityCount", "1024")
+//				.build())
+//		.run();
 		
+		System.out.println("hello there");
 //		new Scanner(System.in).nextLine();
 //		
-//		InsertRemoveBenchmark irb = new InsertRemoveBenchmark();
-//		irb.entityCount = 1024;
-//		irb.init();
-//		for (int i = 0, s = 0xffffff; s > i; i++) {
-//			irb.insert_remove_world();
-//		}
+		InsertRemoveBenchmark irb = new InsertRemoveBenchmark();
+		irb.entityCount = 1024;
+		irb.init();
+		for (int i = 0, s = 20000; s > i; i++) {
+			irb.insert_remove_world();
+		}
 	}
 }
