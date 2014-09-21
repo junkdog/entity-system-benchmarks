@@ -27,27 +27,42 @@ package com.artemis;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
 
+import com.artemis.component.PlainStructComponentA;
 import com.artemis.component.PooledPosition;
-import com.artemis.component.PooledStructComponentA;
-import com.artemis.system.BaselinePositionSystem;
+import com.artemis.system.BaselineSystem;
+import com.artemis.system.BaselineSystem2;
+import com.artemis.system.BaselineSystem3;
 import com.artemis.system.EntityDeleterSystem;
 import com.github.esfbench.JmhSettings;
 
 public class BaselineBenchmark extends JmhSettings {
 	
-	private World worldBaseline;
+	private World world;
 	
 	@Setup
 	public void init() {
-		worldBaseline = new World();
-		worldBaseline.setSystem(new EntityDeleterSystem(SEED, entityCount, PooledPosition.class, PooledStructComponentA.class));
-		worldBaseline.setSystem(new BaselinePositionSystem());
-		worldBaseline.initialize();
+		world = new World();
+		world.setSystem(new BaselineSystem());
+		world.setSystem(new BaselineSystem2());
+		world.setSystem(new BaselineSystem3());
+		world.setSystem(new EntityDeleterSystem(SEED, entityCount, PooledPosition.class, PlainStructComponentA.class));
+		world.initialize();
 	}		
 	
 	@Benchmark
-	public void baseline_world() {
-		worldBaseline.process();
+	public void baseline() {
+		world.process();
+	}
+
+	public static void main(String[] args) throws Exception {
+		new Runner(
+			new OptionsBuilder()
+				.include(BaselineBenchmark.class.getName() + ".*")
+				.param("entityCount", "1024", "4096")
+				.build())
+		.run();
 	}
 }

@@ -9,13 +9,13 @@ import com.artemis.Filter;
 import com.artemis.component.PooledPosition;
 import com.artemis.systems.EntityProcessingSystem;
 
-public class PooledPositionSystem extends EntityProcessingSystem {
+public class PooledPositionSystem2 extends EntityProcessingSystem {
 
 	Blackhole voidness = new Blackhole();
 	ComponentMapper<PooledPosition> positionMapper;
 	
 	@SuppressWarnings("unchecked")
-	public PooledPositionSystem() {
+	public PooledPositionSystem2() {
 		super(Filter.allComponents(PooledPosition.class));
 	}
 	
@@ -27,8 +27,8 @@ public class PooledPositionSystem extends EntityProcessingSystem {
 	@Override
 	protected void process(Entity e) {
 		PooledPosition pos = positionMapper.get(e);
-		pos.x += 1;
-		pos.y -= 1;
+		pos.x -= 1;
+		pos.y += 1;
 		
 		voidness.consume(e);
 	}

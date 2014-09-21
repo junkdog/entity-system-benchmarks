@@ -2,12 +2,12 @@ package com.artemis.component;
 
 import com.artemis.Component;
 
-public class PooledStructComponentA implements Component {
+public class PlainStructComponentA implements Component {
 	public float x, y, z;
 	public short something;
 	public boolean flag;
 	
-	public PooledStructComponentA setXyz(float x, float y, float z) {
+	public PlainStructComponentA setXyz(float x, float y, float z) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
@@ -23,10 +23,6 @@ public class PooledStructComponentA implements Component {
 
 	@Override
 	public void reset() {
-		x = 0;
-		y = 0;
-		z = 0;
-		something = 0;
-		flag = false;
+		
 	}
 }
