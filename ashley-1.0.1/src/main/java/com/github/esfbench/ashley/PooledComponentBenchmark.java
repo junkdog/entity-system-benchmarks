@@ -29,29 +29,30 @@ import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 
 import com.badlogic.ashley.core.Engine;
+import com.badlogic.ashley.core.PooledEngine;
 import com.github.esfbench.JmhSettings;
 import com.github.esfbench.ashley.component.PlainPosition;
 import com.github.esfbench.ashley.component.PlainStructComponentA;
-import com.github.esfbench.ashley.system.EntityDeleterSystem;
 import com.github.esfbench.ashley.system.PlainPositionSystem;
 import com.github.esfbench.ashley.system.PlainPositionSystem2;
 import com.github.esfbench.ashley.system.PlainPositionSystem3;
+import com.github.esfbench.ashley.system.PooledEntityDeleterSystem;
 
-public class PlainComponentBenchmark extends JmhSettings {
+public class PooledComponentBenchmark extends JmhSettings {
 	
 	private Engine engine;
 
 	@Setup
 	public void init() {
-		engine = new Engine();
+		engine = new PooledEngine();
 		engine.addSystem(new PlainPositionSystem());
 		engine.addSystem(new PlainPositionSystem2());
 		engine.addSystem(new PlainPositionSystem3());
-		engine.addSystem(new EntityDeleterSystem(JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
+		engine.addSystem(new PooledEntityDeleterSystem(JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
 	}		
 	
 	@Benchmark
-	public void plain() {
+	public void pooled() {
 		engine.update(0);
 	}
 }

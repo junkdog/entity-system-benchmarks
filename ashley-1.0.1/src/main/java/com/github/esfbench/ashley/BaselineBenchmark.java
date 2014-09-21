@@ -33,6 +33,8 @@ import com.github.esfbench.JmhSettings;
 import com.github.esfbench.ashley.component.PlainPosition;
 import com.github.esfbench.ashley.component.PlainStructComponentA;
 import com.github.esfbench.ashley.system.BaselinePositionSystem;
+import com.github.esfbench.ashley.system.BaselinePositionSystem2;
+import com.github.esfbench.ashley.system.BaselinePositionSystem3;
 import com.github.esfbench.ashley.system.EntityDeleterSystem;
 
 public class BaselineBenchmark extends JmhSettings {
@@ -44,10 +46,12 @@ public class BaselineBenchmark extends JmhSettings {
 		engine = new Engine();
 		engine.addSystem(new EntityDeleterSystem(SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
 		engine.addSystem(new BaselinePositionSystem());
+		engine.addSystem(new BaselinePositionSystem2());
+		engine.addSystem(new BaselinePositionSystem3());
 	}		
 	
 	@Benchmark
-	public void baseline_world() {
+	public void baseline() {
 		engine.update(0);
 	}
 }

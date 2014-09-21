@@ -19,5 +19,6 @@ public class BaselinePositionSystem extends IteratingSystem {
 	@Override
 	public void processEntity(Entity entity, float deltaTime) {
 		voidness.consume(entity);
+		voidness.consume(deltaTime);
 	}
 }

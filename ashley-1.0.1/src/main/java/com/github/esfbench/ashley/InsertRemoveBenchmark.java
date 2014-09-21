@@ -30,28 +30,48 @@ import org.openjdk.jmh.annotations.Setup;
 
 import com.badlogic.ashley.core.Engine;
 import com.github.esfbench.JmhSettings;
-import com.github.esfbench.ashley.component.PlainPosition;
-import com.github.esfbench.ashley.component.PlainStructComponentA;
-import com.github.esfbench.ashley.system.EntityDeleterSystem;
-import com.github.esfbench.ashley.system.PlainPositionSystem;
-import com.github.esfbench.ashley.system.PlainPositionSystem2;
-import com.github.esfbench.ashley.system.PlainPositionSystem3;
+import com.github.esfbench.ashley.system.CompSystemA;
+import com.github.esfbench.ashley.system.CompSystemB;
+import com.github.esfbench.ashley.system.CompSystemC;
+import com.github.esfbench.ashley.system.CompSystemD;
 
-public class PlainComponentBenchmark extends JmhSettings {
+public class InsertRemoveBenchmark extends JmhSettings {
 	
 	private Engine engine;
-
+	
 	@Setup
-	public void init() {
+	public void init() throws Exception {
 		engine = new Engine();
-		engine.addSystem(new PlainPositionSystem());
-		engine.addSystem(new PlainPositionSystem2());
-		engine.addSystem(new PlainPositionSystem3());
-		engine.addSystem(new EntityDeleterSystem(JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
+//		engine.addSystem(new EntityManglerSystem(SEED, entityCount, 20));
+		engine.addSystem(new CompSystemA());
+		engine.addSystem(new CompSystemB());
+		engine.addSystem(new CompSystemC());
+		engine.addSystem(new CompSystemD());
 	}		
 	
 	@Benchmark
-	public void plain() {
-		engine.update(0);
+	public void insert_remove() {
+		engine.update(0);;
+	}
+	
+	public static void main(String[] args) throws Exception {
+//		new Runner(
+//			new OptionsBuilder()
+////				.include(".*insert_remove.*")
+//				.include(".*insert.*")
+//				.param("entityCount", "1024", "4096")
+////				.param("entityCount", "1024")
+//				.build())
+//		.run();
+		
+		System.out.println("hello there");
+//		new Scanner(System.in).nextLine();
+//		
+		InsertRemoveBenchmark irb = new InsertRemoveBenchmark();
+		irb.entityCount = 1024;
+		irb.init();
+		for (int i = 0, s = 10000; s > i; i++) {
+			irb.insert_remove();
+		}
 	}
 }
