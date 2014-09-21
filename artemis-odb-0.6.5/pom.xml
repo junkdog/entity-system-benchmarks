@@ -10,6 +10,10 @@
 	<artifactId>artemis-odb-0-6-5-benchmark</artifactId>
 	<packaging>jar</packaging>
 	<name>artemis-odb-0.6.5-benchmarks</name>
+	
+	<properties>
+		<artemis.version>0.6.5</artemis.version>
+	</properties>
 
 	<dependencies>
 		<dependency>

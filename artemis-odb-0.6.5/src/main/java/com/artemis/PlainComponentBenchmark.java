@@ -27,11 +27,15 @@ package com.artemis;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 import com.artemis.component.PlainPosition;
 import com.artemis.component.PlainStructComponentA;
 import com.artemis.system.EntityDeleterSystem;
 import com.artemis.system.PlainPositionSystem;
+import com.artemis.system.PlainPositionSystem2;
+import com.artemis.system.PlainPositionSystem3;
 import com.github.esfbench.JmhSettings;
 
 public class PlainComponentBenchmark extends JmhSettings {
@@ -42,12 +46,23 @@ public class PlainComponentBenchmark extends JmhSettings {
 	public void init() {
 		worldPlain = new World();
 		worldPlain.setSystem(new PlainPositionSystem());
+		worldPlain.setSystem(new PlainPositionSystem2());
+		worldPlain.setSystem(new PlainPositionSystem3());
 		worldPlain.setSystem(new EntityDeleterSystem(JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
 		worldPlain.initialize();
 	}		
 	
 	@Benchmark
-	public void plain_world() {
+	public void plain() {
 		worldPlain.process();
+	}
+	
+	public static void main(String[] args) throws Exception {
+		new Runner(
+			new OptionsBuilder()
+				.include(PlainComponentBenchmark.class.getName() + ".*")
+				.param("entityCount", "1024", "4096")
+				.build())
+		.run();
 	}
 }

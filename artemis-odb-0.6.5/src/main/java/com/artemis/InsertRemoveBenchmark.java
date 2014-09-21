@@ -27,42 +27,52 @@ package com.artemis;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-import com.artemis.component.PlainPosition;
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.system.BaselinePositionSystem;
-import com.artemis.system.BaselinePositionSystem2;
-import com.artemis.system.BaselinePositionSystem3;
-import com.artemis.system.EntityDeleterSystem;
+import com.artemis.system.CompSystemA;
+import com.artemis.system.CompSystemB;
+import com.artemis.system.CompSystemC;
+import com.artemis.system.CompSystemD;
+import com.artemis.system.EntityManglerSystem;
 import com.github.esfbench.JmhSettings;
 
-public class BaselineBenchmark extends JmhSettings {
+public class InsertRemoveBenchmark extends JmhSettings {
 	
 	private World world;
 	
 	@Setup
-	public void init() {
+	public void init() throws Exception {
 		world = new World();
-		world.setSystem(new BaselinePositionSystem());
-		world.setSystem(new BaselinePositionSystem2());
-		world.setSystem(new BaselinePositionSystem3());
-		world.setSystem(new EntityDeleterSystem(SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
+		world.setSystem(new EntityManglerSystem(SEED, entityCount, 20));
+		world.setSystem(new CompSystemA());
+		world.setSystem(new CompSystemB());
+		world.setSystem(new CompSystemC());
+		world.setSystem(new CompSystemD());
 		world.initialize();
 	}		
 	
 	@Benchmark
-	public void baseline() {
+	public void insert_remove() {
 		world.process();
 	}
-
+	
 	public static void main(String[] args) throws Exception {
-		new Runner(
-			new OptionsBuilder()
-				.include(BaselineBenchmark.class.getName() + ".*")
-				.param("entityCount", "1024", "4096")
-				.build())
-		.run();
+//		new Runner(
+//			new OptionsBuilder()
+////				.include(".*insert_remove.*")
+//				.include(".*insert.*")
+//				.param("entityCount", "1024", "4096")
+////				.param("entityCount", "1024")
+//				.build())
+//		.run();
+		
+		System.out.println("hello there");
+//		new Scanner(System.in).nextLine();
+//		
+		InsertRemoveBenchmark irb = new InsertRemoveBenchmark();
+		irb.entityCount = 1024;
+		irb.init();
+		for (int i = 0, s = 10000; s > i; i++) {
+			irb.insert_remove();
+		}
 	}
 }

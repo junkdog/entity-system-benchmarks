@@ -1,14 +1,15 @@
 package com.artemis.component;
 
 import com.artemis.Component;
-import com.artemis.annotations.PackedWeaver;
+import com.artemis.util.Vec2f;
 
-//@PackedWeaver
-public class PlainPosition extends Component {
+public class PackedPosition extends Component
+{
 	public float x;
 	public float y;
 
-	public PlainPosition xy(float x, float y) {
+	public PackedPosition xy(float x, float y)
+	{
 		this.x = x;
 		this.y = y;
 		return this;

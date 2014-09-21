@@ -7,25 +7,26 @@ import com.artemis.Aspect;
 import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.annotations.Wire;
+import com.artemis.component.PackedPosition;
 import com.artemis.component.Position;
 import com.artemis.systems.EntityProcessingSystem;
 
 @Wire
-public class PositionSystem extends EntityProcessingSystem {
+public class PackedPositionSystem2 extends EntityProcessingSystem {
 
 	Blackhole voidness = new Blackhole();
-	ComponentMapper<Position> positionMapper;
+	ComponentMapper<PackedPosition> positionMapper;
 	
 	@SuppressWarnings("unchecked")
-	public PositionSystem() {
-		super(Aspect.getAspectForAll(Position.class));
+	public PackedPositionSystem2() {
+		super(Aspect.getAspectForAll(PackedPosition.class));
 	}
 
 	@Override
 	protected void process(Entity e) {
-		Position pos = positionMapper.get(e);
-		pos.x(pos.x() + .1f % 100000);
-		pos.y(pos.y() - 0.1f % 100000);
+		PackedPosition pos = positionMapper.get(e);
+		pos.x -= 1;
+		pos.y += 1;
 		
 		voidness.consume(e);
 	}

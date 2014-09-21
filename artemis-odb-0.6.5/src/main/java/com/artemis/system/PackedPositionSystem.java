@@ -7,23 +7,24 @@ import com.artemis.Aspect;
 import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.annotations.Wire;
-import com.artemis.component.PooledPosition;
+import com.artemis.component.PackedPosition;
+import com.artemis.component.Position;
 import com.artemis.systems.EntityProcessingSystem;
 
 @Wire
-public class PooledPositionSystem extends EntityProcessingSystem {
+public class PackedPositionSystem extends EntityProcessingSystem {
 
 	Blackhole voidness = new Blackhole();
-	ComponentMapper<PooledPosition> positionMapper;
+	ComponentMapper<PackedPosition> positionMapper;
 	
 	@SuppressWarnings("unchecked")
-	public PooledPositionSystem() {
-		super(Aspect.getAspectForAll(PooledPosition.class));
+	public PackedPositionSystem() {
+		super(Aspect.getAspectForAll(PackedPosition.class));
 	}
 
 	@Override
 	protected void process(Entity e) {
-		PooledPosition pos = positionMapper.get(e);
+		PackedPosition pos = positionMapper.get(e);
 		pos.x += 1;
 		pos.y -= 1;
 		

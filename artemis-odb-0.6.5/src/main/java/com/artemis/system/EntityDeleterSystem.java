@@ -43,7 +43,7 @@ public final class EntityDeleterSystem extends VoidEntitySystem {
 	protected void processSystem() {
 		if (counter == 100) {
 			Entity e = world.getEntity(ids[index++]);
-			world.deleteEntity(e);
+			e.deleteFromWorld();
 			index = index % ENTITY_COUNT;
 			counter = 0;
 		} else if (counter == 1) { // need to wait one round to reclaim entities
