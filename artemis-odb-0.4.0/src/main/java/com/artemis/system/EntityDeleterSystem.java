@@ -1,6 +1,5 @@
 package com.artemis.system;
 
-
 import java.util.Random;
 
 import com.artemis.Component;
@@ -44,7 +43,7 @@ public final class EntityDeleterSystem extends VoidEntitySystem {
 	protected void processSystem() {
 		if (counter == 100) {
 			Entity e = world.getEntity(ids[index++]);
-			world.deleteEntity(e);
+			e.deleteFromWorld();
 			index = index % ENTITY_COUNT;
 			counter = 0;
 		} else if (counter == 1) { // need to wait one round to reclaim entities
@@ -57,11 +56,11 @@ public final class EntityDeleterSystem extends VoidEntitySystem {
 		try {
 			e.addComponent(c1.newInstance());
 			e.addComponent(c2.newInstance());
+			e.addToWorld();
 		} catch (InstantiationException e1) {
 			e1.printStackTrace();
 		} catch (IllegalAccessException e1) {
 			e1.printStackTrace();
 		}
-		e.addToWorld();
 	}
 }
