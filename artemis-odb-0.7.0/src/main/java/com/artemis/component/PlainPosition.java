@@ -3,7 +3,7 @@ package com.artemis.component;
 import com.artemis.Component;
 import com.artemis.annotations.PackedWeaver;
 
-@PackedWeaver
+//@PackedWeaver
 public class PlainPosition extends Component {
 	public float x;
 	public float y;

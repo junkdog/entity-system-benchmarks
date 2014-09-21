@@ -25,20 +25,8 @@
 
 package com.artemis;
 
-import java.util.Scanner;
-import java.util.concurrent.TimeUnit;
-
 import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.BenchmarkMode;
-import org.openjdk.jmh.annotations.Fork;
-import org.openjdk.jmh.annotations.Measurement;
-import org.openjdk.jmh.annotations.Mode;
-import org.openjdk.jmh.annotations.OutputTimeUnit;
-import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.Setup;
-import org.openjdk.jmh.annotations.State;
-import org.openjdk.jmh.annotations.Threads;
-import org.openjdk.jmh.annotations.Warmup;
 
 import com.artemis.system.CompSystemA;
 import com.artemis.system.CompSystemB;
@@ -47,13 +35,6 @@ import com.artemis.system.CompSystemD;
 import com.artemis.system.EntityManglerSystem;
 import com.github.esfbench.JmhSettings;
 
-@State(Scope.Thread)
-@BenchmarkMode(Mode.AverageTime)
-@Threads(1)
-@Fork(1)
-@OutputTimeUnit(TimeUnit.MICROSECONDS)
-@Warmup(iterations = 5, time = 1, timeUnit = TimeUnit.SECONDS)
-@Measurement(iterations = 3, time = 10, timeUnit = TimeUnit.SECONDS)
 public class InsertRemoveBenchmark extends JmhSettings {
 	
 	private World world;
@@ -72,7 +53,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	}		
 	
 	@Benchmark
-	public void insert_remove_world() {
+	public void insert_remove() {
 		world.process();
 	}
 	
@@ -93,7 +74,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 		irb.entityCount = 1024;
 		irb.init();
 		for (int i = 0, s = 20000; s > i; i++) {
-			irb.insert_remove_world();
+			irb.insert_remove();
 		}
 	}
 }

@@ -25,8 +25,8 @@ public class PackedPositionSystem3 extends EntityProcessingSystem {
 	@Override
 	protected void process(Entity e) {
 		PackedPosition pos = positionMapper.get(e);
-		pos.x += 0.5;
-		pos.y -= 0.5;
+		pos.x += 0.5f;
+		pos.y -= 0.5f;
 		
 		voidness.consume(e);
 	}

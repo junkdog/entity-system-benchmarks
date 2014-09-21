@@ -61,8 +61,10 @@
 		<module>ashley-1.0.1</module>
 		<module>artemis-odb-0.4.0</module>
 		<module>artemis-odb-0.6.5</module>
-		<module>artemis-odb-dev</module>
+		<module>artemis-odb-0.7.0</module>
+		<!--
 		<module>artemis-odb-exp</module>
+		-->
 	</modules>
 	
 	<build>
