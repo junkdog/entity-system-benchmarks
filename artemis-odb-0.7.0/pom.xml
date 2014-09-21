@@ -7,9 +7,9 @@
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>artemis-odb-dev-benchmark</artifactId>
+	<artifactId>artemis-odb-0.7.0-benchmark</artifactId>
 	<packaging>jar</packaging>
-	<name>artemis-odb-dev-benchmarks</name>
+	<name>artemis-odb-0.7.0-benchmarks</name>
 
 	<properties>
 		<artemis.version>0.6.6-SNAPSHOT</artemis.version>

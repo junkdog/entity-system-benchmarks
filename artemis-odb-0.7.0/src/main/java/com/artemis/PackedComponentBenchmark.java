@@ -27,27 +27,42 @@ package com.artemis;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
+import org.openjdk.jmh.runner.Runner;
+import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-import com.artemis.component.PlainPosition;
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.system.BaselinePositionSystem;
+import com.artemis.component.PackedPosition;
+import com.artemis.component.StructComponentA;
 import com.artemis.system.EntityDeleterSystem;
+import com.artemis.system.PackedPositionSystem;
+import com.artemis.system.PackedPositionSystem2;
+import com.artemis.system.PackedPositionSystem3;
 import com.github.esfbench.JmhSettings;
 
-public class BaselineBenchmark extends JmhSettings {
+public class PackedComponentBenchmark extends JmhSettings {
 	
-	private World worldBaseline;
+	private World worldPacked;
 	
 	@Setup
 	public void init() {
-		worldBaseline = new World();
-		worldBaseline.setSystem(new EntityDeleterSystem(SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
-		worldBaseline.setSystem(new BaselinePositionSystem());
-		worldBaseline.initialize();
+		worldPacked = new World();
+		worldPacked.setSystem(new EntityDeleterSystem(JmhSettings.SEED, entityCount, PackedPosition.class, StructComponentA.class));
+		worldPacked.setSystem(new PackedPositionSystem());
+		worldPacked.setSystem(new PackedPositionSystem2());
+		worldPacked.setSystem(new PackedPositionSystem3());
+		worldPacked.initialize();
 	}		
 	
 	@Benchmark
-	public void baseline_world() {
-		worldBaseline.process();
+	public void packed() {
+		worldPacked.process();
+	}
+
+	public static void main(String[] args) throws Exception {
+		new Runner(
+			new OptionsBuilder()
+				.include(PackedComponentBenchmark.class.getName() + ".*")
+				.param("entityCount", "1024", "4096")
+				.build())
+		.run();
 	}
 }

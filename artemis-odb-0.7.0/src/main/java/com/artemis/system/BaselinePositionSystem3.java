@@ -7,17 +7,18 @@ import com.artemis.Entity;
 import com.artemis.component.PlainPosition;
 import com.artemis.systems.EntityProcessingSystem;
 
-public class BaselinePositionSystem extends EntityProcessingSystem {
+public class BaselinePositionSystem3 extends EntityProcessingSystem {
 	
 	Blackhole voidness = new Blackhole();
 	
 	@SuppressWarnings("unchecked")
-	public BaselinePositionSystem() {
+	public BaselinePositionSystem3() {
 		super(Aspect.getAspectForAll(PlainPosition.class));
 	}
 
 	@Override
 	protected void process(Entity e) {
 		voidness.consume(e);
+		voidness.consume(world.delta + 2);
 	}
 }
