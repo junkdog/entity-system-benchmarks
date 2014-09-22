@@ -12,6 +12,7 @@
 - Attempt to be as similar as possible across frameworks.
 - Run with `entityCount`: 1024, 4096, 16384 and 65536.
 - Share the same random seed.
+- Raw, unprocessed results, here: https://github.com/junkdog/entity-system-benchmarks/tree/master/results
 
 #### Component iteration benchmarks:
 - Have 3 entity systems updating a position component system.
