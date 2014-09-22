@@ -15,7 +15,7 @@
 - Raw, unprocessed results, here: https://github.com/junkdog/entity-system-benchmarks/tree/master/results
 
 #### Component iteration benchmarks:
-- Have 3 entity systems updating a position component system.
+- Have 3 entity systems updating a position component.
 - An Entity Deleter system: each 100th tick an entity is deleted and a new entity is created the next tick.
 - There are 4 types of iteration benchmarks:
   - **baseline:** position isn't updated, not included in charts.
