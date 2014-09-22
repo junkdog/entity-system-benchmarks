@@ -34,6 +34,7 @@ import com.github.esfbench.ashley.system.CompSystemA;
 import com.github.esfbench.ashley.system.CompSystemB;
 import com.github.esfbench.ashley.system.CompSystemC;
 import com.github.esfbench.ashley.system.CompSystemD;
+import com.github.esfbench.ashley.system.EntityManglerSystem;
 
 public class InsertRemoveBenchmark extends JmhSettings {
 	
@@ -42,7 +43,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	@Setup
 	public void init() throws Exception {
 		engine = new Engine();
-//		engine.addSystem(new EntityManglerSystem(SEED, entityCount, 20));
+		engine.addSystem(new EntityManglerSystem(SEED, entityCount, 20));
 		engine.addSystem(new CompSystemA());
 		engine.addSystem(new CompSystemB());
 		engine.addSystem(new CompSystemC());
@@ -68,7 +69,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 //		new Scanner(System.in).nextLine();
 //		
 		InsertRemoveBenchmark irb = new InsertRemoveBenchmark();
-		irb.entityCount = 1024;
+		irb.entityCount = 128;
 		irb.init();
 		for (int i = 0, s = 10000; s > i; i++) {
 			irb.insert_remove();

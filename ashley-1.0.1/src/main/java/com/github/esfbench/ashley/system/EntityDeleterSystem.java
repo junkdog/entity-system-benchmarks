@@ -21,7 +21,6 @@ public final class EntityDeleterSystem extends EntitySystem {
 	private Class<? extends Component> c2;
 
 	private Engine engine;
-	
 	private IntMap<Entity> entities = new IntMap<Entity>();
 
 	public EntityDeleterSystem(long seed, int entityCount, Class<? extends Component> c1, Class<? extends Component> c2) {
