@@ -39,7 +39,7 @@ public final class PooledEntityDeleterSystem extends EntitySystem {
 	@Override
 	public void addedToEngine(Engine engine) {
 		this.engine = (PooledEngine) engine;
-		this.entities = engine.getEntitiesFor(Family.getFor(PlainPosition.class));
+		entities = engine.getEntitiesFor(Family.getFor(PlainPosition.class));
 //		engine.addEntityListener(new EntityListener() {
 //			
 //			@Override

@@ -45,7 +45,7 @@ public class PooledComponentBenchmark extends JmhSettings {
 	
 	private Engine engine;
 
-	@Setup
+//	@Setup
 	public void init() {
 		engine = new PooledEngine();
 		engine.addSystem(new PlainPositionSystem());
@@ -54,7 +54,7 @@ public class PooledComponentBenchmark extends JmhSettings {
 		engine.addSystem(new PooledEntityDeleterSystem(JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
 	}		
 	
-	@Benchmark
+//	@Benchmark
 	public void pooled() {
 		engine.update(0);
 	}
@@ -62,7 +62,7 @@ public class PooledComponentBenchmark extends JmhSettings {
 	public static void main(String[] args) throws Exception {
 		new Runner(
 			new OptionsBuilder()
-				.include(".*plain.*")
+				.include(".*pooled.*")
 				.param("entityCount", "1024", "4096")
 				.build())
 		.run();
