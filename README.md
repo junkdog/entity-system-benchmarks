@@ -117,7 +117,7 @@ identical. More about it on the artemis-odb wiki: [Optimizing Entity System][fas
 
 
 
- [fast]: (https://github.com/junkdog/artemis-odb/wiki/Optimizing-Entity-Systems)
+ [fast]: https://github.com/junkdog/artemis-odb/wiki/Optimizing-Entity-Systems
  [it1k]: http://junkdog.github.io/images/ecs-bench/iteration-1024.png
  [it4k]: http://junkdog.github.io/images/ecs-bench/iteration-4096.png
  [it16k]: http://junkdog.github.io/images/ecs-bench/iteration-16384.png
