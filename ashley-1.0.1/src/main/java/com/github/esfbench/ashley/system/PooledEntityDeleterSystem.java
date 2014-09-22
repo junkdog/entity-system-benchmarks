@@ -33,7 +33,6 @@ public final class PooledEntityDeleterSystem extends EntitySystem {
 		ids = new int[ENTITY_COUNT];
 		
 		// ashley is backed up am IntMap, hence we only need to track ids
-//		for (int i = 0; ids.length > i; i++)
 	}
 	
 	@Override

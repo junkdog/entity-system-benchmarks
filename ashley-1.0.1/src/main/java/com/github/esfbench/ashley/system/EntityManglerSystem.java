@@ -115,14 +115,16 @@ public final class EntityManglerSystem extends EntitySystem {
 			createEntity();
 	}
 	
+	int lastDeleted;
+	
 	@Override
 	public void update(float deltaTime) {
 		counter++;
 
 		if (counter % 2 == 1) {
 			for (int i = 0; RENEW > i; i++) {
-				Entity e = entities.get(ids[index++]);
-				System.out.println(ids[index] + ": " + e.getIndex());
+//				Entity e = entities.get(ids[index++]);
+				Entity e = entities.get(lastDeleted++);
 				engine.removeEntity(e);
 				index = index % ENTITY_COUNT;
 			}
@@ -145,8 +147,6 @@ public final class EntityManglerSystem extends EntitySystem {
 		for (int i = 0, s = components.size; s > i; i++) {
 			e.add(newInstance(data[i]));
 		}
-		
-		System.out.println("creating: " + e.getIndex());
 		
 		engine.addEntity(e);
 	}
