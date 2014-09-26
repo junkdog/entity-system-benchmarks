@@ -8,7 +8,6 @@ import com.artemis.ArchetypeBuilder;
 import com.artemis.ArchetypeBuilder.Archetype;
 import com.artemis.Component;
 import com.artemis.Entity;
-import com.artemis.EntityEdit;
 import com.artemis.component.Comp1;
 import com.artemis.component.Comp2;
 import com.artemis.component.Comp3;
@@ -35,12 +34,10 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 	int index;
 
 	private Random rng;
-	private int entityPermutations;
 
 	@SuppressWarnings("unchecked")
 //	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
 	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
-		this.entityPermutations = entityPermutations;
 		rng = new Random(seed);
 		ENTITY_COUNT = entityCount;
 		RENEW = ENTITY_COUNT / 4;
@@ -67,14 +64,6 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 		types.add(Comp8.class);
 		types.add(Comp9.class);
 		
-//		permutations = new Bag[entityPermutations];
-//		for (int i = 0; permutations.length > i; i++) {
-//			Bag<Class<? extends Component>> components = new Bag<Class<? extends Component>>();
-//			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7); s > classIndex; classIndex++) {
-//				components.add(types.get((int)(rng.nextFloat() * types.size())));
-//			}
-//			permutations[i] = components;
-//		}
 		permutations = new Archetype[entityPermutations];
 
 		
@@ -86,9 +75,8 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 	@Override
 	protected void initialize() {
 		for (int i = 0; permutations.length > i; i++) {
-//			Bag<Class<? extends Component>> components = new Bag<Class<? extends Component>>();
 			ArchetypeBuilder builder = new ArchetypeBuilder();
-			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7); s > classIndex; classIndex++) {
+			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7) + 3; s > classIndex; classIndex++) {
 				builder.add(types.get((int)(rng.nextFloat() * types.size())));
 			}
 			
@@ -121,18 +109,6 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 	}
 	
 	int cmpIndex = 0;
-//	private Bag<Class<? extends Component>>[] permutations;
-//	
-//	private final void createEntity() {
-//		EntityEdit e = world.createEntity(new Archetype());
-//		Bag<Class<? extends Component>> components = permutations[cmp[cmpIndex++]];
-//		if (cmpIndex == cmp.length) cmpIndex = 0;
-//		
-//		Object[] data = components.getData();
-//		for (int i = 0, s = components.size(); s > i; i++) {
-//			e.createComponent((Class<? extends Component>)data[i]);
-//		}
-//	}
 	
 	private Archetype[] permutations;
 	

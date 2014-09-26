@@ -2,6 +2,7 @@ package com.artemis.system;
 
 import com.artemis.Aspect;
 import com.artemis.Entity;
+import com.artemis.Filter;
 import com.artemis.component.Comp2;
 import com.artemis.component.Comp8;
 import com.artemis.component.Comp9;
@@ -13,7 +14,7 @@ public class CompSystemB extends EntityProcessingSystem {
 	
 	@SuppressWarnings("unchecked")
 	public CompSystemB() {
-		super(Aspect.getAspectForAll(Comp2.class, Comp8.class, Comp9.class));
+		super(Filter.allComponents(Comp2.class, Comp8.class, Comp9.class));
 	}
 
 	@Override

@@ -53,14 +53,8 @@ public final class EntityDeleterSystem extends VoidEntitySystem {
 	
 	protected final void createEntity() {
 		Entity e = world.createEntity();
-		try {
-			e.addComponent(c1.newInstance());
-			e.addComponent(c2.newInstance());
-			e.addToWorld();
-		} catch (InstantiationException e1) {
-			e1.printStackTrace();
-		} catch (IllegalAccessException e1) {
-			e1.printStackTrace();
-		}
+		e.addComponent(world.createComponent(c1));
+		e.addComponent(world.createComponent(c2));
+		e.addToWorld();
 	}
 }

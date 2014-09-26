@@ -87,7 +87,7 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 	protected void initialize() {
 		for (int i = 0; permutations.length > i; i++) {
 			Bag<Class<? extends Component>> components = new Bag<Class<? extends Component>>();
-			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7); s > classIndex; classIndex++) {
+			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7) + 3; s > classIndex; classIndex++) {
 				components.add(types.get((int)(rng.nextFloat() * types.size())));
 			}
 			permutations[i] = components;

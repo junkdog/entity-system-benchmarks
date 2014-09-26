@@ -85,7 +85,7 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 	public void initialize() {
 		for (int i = 0; permutations.length > i; i++) {
 			Array<Class<? extends Component>> components = new Array<Class<? extends Component>>();
-			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7); s > classIndex; classIndex++) {
+			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7) + 3; s > classIndex; classIndex++) {
 				components.add(types.get((int)(rng.nextFloat() * types.size)));
 			}
 			permutations[i] = components;
@@ -126,19 +126,8 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 		
 		Object[] data = components.items;
 		for (int i = 0, s = components.size; s > i; i++) {
-			e.addComponent(newInstance(data[i]));
+			e.addComponent(world.createComponent((Class<Component>) data[i]));
 		}
 		e.addToWorld();
-	}
-	
-	@SuppressWarnings("unchecked")
-	private static Component newInstance(Object componentClass) {
-		try {
-			return ((Class<? extends Component>)componentClass).newInstance();
-		} catch (InstantiationException e) {
-			throw new RuntimeException(e);
-		} catch (IllegalAccessException e) {
-			throw new RuntimeException(e);
-		}
 	}
 }
