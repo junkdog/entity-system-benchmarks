@@ -51,7 +51,7 @@ public class PooledComponentBenchmark extends JmhSettings {
 		engine.addSystem(new PooledEntityDeleterSystem(JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class));
 	}		
 	
-	@Benchmark
+//	@Benchmark
 	public void pooled() {
 		engine.update(0);
 	}
