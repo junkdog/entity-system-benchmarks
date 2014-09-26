@@ -4,7 +4,7 @@
 # PARAMS="-i 1 -wi 1 -r 1 -p entityCount=4096"
 
 function run_bench() {
-	java -jar $1/target/microbenchmarks.jar -rf json -rff results/$1.json $PARAMS | tee results/$1.log
+	java -jar $1/target/microbenchmarks.jar .* -rf json -rff results/$1.json $PARAMS | tee results/$1.log
 }
 
 mvn clean install
