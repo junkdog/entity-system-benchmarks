@@ -45,6 +45,7 @@
 	</dependencies>
 	
 	<modules>
+		<module>chartgen</module>
 		<module>common</module>
 		<module>ashley-1.0.1</module>
 		<module>ashley-1.2.0</module>

@@ -1,0 +1,42 @@
+{
+    "benchmark": "com.artemis.BaselineBenchmark.baseline",
+    "mode": "thrpt",
+    "threads": 1,
+    "forks": 1,
+    "warmupIterations": 5,
+    "warmupTime": "1 s",
+    "measurementIterations": 3,
+    "measurementTime": "10 s",
+    "params": {
+      "entityCount": "16384"
+    },
+    "primaryMetric": {
+      "score": 4206.2258333006175,
+      "scoreError": 126.78278579635376,
+      "scoreConfidence": [
+        4079.4430475042636,
+        4333.008619096971
+      ],
+      "scorePercentiles": {
+        "0.0": 4198.8194503631485,
+        "50.0": 4207.254483283234,
+        "90.0": 4212.603566255469,
+        "95.0": 4212.603566255469,
+        "99.0": 4212.603566255469,
+        "99.9": 4212.603566255469,
+        "99.99": 4212.603566255469,
+        "99.999": 4212.603566255469,
+        "99.9999": 4212.603566255469,
+        "100.0": 4212.603566255469
+      },
+      "scoreUnit": "ops/s",
+      "rawData": [
+        [
+          4207.254483283234,
+          4212.603566255469,
+          4198.8194503631485
+        ]
+      ]
+    },
+    "secondaryMetrics": {}
+}
