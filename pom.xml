@@ -52,6 +52,7 @@
 		<module>artemis-odb-0.4.0</module>
 		<module>artemis-odb-0.6.5</module>
 		<module>artemis-odb-0.7.0</module>
+		<module>artemis-odb-0.8.0</module>
 		<module>gdx-artemis-0.5.0</module>
 		<!--
 		<module>artemis-odb-exp</module>
