@@ -1,0 +1,18 @@
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.BaselineBenchmark.baseline
+# Parameters: (entityCount = 1024)
+
+# Run progress: 0.00% complete, ETA 00:11:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 59864.448 ops/s
+# Warmup Iteration   2: 61769.968 ops/s
+# Warmup Iteration   3: 65077.489 ops/s
+# Warmup Iteration   4: 64133.033 ops/s
+# Warmup Iteration   5: 62642.654 ops/s
+Iteration   1: 
