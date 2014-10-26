@@ -60,6 +60,7 @@
 		<module>common</module>
 		<module>ashley-1.0.1</module>
 		<module>ashley-1.2.0</module>
+		<module>ashley-1.3.1</module>
 		<module>artemis-odb-0.4.0</module>
 		<module>artemis-odb-0.6.5</module>
 		<module>artemis-odb-0.7.0</module>

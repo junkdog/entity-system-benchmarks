@@ -13,6 +13,7 @@ run_bench artemis-odb-0.6.5
 run_bench artemis-odb-0.7.0
 run_bench ashley-1.0.1
 run_bench ashley-1.2.0
+run_bench ashley-1.3.1
 run_bench gdx-artemis-0.5.0
 mvn -Pfast clean install -f artemis-odb-0.7.0/pom.xml
 run_bench artemis-odb-0.7.0 _fast
