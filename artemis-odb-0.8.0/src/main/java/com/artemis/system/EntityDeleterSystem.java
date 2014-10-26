@@ -2,8 +2,8 @@ package com.artemis.system;
 
 import java.util.Random;
 
+import com.artemis.Archetype;
 import com.artemis.ArchetypeBuilder;
-import com.artemis.ArchetypeBuilder.Archetype;
 import com.artemis.Component;
 import com.artemis.Entity;
 import com.artemis.systems.VoidEntitySystem;

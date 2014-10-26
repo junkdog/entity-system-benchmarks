@@ -8,7 +8,6 @@ import com.artemis.ComponentMapper;
 import com.artemis.Entity;
 import com.artemis.annotations.Wire;
 import com.artemis.component.PackedPosition;
-import com.artemis.component.Position;
 import com.artemis.systems.EntityProcessingSystem;
 
 @Wire

@@ -1,0 +1,531 @@
+[
+    {
+        "benchmark" : "com.github.esfbench.ashley.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "1024"
+        },
+        "primaryMetric" : {
+            "score" : 59175.85382981192,
+            "scoreError" : 752.549505215346,
+            "scoreConfidence" : [
+                58423.30432459657,
+                59928.403335027266
+            ],
+            "scorePercentiles" : {
+                "0.0" : 59128.27510630478,
+                "50.0" : 59197.70851688477,
+                "90.0" : 59201.57786624621,
+                "95.0" : 59201.57786624621,
+                "99.0" : 59201.57786624621,
+                "99.9" : 59201.57786624621,
+                "99.99" : 59201.57786624621,
+                "99.999" : 59201.57786624621,
+                "99.9999" : 59201.57786624621,
+                "100.0" : 59201.57786624621
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    59128.27510630478,
+                    59201.57786624621,
+                    59197.70851688477
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 13529.76332911328,
+            "scoreError" : 916.6066090683074,
+            "scoreConfidence" : [
+                12613.156720044974,
+                14446.369938181588
+            ],
+            "scorePercentiles" : {
+                "0.0" : 13480.929111638263,
+                "50.0" : 13527.056587978017,
+                "90.0" : 13581.304287723566,
+                "95.0" : 13581.304287723566,
+                "99.0" : 13581.304287723566,
+                "99.9" : 13581.304287723566,
+                "99.99" : 13581.304287723566,
+                "99.999" : 13581.304287723566,
+                "99.9999" : 13581.304287723566,
+                "100.0" : 13581.304287723566
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    13527.056587978017,
+                    13480.929111638263,
+                    13581.304287723566
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 3097.860664235226,
+            "scoreError" : 14.1478221912274,
+            "scoreConfidence" : [
+                3083.7128420439985,
+                3112.0084864264536
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3097.0130645773916,
+                "50.0" : 3098.0343327792384,
+                "90.0" : 3098.5345953490487,
+                "95.0" : 3098.5345953490487,
+                "99.0" : 3098.5345953490487,
+                "99.9" : 3098.5345953490487,
+                "99.99" : 3098.5345953490487,
+                "99.999" : 3098.5345953490487,
+                "99.9999" : 3098.5345953490487,
+                "100.0" : 3098.5345953490487
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3098.5345953490487,
+                    3098.0343327792384,
+                    3097.0130645773916
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 277.29207807186435,
+            "scoreError" : 3.42210663931592,
+            "scoreConfidence" : [
+                273.8699714325484,
+                280.7141847111803
+            ],
+            "scorePercentiles" : {
+                "0.0" : 277.076065044636,
+                "50.0" : 277.38633723597366,
+                "90.0" : 277.41383193498353,
+                "95.0" : 277.41383193498353,
+                "99.0" : 277.41383193498353,
+                "99.9" : 277.41383193498353,
+                "99.99" : 277.41383193498353,
+                "99.999" : 277.41383193498353,
+                "99.9999" : 277.41383193498353,
+                "100.0" : 277.41383193498353
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    277.38633723597366,
+                    277.41383193498353,
+                    277.076065044636
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "1024"
+        },
+        "primaryMetric" : {
+            "score" : 65.75000048019652,
+            "scoreError" : 315.01773804156664,
+            "scoreConfidence" : [
+                -249.26773756137013,
+                380.76773852176314
+            ],
+            "scorePercentiles" : {
+                "0.0" : 48.834147858284744,
+                "50.0" : 65.06756944864331,
+                "90.0" : 83.34828413366151,
+                "95.0" : 83.34828413366151,
+                "99.0" : 83.34828413366151,
+                "99.9" : 83.34828413366151,
+                "99.99" : 83.34828413366151,
+                "99.999" : 83.34828413366151,
+                "99.9999" : 83.34828413366151,
+                "100.0" : 83.34828413366151
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    83.34828413366151,
+                    65.06756944864331,
+                    48.834147858284744
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 17.575180567841624,
+            "scoreError" : 80.70914233310315,
+            "scoreConfidence" : [
+                -63.13396176526152,
+                98.28432290094477
+            ],
+            "scorePercentiles" : {
+                "0.0" : 13.285880602959118,
+                "50.0" : 17.317190688581082,
+                "90.0" : 22.12247041198468,
+                "95.0" : 22.12247041198468,
+                "99.0" : 22.12247041198468,
+                "99.9" : 22.12247041198468,
+                "99.99" : 22.12247041198468,
+                "99.999" : 22.12247041198468,
+                "99.9999" : 22.12247041198468,
+                "100.0" : 22.12247041198468
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    22.12247041198468,
+                    17.317190688581082,
+                    13.285880602959118
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 4.561359742423217,
+            "scoreError" : 23.170846905579012,
+            "scoreConfidence" : [
+                -18.609487163155794,
+                27.73220664800223
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3.445659918708902,
+                "50.0" : 4.2948953401337855,
+                "90.0" : 5.943523968426963,
+                "95.0" : 5.943523968426963,
+                "99.0" : 5.943523968426963,
+                "99.9" : 5.943523968426963,
+                "99.99" : 5.943523968426963,
+                "99.999" : 5.943523968426963,
+                "99.9999" : 5.943523968426963,
+                "100.0" : 5.943523968426963
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5.943523968426963,
+                    4.2948953401337855,
+                    3.445659918708902
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 1.036932602606872,
+            "scoreError" : 4.439534158255119,
+            "scoreConfidence" : [
+                -3.402601555648247,
+                5.4764667608619915
+            ],
+            "scorePercentiles" : {
+                "0.0" : 0.8206098647749483,
+                "50.0" : 0.9897860308361628,
+                "90.0" : 1.300401912209505,
+                "95.0" : 1.300401912209505,
+                "99.0" : 1.300401912209505,
+                "99.9" : 1.300401912209505,
+                "99.99" : 1.300401912209505,
+                "99.999" : 1.300401912209505,
+                "99.9999" : 1.300401912209505,
+                "100.0" : 1.300401912209505
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1.300401912209505,
+                    0.9897860308361628,
+                    0.8206098647749483
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "1024"
+        },
+        "primaryMetric" : {
+            "score" : 20273.937916061852,
+            "scoreError" : 104.03650231183451,
+            "scoreConfidence" : [
+                20169.901413750016,
+                20377.974418373688
+            ],
+            "scorePercentiles" : {
+                "0.0" : 20267.92545378385,
+                "50.0" : 20274.618792249123,
+                "90.0" : 20279.269502152583,
+                "95.0" : 20279.269502152583,
+                "99.0" : 20279.269502152583,
+                "99.9" : 20279.269502152583,
+                "99.99" : 20279.269502152583,
+                "99.999" : 20279.269502152583,
+                "99.9999" : 20279.269502152583,
+                "100.0" : 20279.269502152583
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    20267.92545378385,
+                    20274.618792249123,
+                    20279.269502152583
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 5157.164978906932,
+            "scoreError" : 133.30297888723007,
+            "scoreConfidence" : [
+                5023.8620000197025,
+                5290.467957794162
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5152.050741055084,
+                "50.0" : 5153.910682233624,
+                "90.0" : 5165.53351343209,
+                "95.0" : 5165.53351343209,
+                "99.0" : 5165.53351343209,
+                "99.9" : 5165.53351343209,
+                "99.99" : 5165.53351343209,
+                "99.999" : 5165.53351343209,
+                "99.9999" : 5165.53351343209,
+                "100.0" : 5165.53351343209
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5153.910682233624,
+                    5152.050741055084,
+                    5165.53351343209
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 871.8427762806965,
+            "scoreError" : 64.11510230791502,
+            "scoreConfidence" : [
+                807.7276739727815,
+                935.9578785886115
+            ],
+            "scorePercentiles" : {
+                "0.0" : 868.6032498589826,
+                "50.0" : 871.3459706861472,
+                "90.0" : 875.5791082969598,
+                "95.0" : 875.5791082969598,
+                "99.0" : 875.5791082969598,
+                "99.9" : 875.5791082969598,
+                "99.99" : 875.5791082969598,
+                "99.999" : 875.5791082969598,
+                "99.9999" : 875.5791082969598,
+                "100.0" : 875.5791082969598
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    868.6032498589826,
+                    871.3459706861472,
+                    875.5791082969598
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.esfbench.ashley.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 68.22601848173089,
+            "scoreError" : 1.6805149187274355,
+            "scoreConfidence" : [
+                66.54550356300345,
+                69.90653340045833
+            ],
+            "scorePercentiles" : {
+                "0.0" : 68.16928979696172,
+                "50.0" : 68.17646293594682,
+                "90.0" : 68.33230271228416,
+                "95.0" : 68.33230271228416,
+                "99.0" : 68.33230271228416,
+                "99.9" : 68.33230271228416,
+                "99.99" : 68.33230271228416,
+                "99.999" : 68.33230271228416,
+                "99.9999" : 68.33230271228416,
+                "100.0" : 68.33230271228416
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    68.17646293594682,
+                    68.33230271228416,
+                    68.16928979696172
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

@@ -1,7 +1,6 @@
 package com.artemis.component;
 
 import com.artemis.Component;
-import com.artemis.util.Vec2f;
 
 public class PackedPosition extends Component
 {

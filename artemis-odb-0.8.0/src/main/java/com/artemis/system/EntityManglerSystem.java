@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
+import com.artemis.Archetype;
 import com.artemis.ArchetypeBuilder;
-import com.artemis.ArchetypeBuilder.Archetype;
 import com.artemis.Component;
 import com.artemis.Entity;
 import com.artemis.component.Comp1;
