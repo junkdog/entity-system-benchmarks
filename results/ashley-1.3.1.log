@@ -1330,4 +1330,25 @@ Result: 711.050 ±(99.9%) 188.678 ops/s [Average]
 # Warmup Iteration   5: 57.027 ops/s
 Iteration   1: 57.143 ops/s
 Iteration   2: 59.754 ops/s
-Iteration   3: 
+Iteration   3: 60.291 ops/s
+
+
+Result: 59.063 ±(99.9%) 30.727 ops/s [Average]
+  Statistics: (min, avg, max) = (57.143, 59.063, 60.291), stdev = 1.684
+  Confidence interval (99.9%): [28.336, 89.790]
+
+
+# Run complete. Total time: 00:06:49
+
+Benchmark                                      (entityCount)   Mode  Samples      Score       Error  Units
+c.g.e.a.BaselineBenchmark.baseline                      1024  thrpt        3  57434.737 ± 13986.003  ops/s
+c.g.e.a.BaselineBenchmark.baseline                      4096  thrpt        3  12905.786 ±  1336.418  ops/s
+c.g.e.a.BaselineBenchmark.baseline                     16384  thrpt        3   3056.067 ±  1403.212  ops/s
+c.g.e.a.BaselineBenchmark.baseline                     65536  thrpt        3    276.465 ±   191.432  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove             1024  thrpt        3     64.584 ±   302.937  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove             4096  thrpt        3     17.285 ±    82.146  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove            16384  thrpt        3      4.331 ±    18.549  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                   1024  thrpt        3  18637.944 ±  2199.522  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                   4096  thrpt        3   5054.509 ±   501.683  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                  16384  thrpt        3    711.050 ±   188.678  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                  65536  thrpt        3     59.063 ±    30.727  ops/s
