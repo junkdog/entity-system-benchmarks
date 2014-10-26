@@ -1,25 +1,23 @@
 package com.github.esfbench.chartgen;
 
 import java.io.File;
-import java.util.Arrays;
+import java.io.IOException;
 
-import com.esotericsoftware.jsonbeans.Json;
-import com.esotericsoftware.jsonbeans.OutputType;
+import com.github.esfbench.chartgen.json.JmhResult;
 
 public class Framework {
-	private JmhResult[] results;
+	private final JmhResult[] results;
 
-	public Framework(File file) {
-		Json json = new Json(OutputType.json);
-		json.setIgnoreUnknownFields(true);
-		JmhResult[] results = json.fromJson(JmhResult[].class, file);
-		for (int i = 0; results.length > i; i++) {
-			if (results[i] == null) {
-				results = Arrays.copyOf(results, i); 
-				break;
-			}
-		}
+	public Framework(File file) throws IOException {
+		this.results = BenchmarkUtil.fromJson(file);
+	}
+	
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		for (JmhResult result : results)
+			sb.append(result).append("\n");
 		
-		this.results = results;
+		return sb.toString();
 	}
 }

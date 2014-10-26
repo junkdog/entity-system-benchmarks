@@ -2,6 +2,7 @@ package com.github.esfbench.chartgen;
 
 import static org.junit.Assert.*;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 
@@ -9,6 +10,7 @@ import org.junit.Test;
 
 import com.esotericsoftware.jsonbeans.Json;
 import com.esotericsoftware.jsonbeans.OutputType;
+import com.github.esfbench.chartgen.json.JmhResult;
 
 public class ResultToJsonTest {
 	
@@ -28,20 +30,15 @@ public class ResultToJsonTest {
 	}
 	
 	@Test
-	public void read_json_list_result() {
-		Json json = new Json(OutputType.json);
+	public void read_json_list_result() throws IOException {
 		InputStream stream = getClass().getResourceAsStream("/test.json");
-		assertNotNull(stream);
-		
-		json.setIgnoreUnknownFields(true);
-		JmhResult[] results = json.fromJson(JmhResult[].class, stream);
-		for (int i = 0; results.length > i; i++) {
-			if (results[i] == null) {
-				results = Arrays.copyOf(results, i); 
-				break;
-			}
-		}
+		JmhResult[] results = BenchmarkUtil.fromJson("test.json", stream);
 		
 		assertEquals(10, results.length);
+	}
+	
+	@Test
+	public void temp() throws IOException {
+		ChartWriter.writeChart("test.json", getClass().getResourceAsStream("/test.json"));
 	}
 }
