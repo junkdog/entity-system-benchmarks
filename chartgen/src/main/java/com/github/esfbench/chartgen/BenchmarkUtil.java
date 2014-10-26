@@ -5,23 +5,31 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.util.TreeMap;
 
 import org.jfree.data.category.DefaultCategoryDataset;
 
 import com.esotericsoftware.jsonbeans.Json;
 import com.esotericsoftware.jsonbeans.OutputType;
 import com.github.esfbench.chartgen.json.JmhResult;
+import com.github.esfbench.chartgen.model.Benchmark;
 
 public class BenchmarkUtil {
 	private BenchmarkUtil() {}
 	
-	public static JmhResult[] fromJson(File file) throws IOException {
+	public static JmhResult[] fromJson(File file) {
 		try (FileInputStream fis = new FileInputStream(file)) {
-			return fromJson(file.getName(), fis);
+			return fromJson(file.getAbsolutePath(), fis);
+		} catch (IOException e) {
+			throw new RuntimeException(e);
 		}
 	}
 	
-	public static JmhResult[] fromJson(String framework, InputStream is) throws IOException {
+	static JmhResult[] fromJson(String framework, InputStream is) {
 		Json json = new Json(OutputType.json);
 		json.setIgnoreUnknownFields(true);
 		
@@ -35,14 +43,14 @@ public class BenchmarkUtil {
 		return results;
 	}
 	
-	public static DefaultCategoryDataset toDataset(JmhResult... results) {
-		DefaultCategoryDataset data= new DefaultCategoryDataset();
-		for (JmhResult result : results) {
-			System.out.println(result);
-			data.addValue(
-					result.primaryMetric.score,
-					"throughput",
-					result.benchmark);
+	public static Map<Integer, DefaultCategoryDataset> toDatasets(Map<Integer, Set<Benchmark>> benchmarks) {
+		Map<Integer, DefaultCategoryDataset> data = new TreeMap<>();
+		for (Entry<Integer, Set<Benchmark>> entry : benchmarks.entrySet()) {
+			DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+			for (Benchmark benchmark : entry.getValue()) {
+				dataset.addValue(benchmark.score, benchmark.type.name(), benchmark.framework);
+			}
+			data.put(entry.getKey(), dataset);
 		}
 		
 		return data;

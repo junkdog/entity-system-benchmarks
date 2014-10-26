@@ -36,9 +36,4 @@ public class ResultToJsonTest {
 		
 		assertEquals(10, results.length);
 	}
-	
-	@Test
-	public void temp() throws IOException {
-		ChartWriter.writeChart("test.json", getClass().getResourceAsStream("/test.json"));
-	}
 }

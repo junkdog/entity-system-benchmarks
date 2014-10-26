@@ -1,30 +1,29 @@
 package com.github.esfbench.chartgen.model;
 
-import static com.github.esfbench.chartgen.model.Benchmark.*;
+import static com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup.ITERATION;
+import static com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup.PROCESSING;
+import static com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup.THRESHOLD;
 import static java.lang.String.format;
 
+import com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup;
+
 public enum BenchmarkType {
-	BASELINE("baseline", MODE_BASELINE),
+	BASELINE("baseline", THRESHOLD),
+	PLAIN("plain", ITERATION),
+	POOLED("pooled", ITERATION),
+	PACKED("packed", ITERATION),
+	INSERT_REMOVE("insert_remove", PROCESSING);
 	
-	PLAIN("plain", MODE_ITERATION),
-	PACKED("packed", MODE_ITERATION),
-	POOLED("pooled", MODE_ITERATION),
+	public final String id;
+	public final BenchmarkGroup group;
 	
-	INSERT_REMOVE("insert_remove", MODE_INSERT_REMOVE);
-	
-	private final String id;
-	private final int group;
-	
-	private BenchmarkType(String id, int group) {
+	private BenchmarkType(String id, BenchmarkGroup group) {
 		this.id = id;
 		this.group = group;
 	}
 	
 	public static BenchmarkType parse(String benchmark) {
-		
-		String id = benchmark.substring(benchmark.lastIndexOf('.'));
-		id = id.replaceAll("_fast$", "");
-		
+		String id = benchmark.substring(benchmark.lastIndexOf('.') + 1);
 		for (BenchmarkType bt : values()) {
 			if (id.equals(bt.id))
 				return bt;

@@ -1,13 +1,7 @@
 package com.github.esfbench.chartgen.model;
 
-import org.openjdk.jmh.runner.RunnerException;
 
-public class Benchmark {
-	public static final int MODE_BASELINE = 0;
-	public static final int MODE_ITERATION = 1;
-	public static final int MODE_INSERT_REMOVE = 1;
-	
-	
+public class Benchmark implements Comparable<Benchmark> {
 	public String framework;
 	public int entityCount;
 	public BenchmarkType type;
@@ -26,7 +20,7 @@ public class Benchmark {
 		result = prime * result + ((type == null) ? 0 : type.hashCode());
 		return result;
 	}
-	
+
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -51,6 +45,25 @@ public class Benchmark {
 			return false;
 		return true;
 	}
+
+	@Override
+	public int compareTo(Benchmark other) {
+		String s = compareString();
+		return compareString().compareTo(other.compareString());
+	}
+
+	private String compareString() {
+		String s = type.ordinal() + framework + entityCount;
+		return s;
+	}
 	
+	@Override
+	public String toString() {
+		return String.format("Benchmark[%s (%s) %d entities]",
+				this.type, this.framework, this.entityCount);
+	}
 	
+	public static enum BenchmarkGroup {
+		THRESHOLD, ITERATION, PROCESSING;
+	}
 }
