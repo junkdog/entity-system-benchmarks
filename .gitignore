@@ -6,6 +6,7 @@
 *.kate-swp
 *.releaseBackup
 *.iml
+*.png
 bin/
 target/
 .classpath
