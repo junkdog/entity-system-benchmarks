@@ -3,11 +3,7 @@ package com.github.esfbench.chartgen;
 import static com.github.esfbench.chartgen.BenchmarkUtil.toDatasets;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -15,15 +11,11 @@ import java.util.Set;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
-import org.jfree.chart.axis.CategoryAxis;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.category.BarRenderer;
-import org.jfree.chart.renderer.category.CategoryItemRenderer;
 import org.jfree.data.category.DefaultCategoryDataset;
-import org.openjdk.jmh.runner.RunnerException;
 
-import com.github.esfbench.chartgen.json.JmhResult;
 import com.github.esfbench.chartgen.model.Benchmark;
 import com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup;
 import com.github.esfbench.chartgen.model.BenchmarkCollection;
