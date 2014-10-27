@@ -9,7 +9,7 @@
 
 	<artifactId>chartgen</artifactId>
 	<packaging>jar</packaging>
-	<name>common</name>
+	<name>chartgen</name>
 
 	<dependencies>
 		<dependency>
