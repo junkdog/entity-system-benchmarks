@@ -63,7 +63,7 @@ public final class ChartWriterFactory {
 	}
 	
 	public static void main(String[] args) {
-		File logs = new File("/home/junkdog/opt/dev/entity-system-benchmarks/results");
+		File logs = new File("../results");
 		BenchmarkCollection bc = new BenchmarkCollection(logs);
 		
 		for (BenchmarkGroup group : BenchmarkGroup.values()) {
