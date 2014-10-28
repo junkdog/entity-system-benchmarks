@@ -3,6 +3,7 @@ package com.github.esfbench.chartgen.model;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -60,12 +61,17 @@ public class BenchmarkCollection {
 		return counts;
 	}
 	
-	public Map<Integer, Set<Benchmark>> getBenchmarks(BenchmarkGroup group) {
+	public Map<Integer,Set<Benchmark>> getBenchmarks() {
+		return getBenchmarks(BenchmarkGroup.values());
+	}
+	
+	public Map<Integer, Set<Benchmark>> getBenchmarks(BenchmarkGroup... groups) {
+		Set<BenchmarkGroup> matched = new HashSet<>(Arrays.asList(groups));
 		BenchmarkCollection bc = new BenchmarkCollection();
 		
 		for (Set<Benchmark> benchmarks : this.benchmarks.values()) {
 			for (Benchmark benchmark : benchmarks) {
-				if (benchmark.type.group == group)
+				if (matched.contains(benchmark.type.group))
 					bc.add(benchmark);
 			}
 		}

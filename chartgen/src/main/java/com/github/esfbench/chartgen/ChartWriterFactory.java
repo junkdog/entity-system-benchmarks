@@ -19,6 +19,7 @@ import org.jfree.data.category.DefaultCategoryDataset;
 import com.github.esfbench.chartgen.model.Benchmark;
 import com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup;
 import com.github.esfbench.chartgen.model.BenchmarkCollection;
+import com.github.esfbench.chartgen.model.ResultTable;
 
 public final class ChartWriterFactory {
 	private ChartWriterFactory() {}
@@ -53,6 +54,19 @@ public final class ChartWriterFactory {
 	private static String getOutputName(String benchmark) {
 		return benchmark.replaceAll("[: /]", "_") + ".png";
 	}
+
+	private static String title(BenchmarkGroup group, int entityCount) {
+		switch (group) {
+			case ITERATION:
+				return "iteration: " + entityCount + " entities";
+			case PROCESSING:
+				return "insert/remove: " + entityCount + " entities";
+			case THRESHOLD:
+				return "baseline: " + entityCount + " entities";
+			default:
+				throw new RuntimeException(group.name());
+		}
+	}
 	
 	public static void main(String[] args) {
 		File logs = new File("../results");
@@ -68,18 +82,19 @@ public final class ChartWriterFactory {
 				generateChart(title(group, entry.getKey()), entry.getValue());
 			}
 		}
-	}
 
-	private static String title(BenchmarkGroup group, int entityCount) {
-		switch (group) {
-			case ITERATION:
-				return "iteration: " + entityCount + " entities";
-			case PROCESSING:
-				return "insert/remove: " + entityCount + " entities";
-			case THRESHOLD:
-				return "baseline: " + entityCount + " entities";
-			default:
-				throw new RuntimeException(group.name());
+		System.out.println();
+		
+		for (Entry<Integer, Set<Benchmark>> entry : bc.getBenchmarks().entrySet()) {
+			int entityCount = entry.getKey();
+			System.out.println("#### Benchmarks: " + entityCount + " entites");
+			System.out.println();
+			System.out.printf(" ![it%1$dk][it%1$dk] ![ir%1$dk][ir%1$dk]\n", (entityCount / 1024));
+			System.out.println();
+			ResultTable table = new ResultTable(entry.getValue());
+			table.printTable(System.out);
+			System.out.println();
+			System.out.println();
 		}
 	}
 }
