@@ -37,7 +37,7 @@ public final class ChartWriterFactory {
 		String pngFile = getOutputName(benchmark);
 		
 		try {
-			ChartUtilities.saveChartAsPNG(new File(pngFile), chart, 600, 500);
+			ChartUtilities.saveChartAsPNG(new File(pngFile), chart, 700, 450);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
