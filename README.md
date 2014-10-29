@@ -101,7 +101,7 @@ identical. More about it on the artemis-odb wiki: [Optimizing Entity System][fas
 | artemis-odb-0.8.0_fast |   7871.96 |   4624.92 |   4735.83 |   4805.10 |       1136.84 |
 | ashley-1.0.1           |   1829.45 |    214.05 |           |           |        189.47 |
 | ashley-1.2.0           |   1512.03 |    339.71 |           |           |          4.24 |
-| ashley-1.3.1           |   2182.99 |    338.22 |           |           |               |
+| ashley-1.3.1           |   2182.99 |    338.22 |           |           |        FAILED |
 | gdx-artemis-0.5.0      |   3566.84 |           |   2295.99 |           |        355.05 |
 
 
