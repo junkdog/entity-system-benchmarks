@@ -2,8 +2,8 @@
 
 ## Benchmarks description:
 #### Tested frameworks
-- [artemis-odb](https://github.com/junkdog/artemis-odb) 0.4.0, 0.6.5, 0.7.0
-- [ashley](https://github.com/libgdx/ashley) 1.0.1, 1.2.0
+- [artemis-odb](https://github.com/junkdog/artemis-odb) 0.4.0, 0.6.5, 0.7.0, 0.8.0
+- [ashley](https://github.com/libgdx/ashley) 1.0.1, 1.2.0, 1.3.1
 - [gdx-artemis](https://github.com/apotapov/gdx-artemis) 0.5.0
 
 
@@ -40,8 +40,6 @@ they aim to give a hint of each framework's performance.
 
 #### Things that might concern
 
-- Ashley 1.2.0's insertion/removal speed is suspiciously low: potentially an
-  error in the benchmark.
 - Overall, ashley-realted benchmarks may be improved; I'm not very familiar with
   the framework.
 - I never got pooling working with Ashley-1.2.0. Ashley-1.0.1:s pooling benchmarks had an
@@ -50,7 +48,7 @@ they aim to give a hint of each framework's performance.
 - artemis-odb's PackedComponent benchmarks only have a single component implementation, skewing
   the benchmark results in its favor.
 
-#### artemis-odb-0.7.0_fast benchmarks
+#### artemis-odb_fast benchmarks
 
 Artemis-odb-0.7.0 added support for automatically rewriting the generated class files
 of EntitySystems in order to achieve higher performance. The source code itself remains
