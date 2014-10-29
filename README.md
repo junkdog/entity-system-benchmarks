@@ -120,7 +120,7 @@ identical. More about it on the artemis-odb wiki: [Optimizing Entity System][fas
 | artemis-odb-0.8.0_fast |   1939.72 |    898.97 |    929.32 |   1113.98 |         79.98 |
 | ashley-1.0.1           |    199.64 |     53.04 |           |           |         13.73 |
 | ashley-1.2.0           |    263.84 |     56.04 |           |           |          0.97 |
-| ashley-1.3.1           |    261.16 |     58.64 |           |           |               |
+| ashley-1.3.1           |    261.16 |     58.64 |           |           |        FAILED |
 | gdx-artemis-0.5.0      |    469.48 |           |    347.79 |           |         45.70 |
 
 
