@@ -129,9 +129,9 @@ identical. More about it on the artemis-odb wiki: [Optimizing Entity System][fas
  [it1k]: http://junkdog.github.io/images/ecs-bench/iteration__1024_entities.png
  [it4k]: http://junkdog.github.io/images/ecs-bench/iteration__4096_entities.png
  [it16k]: http://junkdog.github.io/images/ecs-bench/iteration__16384_entities.png
- [it65k]: http://junkdog.github.io/images/ecs-bench/iteration__65536_entities.png
+ [it64k]: http://junkdog.github.io/images/ecs-bench/iteration__65536_entities.png
  [ir1k]: http://junkdog.github.io/images/ecs-bench/insert_remove__1024_entities.png
  [ir4k]: http://junkdog.github.io/images/ecs-bench/insert_remove__4096_entities.png
  [ir16k]: http://junkdog.github.io/images/ecs-bench/insert_remove__16384_entities.png
- [ir65k]: http://junkdog.github.io/images/ecs-bench/insert_remove__65536_entities.png
+ [ir64k]: http://junkdog.github.io/images/ecs-bench/insert_remove__65536_entities.png
  
