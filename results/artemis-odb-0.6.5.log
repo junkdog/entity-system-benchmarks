@@ -10,19 +10,19 @@
 
 # Run progress: 0.00% complete, ETA 00:11:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 59171.757 ops/s
-# Warmup Iteration   2: 60750.659 ops/s
-# Warmup Iteration   3: 60395.386 ops/s
-# Warmup Iteration   4: 61748.033 ops/s
-# Warmup Iteration   5: 61671.979 ops/s
-Iteration   1: 62191.005 ops/s
-Iteration   2: 61732.484 ops/s
-Iteration   3: 61516.506 ops/s
+# Warmup Iteration   1: 59122.802 ops/s
+# Warmup Iteration   2: 61448.910 ops/s
+# Warmup Iteration   3: 61251.213 ops/s
+# Warmup Iteration   4: 60769.878 ops/s
+# Warmup Iteration   5: 61145.526 ops/s
+Iteration   1: 61517.010 ops/s
+Iteration   2: 61287.698 ops/s
+Iteration   3: 60096.745 ops/s
 
 
-Result: 61813.332 ±(99.9%) 6283.875 ops/s [Average]
-  Statistics: (min, avg, max) = (61516.506, 61813.332, 62191.005), stdev = 344.440
-  Confidence interval (99.9%): [55529.456, 68097.207]
+Result: 60967.151 ±(99.9%) 13910.171 ops/s [Average]
+  Statistics: (min, avg, max) = (60096.745, 60967.151, 61517.010), stdev = 762.463
+  Confidence interval (99.9%): [47056.980, 74877.322]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -37,19 +37,19 @@ Result: 61813.332 ±(99.9%) 6283.875 ops/s [Average]
 
 # Run progress: 5.00% complete, ETA 00:11:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 13884.984 ops/s
-# Warmup Iteration   2: 14747.253 ops/s
-# Warmup Iteration   3: 15182.329 ops/s
-# Warmup Iteration   4: 14922.450 ops/s
-# Warmup Iteration   5: 15034.703 ops/s
-Iteration   1: 14796.806 ops/s
-Iteration   2: 14773.988 ops/s
-Iteration   3: 14729.110 ops/s
+# Warmup Iteration   1: 13230.149 ops/s
+# Warmup Iteration   2: 14474.948 ops/s
+# Warmup Iteration   3: 14502.527 ops/s
+# Warmup Iteration   4: 14267.595 ops/s
+# Warmup Iteration   5: 14609.967 ops/s
+Iteration   1: 15397.326 ops/s
+Iteration   2: 15452.781 ops/s
+Iteration   3: 15442.969 ops/s
 
 
-Result: 14766.635 ±(99.9%) 628.345 ops/s [Average]
-  Statistics: (min, avg, max) = (14729.110, 14766.635, 14796.806), stdev = 34.442
-  Confidence interval (99.9%): [14138.289, 15394.980]
+Result: 15431.025 ±(99.9%) 539.909 ops/s [Average]
+  Statistics: (min, avg, max) = (15397.326, 15431.025, 15452.781), stdev = 29.594
+  Confidence interval (99.9%): [14891.116, 15970.934]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -64,19 +64,19 @@ Result: 14766.635 ±(99.9%) 628.345 ops/s [Average]
 
 # Run progress: 10.00% complete, ETA 00:11:06
 # Fork: 1 of 1
-# Warmup Iteration   1: 3469.556 ops/s
-# Warmup Iteration   2: 3869.088 ops/s
-# Warmup Iteration   3: 3797.064 ops/s
-# Warmup Iteration   4: 3782.097 ops/s
-# Warmup Iteration   5: 3813.791 ops/s
-Iteration   1: 3841.411 ops/s
-Iteration   2: 3810.430 ops/s
-Iteration   3: 3658.416 ops/s
+# Warmup Iteration   1: 3514.187 ops/s
+# Warmup Iteration   2: 3795.956 ops/s
+# Warmup Iteration   3: 3882.497 ops/s
+# Warmup Iteration   4: 3905.675 ops/s
+# Warmup Iteration   5: 3832.600 ops/s
+Iteration   1: 3919.137 ops/s
+Iteration   2: 3926.500 ops/s
+Iteration   3: 3923.193 ops/s
 
 
-Result: 3770.086 ±(99.9%) 1786.818 ops/s [Average]
-  Statistics: (min, avg, max) = (3658.416, 3770.086, 3841.411), stdev = 97.942
-  Confidence interval (99.9%): [1983.268, 5556.904]
+Result: 3922.944 ±(99.9%) 67.279 ops/s [Average]
+  Statistics: (min, avg, max) = (3919.137, 3922.944, 3926.500), stdev = 3.688
+  Confidence interval (99.9%): [3855.665, 3990.222]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -91,19 +91,19 @@ Result: 3770.086 ±(99.9%) 1786.818 ops/s [Average]
 
 # Run progress: 15.00% complete, ETA 00:10:29
 # Fork: 1 of 1
-# Warmup Iteration   1: 838.470 ops/s
-# Warmup Iteration   2: 946.671 ops/s
-# Warmup Iteration   3: 960.977 ops/s
-# Warmup Iteration   4: 946.512 ops/s
-# Warmup Iteration   5: 935.654 ops/s
-Iteration   1: 972.650 ops/s
-Iteration   2: 962.006 ops/s
-Iteration   3: 969.535 ops/s
+# Warmup Iteration   1: 880.163 ops/s
+# Warmup Iteration   2: 968.189 ops/s
+# Warmup Iteration   3: 985.627 ops/s
+# Warmup Iteration   4: 974.976 ops/s
+# Warmup Iteration   5: 983.905 ops/s
+Iteration   1: 993.403 ops/s
+Iteration   2: 992.316 ops/s
+Iteration   3: 993.252 ops/s
 
 
-Result: 968.063 ±(99.9%) 99.834 ops/s [Average]
-  Statistics: (min, avg, max) = (962.006, 968.063, 972.650), stdev = 5.472
-  Confidence interval (99.9%): [868.229, 1067.898]
+Result: 992.990 ±(99.9%) 10.748 ops/s [Average]
+  Statistics: (min, avg, max) = (992.316, 992.990, 993.403), stdev = 0.589
+  Confidence interval (99.9%): [982.242, 1003.739]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -118,19 +118,19 @@ Result: 968.063 ±(99.9%) 99.834 ops/s [Average]
 
 # Run progress: 20.00% complete, ETA 00:09:52
 # Fork: 1 of 1
-# Warmup Iteration   1: 10209.773 ops/s
-# Warmup Iteration   2: 11978.271 ops/s
-# Warmup Iteration   3: 11730.274 ops/s
-# Warmup Iteration   4: 11454.408 ops/s
-# Warmup Iteration   5: 11549.622 ops/s
-Iteration   1: 11645.273 ops/s
-Iteration   2: 11876.629 ops/s
-Iteration   3: 11830.425 ops/s
+# Warmup Iteration   1: 10466.563 ops/s
+# Warmup Iteration   2: 11483.451 ops/s
+# Warmup Iteration   3: 11436.912 ops/s
+# Warmup Iteration   4: 11548.242 ops/s
+# Warmup Iteration   5: 11472.113 ops/s
+Iteration   1: 11677.429 ops/s
+Iteration   2: 11534.993 ops/s
+Iteration   3: 11403.972 ops/s
 
 
-Result: 11784.109 ±(99.9%) 2233.663 ops/s [Average]
-  Statistics: (min, avg, max) = (11645.273, 11784.109, 11876.629), stdev = 122.435
-  Confidence interval (99.9%): [9550.446, 14017.772]
+Result: 11538.798 ±(99.9%) 2495.162 ops/s [Average]
+  Statistics: (min, avg, max) = (11403.972, 11538.798, 11677.429), stdev = 136.768
+  Confidence interval (99.9%): [9043.636, 14033.960]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -145,19 +145,19 @@ Result: 11784.109 ±(99.9%) 2233.663 ops/s [Average]
 
 # Run progress: 25.00% complete, ETA 00:09:15
 # Fork: 1 of 1
-# Warmup Iteration   1: 1957.970 ops/s
-# Warmup Iteration   2: 2289.042 ops/s
-# Warmup Iteration   3: 2333.215 ops/s
-# Warmup Iteration   4: 2315.010 ops/s
-# Warmup Iteration   5: 2318.429 ops/s
-Iteration   1: 2330.796 ops/s
-Iteration   2: 2330.340 ops/s
-Iteration   3: 2340.074 ops/s
+# Warmup Iteration   1: 2026.207 ops/s
+# Warmup Iteration   2: 2261.303 ops/s
+# Warmup Iteration   3: 2315.852 ops/s
+# Warmup Iteration   4: 2307.322 ops/s
+# Warmup Iteration   5: 2239.766 ops/s
+Iteration   1: 2300.475 ops/s
+Iteration   2: 2292.004 ops/s
+Iteration   3: 2292.303 ops/s
 
 
-Result: 2333.737 ±(99.9%) 100.217 ops/s [Average]
-  Statistics: (min, avg, max) = (2330.340, 2333.737, 2340.074), stdev = 5.493
-  Confidence interval (99.9%): [2233.519, 2433.954]
+Result: 2294.927 ±(99.9%) 87.688 ops/s [Average]
+  Statistics: (min, avg, max) = (2292.004, 2294.927, 2300.475), stdev = 4.807
+  Confidence interval (99.9%): [2207.239, 2382.616]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -172,19 +172,19 @@ Result: 2333.737 ±(99.9%) 100.217 ops/s [Average]
 
 # Run progress: 30.00% complete, ETA 00:08:38
 # Fork: 1 of 1
-# Warmup Iteration   1: 287.427 ops/s
-# Warmup Iteration   2: 336.457 ops/s
-# Warmup Iteration   3: 333.472 ops/s
-# Warmup Iteration   4: 340.958 ops/s
-# Warmup Iteration   5: 336.826 ops/s
-Iteration   1: 342.161 ops/s
-Iteration   2: 340.568 ops/s
-Iteration   3: 339.313 ops/s
+# Warmup Iteration   1: 301.543 ops/s
+# Warmup Iteration   2: 349.887 ops/s
+# Warmup Iteration   3: 355.259 ops/s
+# Warmup Iteration   4: 351.788 ops/s
+# Warmup Iteration   5: 356.643 ops/s
+Iteration   1: 358.213 ops/s
+Iteration   2: 357.486 ops/s
+Iteration   3: 356.822 ops/s
 
 
-Result: 340.681 ±(99.9%) 26.040 ops/s [Average]
-  Statistics: (min, avg, max) = (339.313, 340.681, 342.161), stdev = 1.427
-  Confidence interval (99.9%): [314.641, 366.720]
+Result: 357.507 ±(99.9%) 12.693 ops/s [Average]
+  Statistics: (min, avg, max) = (356.822, 357.507, 358.213), stdev = 0.696
+  Confidence interval (99.9%): [344.814, 370.200]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -199,19 +199,19 @@ Result: 340.681 ±(99.9%) 26.040 ops/s [Average]
 
 # Run progress: 35.00% complete, ETA 00:08:01
 # Fork: 1 of 1
-# Warmup Iteration   1: 25.266 ops/s
-# Warmup Iteration   2: 29.079 ops/s
-# Warmup Iteration   3: 29.697 ops/s
-# Warmup Iteration   4: 29.709 ops/s
-# Warmup Iteration   5: 30.231 ops/s
-Iteration   1: 30.208 ops/s
-Iteration   2: 30.790 ops/s
-Iteration   3: 30.761 ops/s
+# Warmup Iteration   1: 26.819 ops/s
+# Warmup Iteration   2: 31.540 ops/s
+# Warmup Iteration   3: 30.542 ops/s
+# Warmup Iteration   4: 31.372 ops/s
+# Warmup Iteration   5: 31.295 ops/s
+Iteration   1: 31.637 ops/s
+Iteration   2: 31.667 ops/s
+Iteration   3: 31.529 ops/s
 
 
-Result: 30.587 ±(99.9%) 5.986 ops/s [Average]
-  Statistics: (min, avg, max) = (30.208, 30.587, 30.790), stdev = 0.328
-  Confidence interval (99.9%): [24.600, 36.573]
+Result: 31.611 ±(99.9%) 1.324 ops/s [Average]
+  Statistics: (min, avg, max) = (31.529, 31.611, 31.667), stdev = 0.073
+  Confidence interval (99.9%): [30.287, 32.936]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -226,19 +226,19 @@ Result: 30.587 ±(99.9%) 5.986 ops/s [Average]
 
 # Run progress: 40.00% complete, ETA 00:07:24
 # Fork: 1 of 1
-# Warmup Iteration   1: 43125.698 ops/s
-# Warmup Iteration   2: 43125.811 ops/s
-# Warmup Iteration   3: 43043.146 ops/s
-# Warmup Iteration   4: 42371.610 ops/s
-# Warmup Iteration   5: 43116.171 ops/s
-Iteration   1: 43889.115 ops/s
-Iteration   2: 43442.523 ops/s
-Iteration   3: 43433.219 ops/s
+# Warmup Iteration   1: 43559.538 ops/s
+# Warmup Iteration   2: 43386.829 ops/s
+# Warmup Iteration   3: 43244.125 ops/s
+# Warmup Iteration   4: 42743.394 ops/s
+# Warmup Iteration   5: 44039.242 ops/s
+Iteration   1: 44329.537 ops/s
+Iteration   2: 44312.145 ops/s
+Iteration   3: 44291.680 ops/s
 
 
-Result: 43588.285 ±(99.9%) 4753.717 ops/s [Average]
-  Statistics: (min, avg, max) = (43433.219, 43588.285, 43889.115), stdev = 260.567
-  Confidence interval (99.9%): [38834.569, 48342.002]
+Result: 44311.121 ±(99.9%) 345.705 ops/s [Average]
+  Statistics: (min, avg, max) = (44291.680, 44311.121, 44329.537), stdev = 18.949
+  Confidence interval (99.9%): [43965.416, 44656.826]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -253,19 +253,19 @@ Result: 43588.285 ±(99.9%) 4753.717 ops/s [Average]
 
 # Run progress: 45.00% complete, ETA 00:06:47
 # Fork: 1 of 1
-# Warmup Iteration   1: 10013.636 ops/s
-# Warmup Iteration   2: 10393.875 ops/s
-# Warmup Iteration   3: 10350.467 ops/s
-# Warmup Iteration   4: 10403.403 ops/s
-# Warmup Iteration   5: 10228.048 ops/s
-Iteration   1: 10210.310 ops/s
-Iteration   2: 9639.380 ops/s
-Iteration   3: 9513.937 ops/s
+# Warmup Iteration   1: 10245.728 ops/s
+# Warmup Iteration   2: 10692.966 ops/s
+# Warmup Iteration   3: 10764.224 ops/s
+# Warmup Iteration   4: 10430.398 ops/s
+# Warmup Iteration   5: 10379.850 ops/s
+Iteration   1: 10272.762 ops/s
+Iteration   2: 10194.915 ops/s
+Iteration   3: 10178.563 ops/s
 
 
-Result: 9787.875 ±(99.9%) 6771.639 ops/s [Average]
-  Statistics: (min, avg, max) = (9513.937, 9787.875, 10210.310), stdev = 371.176
-  Confidence interval (99.9%): [3016.237, 16559.514]
+Result: 10215.413 ±(99.9%) 918.276 ops/s [Average]
+  Statistics: (min, avg, max) = (10178.563, 10215.413, 10272.762), stdev = 50.334
+  Confidence interval (99.9%): [9297.138, 11133.689]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -280,19 +280,19 @@ Result: 9787.875 ±(99.9%) 6771.639 ops/s [Average]
 
 # Run progress: 50.00% complete, ETA 00:06:10
 # Fork: 1 of 1
-# Warmup Iteration   1: 2616.839 ops/s
-# Warmup Iteration   2: 2774.631 ops/s
-# Warmup Iteration   3: 2720.925 ops/s
-# Warmup Iteration   4: 2746.744 ops/s
-# Warmup Iteration   5: 2769.178 ops/s
-Iteration   1: 2772.195 ops/s
-Iteration   2: 2751.344 ops/s
-Iteration   3: 2743.303 ops/s
+# Warmup Iteration   1: 2655.216 ops/s
+# Warmup Iteration   2: 2784.268 ops/s
+# Warmup Iteration   3: 2767.652 ops/s
+# Warmup Iteration   4: 2805.396 ops/s
+# Warmup Iteration   5: 2822.074 ops/s
+Iteration   1: 2827.997 ops/s
+Iteration   2: 2816.842 ops/s
+Iteration   3: 2716.462 ops/s
 
 
-Result: 2755.614 ±(99.9%) 272.048 ops/s [Average]
-  Statistics: (min, avg, max) = (2743.303, 2755.614, 2772.195), stdev = 14.912
-  Confidence interval (99.9%): [2483.566, 3027.662]
+Result: 2787.100 ±(99.9%) 1120.678 ops/s [Average]
+  Statistics: (min, avg, max) = (2716.462, 2787.100, 2827.997), stdev = 61.428
+  Confidence interval (99.9%): [1666.422, 3907.779]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -307,19 +307,19 @@ Result: 2755.614 ±(99.9%) 272.048 ops/s [Average]
 
 # Run progress: 55.00% complete, ETA 00:05:33
 # Fork: 1 of 1
-# Warmup Iteration   1: 604.226 ops/s
-# Warmup Iteration   2: 646.436 ops/s
-# Warmup Iteration   3: 656.245 ops/s
-# Warmup Iteration   4: 650.947 ops/s
-# Warmup Iteration   5: 645.141 ops/s
-Iteration   1: 655.041 ops/s
-Iteration   2: 659.935 ops/s
-Iteration   3: 664.495 ops/s
+# Warmup Iteration   1: 615.986 ops/s
+# Warmup Iteration   2: 659.218 ops/s
+# Warmup Iteration   3: 657.157 ops/s
+# Warmup Iteration   4: 661.226 ops/s
+# Warmup Iteration   5: 638.578 ops/s
+Iteration   1: 666.468 ops/s
+Iteration   2: 666.115 ops/s
+Iteration   3: 666.591 ops/s
 
 
-Result: 659.823 ±(99.9%) 86.258 ops/s [Average]
-  Statistics: (min, avg, max) = (655.041, 659.823, 664.495), stdev = 4.728
-  Confidence interval (99.9%): [573.565, 746.081]
+Result: 666.391 ±(99.9%) 4.510 ops/s [Average]
+  Statistics: (min, avg, max) = (666.115, 666.391, 666.591), stdev = 0.247
+  Confidence interval (99.9%): [661.881, 670.902]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -334,19 +334,19 @@ Result: 659.823 ±(99.9%) 86.258 ops/s [Average]
 
 # Run progress: 60.00% complete, ETA 00:04:56
 # Fork: 1 of 1
-# Warmup Iteration   1: 41436.380 ops/s
-# Warmup Iteration   2: 40797.056 ops/s
-# Warmup Iteration   3: 39802.110 ops/s
-# Warmup Iteration   4: 39997.025 ops/s
-# Warmup Iteration   5: 40404.737 ops/s
-Iteration   1: 40643.232 ops/s
-Iteration   2: 40763.711 ops/s
-Iteration   3: 40529.206 ops/s
+# Warmup Iteration   1: 40737.905 ops/s
+# Warmup Iteration   2: 41988.765 ops/s
+# Warmup Iteration   3: 41488.473 ops/s
+# Warmup Iteration   4: 40655.695 ops/s
+# Warmup Iteration   5: 40419.392 ops/s
+Iteration   1: 41225.312 ops/s
+Iteration   2: 40353.283 ops/s
+Iteration   3: 40317.305 ops/s
 
 
-Result: 40645.383 ±(99.9%) 2139.396 ops/s [Average]
-  Statistics: (min, avg, max) = (40529.206, 40645.383, 40763.711), stdev = 117.268
-  Confidence interval (99.9%): [38505.987, 42784.779]
+Result: 40631.967 ±(99.9%) 9380.318 ops/s [Average]
+  Statistics: (min, avg, max) = (40317.305, 40631.967, 41225.312), stdev = 514.167
+  Confidence interval (99.9%): [31251.649, 50012.285]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -361,19 +361,19 @@ Result: 40645.383 ±(99.9%) 2139.396 ops/s [Average]
 
 # Run progress: 65.00% complete, ETA 00:04:19
 # Fork: 1 of 1
-# Warmup Iteration   1: 9939.970 ops/s
-# Warmup Iteration   2: 10159.455 ops/s
-# Warmup Iteration   3: 10127.373 ops/s
-# Warmup Iteration   4: 9932.409 ops/s
-# Warmup Iteration   5: 9806.846 ops/s
-Iteration   1: 9768.564 ops/s
-Iteration   2: 9520.781 ops/s
-Iteration   3: 9313.126 ops/s
+# Warmup Iteration   1: 9453.290 ops/s
+# Warmup Iteration   2: 10160.366 ops/s
+# Warmup Iteration   3: 10087.508 ops/s
+# Warmup Iteration   4: 9852.350 ops/s
+# Warmup Iteration   5: 9811.681 ops/s
+Iteration   1: 9629.198 ops/s
+Iteration   2: 9358.178 ops/s
+Iteration   3: 9158.989 ops/s
 
 
-Result: 9534.157 ±(99.9%) 4159.814 ops/s [Average]
-  Statistics: (min, avg, max) = (9313.126, 9534.157, 9768.564), stdev = 228.013
-  Confidence interval (99.9%): [5374.343, 13693.970]
+Result: 9382.122 ±(99.9%) 4305.836 ops/s [Average]
+  Statistics: (min, avg, max) = (9158.989, 9382.122, 9629.198), stdev = 236.017
+  Confidence interval (99.9%): [5076.286, 13687.957]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -388,19 +388,19 @@ Result: 9534.157 ±(99.9%) 4159.814 ops/s [Average]
 
 # Run progress: 70.00% complete, ETA 00:03:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 2476.558 ops/s
-# Warmup Iteration   2: 2830.387 ops/s
-# Warmup Iteration   3: 2824.990 ops/s
-# Warmup Iteration   4: 2870.339 ops/s
-# Warmup Iteration   5: 2817.047 ops/s
-Iteration   1: 2829.239 ops/s
-Iteration   2: 2861.827 ops/s
-Iteration   3: 2814.129 ops/s
+# Warmup Iteration   1: 2574.621 ops/s
+# Warmup Iteration   2: 2715.973 ops/s
+# Warmup Iteration   3: 2721.919 ops/s
+# Warmup Iteration   4: 2650.407 ops/s
+# Warmup Iteration   5: 2717.573 ops/s
+Iteration   1: 2721.263 ops/s
+Iteration   2: 2836.161 ops/s
+Iteration   3: 2909.025 ops/s
 
 
-Result: 2835.065 ±(99.9%) 444.721 ops/s [Average]
-  Statistics: (min, avg, max) = (2814.129, 2835.065, 2861.827), stdev = 24.377
-  Confidence interval (99.9%): [2390.344, 3279.786]
+Result: 2822.150 ±(99.9%) 1726.983 ops/s [Average]
+  Statistics: (min, avg, max) = (2721.263, 2822.150, 2909.025), stdev = 94.662
+  Confidence interval (99.9%): [1095.167, 4549.132]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -415,19 +415,19 @@ Result: 2835.065 ±(99.9%) 444.721 ops/s [Average]
 
 # Run progress: 75.00% complete, ETA 00:03:05
 # Fork: 1 of 1
-# Warmup Iteration   1: 592.375 ops/s
-# Warmup Iteration   2: 630.177 ops/s
-# Warmup Iteration   3: 633.162 ops/s
-# Warmup Iteration   4: 633.715 ops/s
-# Warmup Iteration   5: 614.806 ops/s
-Iteration   1: 646.982 ops/s
-Iteration   2: 648.081 ops/s
-Iteration   3: 645.310 ops/s
+# Warmup Iteration   1: 610.737 ops/s
+# Warmup Iteration   2: 663.395 ops/s
+# Warmup Iteration   3: 667.776 ops/s
+# Warmup Iteration   4: 662.535 ops/s
+# Warmup Iteration   5: 680.212 ops/s
+Iteration   1: 682.011 ops/s
+Iteration   2: 680.235 ops/s
+Iteration   3: 674.892 ops/s
 
 
-Result: 646.791 ±(99.9%) 25.453 ops/s [Average]
-  Statistics: (min, avg, max) = (645.310, 646.791, 648.081), stdev = 1.395
-  Confidence interval (99.9%): [621.338, 672.244]
+Result: 679.046 ±(99.9%) 67.602 ops/s [Average]
+  Statistics: (min, avg, max) = (674.892, 679.046, 682.011), stdev = 3.705
+  Confidence interval (99.9%): [611.444, 746.648]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -442,19 +442,19 @@ Result: 646.791 ±(99.9%) 25.453 ops/s [Average]
 
 # Run progress: 80.00% complete, ETA 00:02:28
 # Fork: 1 of 1
-# Warmup Iteration   1: 41743.237 ops/s
-# Warmup Iteration   2: 42318.547 ops/s
-# Warmup Iteration   3: 41932.455 ops/s
-# Warmup Iteration   4: 41649.189 ops/s
-# Warmup Iteration   5: 42539.750 ops/s
-Iteration   1: 42761.658 ops/s
-Iteration   2: 42497.217 ops/s
-Iteration   3: 43253.570 ops/s
+# Warmup Iteration   1: 43414.651 ops/s
+# Warmup Iteration   2: 44189.571 ops/s
+# Warmup Iteration   3: 43462.360 ops/s
+# Warmup Iteration   4: 43575.879 ops/s
+# Warmup Iteration   5: 44786.074 ops/s
+Iteration   1: 44787.732 ops/s
+Iteration   2: 43932.554 ops/s
+Iteration   3: 44993.505 ops/s
 
 
-Result: 42837.482 ±(99.9%) 7002.583 ops/s [Average]
-  Statistics: (min, avg, max) = (42497.217, 42837.482, 43253.570), stdev = 383.835
-  Confidence interval (99.9%): [35834.899, 49840.065]
+Result: 44571.264 ±(99.9%) 10264.393 ops/s [Average]
+  Statistics: (min, avg, max) = (43932.554, 44571.264, 44993.505), stdev = 562.626
+  Confidence interval (99.9%): [34306.871, 54835.656]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -469,19 +469,19 @@ Result: 42837.482 ±(99.9%) 7002.583 ops/s [Average]
 
 # Run progress: 85.00% complete, ETA 00:01:51
 # Fork: 1 of 1
-# Warmup Iteration   1: 8993.217 ops/s
-# Warmup Iteration   2: 9949.886 ops/s
-# Warmup Iteration   3: 9864.830 ops/s
-# Warmup Iteration   4: 9935.502 ops/s
-# Warmup Iteration   5: 9996.802 ops/s
-Iteration   1: 10102.887 ops/s
-Iteration   2: 9951.551 ops/s
-Iteration   3: 9973.800 ops/s
+# Warmup Iteration   1: 9743.233 ops/s
+# Warmup Iteration   2: 10293.965 ops/s
+# Warmup Iteration   3: 10307.964 ops/s
+# Warmup Iteration   4: 10452.472 ops/s
+# Warmup Iteration   5: 10388.074 ops/s
+Iteration   1: 10419.324 ops/s
+Iteration   2: 10496.300 ops/s
+Iteration   3: 10506.260 ops/s
 
 
-Result: 10009.413 ±(99.9%) 1490.738 ops/s [Average]
-  Statistics: (min, avg, max) = (9951.551, 10009.413, 10102.887), stdev = 81.712
-  Confidence interval (99.9%): [8518.675, 11500.150]
+Result: 10473.961 ±(99.9%) 868.007 ops/s [Average]
+  Statistics: (min, avg, max) = (10419.324, 10473.961, 10506.260), stdev = 47.578
+  Confidence interval (99.9%): [9605.954, 11341.969]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -496,19 +496,19 @@ Result: 10009.413 ±(99.9%) 1490.738 ops/s [Average]
 
 # Run progress: 90.00% complete, ETA 00:01:14
 # Fork: 1 of 1
-# Warmup Iteration   1: 2466.477 ops/s
-# Warmup Iteration   2: 2678.013 ops/s
-# Warmup Iteration   3: 2689.118 ops/s
-# Warmup Iteration   4: 2669.408 ops/s
-# Warmup Iteration   5: 2684.166 ops/s
-Iteration   1: 2685.663 ops/s
-Iteration   2: 2681.855 ops/s
-Iteration   3: 2808.023 ops/s
+# Warmup Iteration   1: 2468.395 ops/s
+# Warmup Iteration   2: 2878.324 ops/s
+# Warmup Iteration   3: 2892.182 ops/s
+# Warmup Iteration   4: 2869.387 ops/s
+# Warmup Iteration   5: 2890.356 ops/s
+Iteration   1: 2907.057 ops/s
+Iteration   2: 2898.435 ops/s
+Iteration   3: 2920.838 ops/s
 
 
-Result: 2725.180 ±(99.9%) 1309.333 ops/s [Average]
-  Statistics: (min, avg, max) = (2681.855, 2725.180, 2808.023), stdev = 71.769
-  Confidence interval (99.9%): [1415.848, 4034.513]
+Result: 2908.777 ±(99.9%) 206.150 ops/s [Average]
+  Statistics: (min, avg, max) = (2898.435, 2908.777, 2920.838), stdev = 11.300
+  Confidence interval (99.9%): [2702.627, 3114.926]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -523,41 +523,41 @@ Result: 2725.180 ±(99.9%) 1309.333 ops/s [Average]
 
 # Run progress: 95.00% complete, ETA 00:00:37
 # Fork: 1 of 1
-# Warmup Iteration   1: 579.317 ops/s
-# Warmup Iteration   2: 648.560 ops/s
-# Warmup Iteration   3: 644.983 ops/s
-# Warmup Iteration   4: 644.755 ops/s
-# Warmup Iteration   5: 640.063 ops/s
-Iteration   1: 660.299 ops/s
-Iteration   2: 656.884 ops/s
-Iteration   3: 661.428 ops/s
+# Warmup Iteration   1: 649.585 ops/s
+# Warmup Iteration   2: 690.605 ops/s
+# Warmup Iteration   3: 677.761 ops/s
+# Warmup Iteration   4: 694.005 ops/s
+# Warmup Iteration   5: 675.036 ops/s
+Iteration   1: 697.216 ops/s
+Iteration   2: 696.872 ops/s
+Iteration   3: 696.683 ops/s
 
 
-Result: 659.537 ±(99.9%) 43.164 ops/s [Average]
-  Statistics: (min, avg, max) = (656.884, 659.537, 661.428), stdev = 2.366
-  Confidence interval (99.9%): [616.373, 702.701]
+Result: 696.924 ±(99.9%) 4.934 ops/s [Average]
+  Statistics: (min, avg, max) = (696.683, 696.924, 697.216), stdev = 0.270
+  Confidence interval (99.9%): [691.989, 701.858]
 
 
 # Run complete. Total time: 00:12:20
 
-Benchmark                                  (entityCount)   Mode  Samples      Score      Error  Units
-c.a.BaselineBenchmark.baseline                      1024  thrpt        3  61813.332 ± 6283.875  ops/s
-c.a.BaselineBenchmark.baseline                      4096  thrpt        3  14766.635 ±  628.345  ops/s
-c.a.BaselineBenchmark.baseline                     16384  thrpt        3   3770.086 ± 1786.818  ops/s
-c.a.BaselineBenchmark.baseline                     65536  thrpt        3    968.063 ±   99.834  ops/s
-c.a.InsertRemoveBenchmark.insert_remove             1024  thrpt        3  11784.109 ± 2233.663  ops/s
-c.a.InsertRemoveBenchmark.insert_remove             4096  thrpt        3   2333.737 ±  100.217  ops/s
-c.a.InsertRemoveBenchmark.insert_remove            16384  thrpt        3    340.681 ±   26.040  ops/s
-c.a.InsertRemoveBenchmark.insert_remove            65536  thrpt        3     30.587 ±    5.986  ops/s
-c.a.PackedComponentBenchmark.packed                 1024  thrpt        3  43588.285 ± 4753.717  ops/s
-c.a.PackedComponentBenchmark.packed                 4096  thrpt        3   9787.875 ± 6771.639  ops/s
-c.a.PackedComponentBenchmark.packed                16384  thrpt        3   2755.614 ±  272.048  ops/s
-c.a.PackedComponentBenchmark.packed                65536  thrpt        3    659.823 ±   86.258  ops/s
-c.a.PlainComponentBenchmark.plain                   1024  thrpt        3  40645.383 ± 2139.396  ops/s
-c.a.PlainComponentBenchmark.plain                   4096  thrpt        3   9534.157 ± 4159.814  ops/s
-c.a.PlainComponentBenchmark.plain                  16384  thrpt        3   2835.065 ±  444.721  ops/s
-c.a.PlainComponentBenchmark.plain                  65536  thrpt        3    646.791 ±   25.453  ops/s
-c.a.PooledComponentBenchmark.pooled                 1024  thrpt        3  42837.482 ± 7002.583  ops/s
-c.a.PooledComponentBenchmark.pooled                 4096  thrpt        3  10009.413 ± 1490.738  ops/s
-c.a.PooledComponentBenchmark.pooled                16384  thrpt        3   2725.180 ± 1309.333  ops/s
-c.a.PooledComponentBenchmark.pooled                65536  thrpt        3    659.537 ±   43.164  ops/s
+Benchmark                                  (entityCount)   Mode  Samples      Score       Error  Units
+c.a.BaselineBenchmark.baseline                      1024  thrpt        3  60967.151 ± 13910.171  ops/s
+c.a.BaselineBenchmark.baseline                      4096  thrpt        3  15431.025 ±   539.909  ops/s
+c.a.BaselineBenchmark.baseline                     16384  thrpt        3   3922.944 ±    67.279  ops/s
+c.a.BaselineBenchmark.baseline                     65536  thrpt        3    992.990 ±    10.748  ops/s
+c.a.InsertRemoveBenchmark.insert_remove             1024  thrpt        3  11538.798 ±  2495.162  ops/s
+c.a.InsertRemoveBenchmark.insert_remove             4096  thrpt        3   2294.927 ±    87.688  ops/s
+c.a.InsertRemoveBenchmark.insert_remove            16384  thrpt        3    357.507 ±    12.693  ops/s
+c.a.InsertRemoveBenchmark.insert_remove            65536  thrpt        3     31.611 ±     1.324  ops/s
+c.a.PackedComponentBenchmark.packed                 1024  thrpt        3  44311.121 ±   345.705  ops/s
+c.a.PackedComponentBenchmark.packed                 4096  thrpt        3  10215.413 ±   918.276  ops/s
+c.a.PackedComponentBenchmark.packed                16384  thrpt        3   2787.100 ±  1120.678  ops/s
+c.a.PackedComponentBenchmark.packed                65536  thrpt        3    666.391 ±     4.510  ops/s
+c.a.PlainComponentBenchmark.plain                   1024  thrpt        3  40631.967 ±  9380.318  ops/s
+c.a.PlainComponentBenchmark.plain                   4096  thrpt        3   9382.122 ±  4305.836  ops/s
+c.a.PlainComponentBenchmark.plain                  16384  thrpt        3   2822.150 ±  1726.983  ops/s
+c.a.PlainComponentBenchmark.plain                  65536  thrpt        3    679.046 ±    67.602  ops/s
+c.a.PooledComponentBenchmark.pooled                 1024  thrpt        3  44571.264 ± 10264.393  ops/s
+c.a.PooledComponentBenchmark.pooled                 4096  thrpt        3  10473.961 ±   868.007  ops/s
+c.a.PooledComponentBenchmark.pooled                16384  thrpt        3   2908.777 ±   206.150  ops/s
+c.a.PooledComponentBenchmark.pooled                65536  thrpt        3    696.924 ±     4.934  ops/s

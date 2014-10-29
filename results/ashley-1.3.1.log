@@ -10,19 +10,19 @@
 
 # Run progress: 0.00% complete, ETA 00:07:00
 # Fork: 1 of 1
-# Warmup Iteration   1: 54457.052 ops/s
-# Warmup Iteration   2: 54911.903 ops/s
-# Warmup Iteration   3: 54076.702 ops/s
-# Warmup Iteration   4: 55674.817 ops/s
-# Warmup Iteration   5: 55837.103 ops/s
-Iteration   1: 55039.377 ops/s
-Iteration   2: 55763.471 ops/s
-Iteration   3: 55805.614 ops/s
+# Warmup Iteration   1: 54643.168 ops/s
+# Warmup Iteration   2: 55812.450 ops/s
+# Warmup Iteration   3: 54803.879 ops/s
+# Warmup Iteration   4: 56107.855 ops/s
+# Warmup Iteration   5: 55513.997 ops/s
+Iteration   1: 54484.644 ops/s
+Iteration   2: 57275.811 ops/s
+Iteration   3: 56648.204 ops/s
 
 
-Result: 55536.154 ±(99.9%) 7858.251 ops/s [Average]
-  Statistics: (min, avg, max) = (55039.377, 55536.154, 55805.614), stdev = 430.737
-  Confidence interval (99.9%): [47677.903, 63394.406]
+Result: 56136.220 ±(99.9%) 26714.754 ops/s [Average]
+  Statistics: (min, avg, max) = (54484.644, 56136.220, 57275.811), stdev = 1464.326
+  Confidence interval (99.9%): [29421.466, 82850.974]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -37,19 +37,19 @@ Result: 55536.154 ±(99.9%) 7858.251 ops/s [Average]
 
 # Run progress: 8.33% complete, ETA 00:06:47
 # Fork: 1 of 1
-# Warmup Iteration   1: 11337.219 ops/s
-# Warmup Iteration   2: 11637.451 ops/s
-# Warmup Iteration   3: 11481.140 ops/s
-# Warmup Iteration   4: 11328.174 ops/s
-# Warmup Iteration   5: 11598.775 ops/s
-Iteration   1: 10504.631 ops/s
-Iteration   2: 11929.195 ops/s
-Iteration   3: 11794.242 ops/s
+# Warmup Iteration   1: 11469.596 ops/s
+# Warmup Iteration   2: 11558.885 ops/s
+# Warmup Iteration   3: 11541.251 ops/s
+# Warmup Iteration   4: 11892.172 ops/s
+# Warmup Iteration   5: 11481.308 ops/s
+Iteration   1: 11873.224 ops/s
+Iteration   2: 11991.770 ops/s
+Iteration   3: 11666.274 ops/s
 
 
-Result: 11409.356 ±(99.9%) 14347.139 ops/s [Average]
-  Statistics: (min, avg, max) = (10504.631, 11409.356, 11929.195), stdev = 786.415
-  Confidence interval (99.9%): [-2937.783, 25756.495]
+Result: 11843.756 ±(99.9%) 3005.416 ops/s [Average]
+  Statistics: (min, avg, max) = (11666.274, 11843.756, 11991.770), stdev = 164.737
+  Confidence interval (99.9%): [8838.340, 14849.172]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -64,19 +64,19 @@ Result: 11409.356 ±(99.9%) 14347.139 ops/s [Average]
 
 # Run progress: 16.67% complete, ETA 00:06:10
 # Fork: 1 of 1
-# Warmup Iteration   1: 2310.595 ops/s
-# Warmup Iteration   2: 2520.383 ops/s
-# Warmup Iteration   3: 2560.018 ops/s
-# Warmup Iteration   4: 2573.683 ops/s
-# Warmup Iteration   5: 2578.274 ops/s
-Iteration   1: 2575.172 ops/s
-Iteration   2: 2549.665 ops/s
-Iteration   3: 2550.480 ops/s
+# Warmup Iteration   1: 2407.426 ops/s
+# Warmup Iteration   2: 2268.702 ops/s
+# Warmup Iteration   3: 2203.223 ops/s
+# Warmup Iteration   4: 2116.633 ops/s
+# Warmup Iteration   5: 2108.715 ops/s
+Iteration   1: 2146.025 ops/s
+Iteration   2: 2147.524 ops/s
+Iteration   3: 2255.420 ops/s
 
 
-Result: 2558.439 ±(99.9%) 264.478 ops/s [Average]
-  Statistics: (min, avg, max) = (2549.665, 2558.439, 2575.172), stdev = 14.497
-  Confidence interval (99.9%): [2293.961, 2822.917]
+Result: 2182.989 ±(99.9%) 1144.449 ops/s [Average]
+  Statistics: (min, avg, max) = (2146.025, 2182.989, 2255.420), stdev = 62.731
+  Confidence interval (99.9%): [1038.540, 3327.439]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -91,19 +91,19 @@ Result: 2558.439 ±(99.9%) 264.478 ops/s [Average]
 
 # Run progress: 25.00% complete, ETA 00:05:33
 # Fork: 1 of 1
-# Warmup Iteration   1: 218.185 ops/s
-# Warmup Iteration   2: 234.310 ops/s
-# Warmup Iteration   3: 233.792 ops/s
-# Warmup Iteration   4: 233.458 ops/s
-# Warmup Iteration   5: 237.337 ops/s
-Iteration   1: 238.068 ops/s
-Iteration   2: 238.083 ops/s
-Iteration   3: 237.090 ops/s
+# Warmup Iteration   1: 239.149 ops/s
+# Warmup Iteration   2: 252.664 ops/s
+# Warmup Iteration   3: 252.908 ops/s
+# Warmup Iteration   4: 258.608 ops/s
+# Warmup Iteration   5: 260.248 ops/s
+Iteration   1: 260.201 ops/s
+Iteration   2: 261.522 ops/s
+Iteration   3: 261.757 ops/s
 
 
-Result: 237.747 ±(99.9%) 10.384 ops/s [Average]
-  Statistics: (min, avg, max) = (237.090, 237.747, 238.083), stdev = 0.569
-  Confidence interval (99.9%): [227.363, 248.131]
+Result: 261.160 ±(99.9%) 15.310 ops/s [Average]
+  Statistics: (min, avg, max) = (260.201, 261.160, 261.757), stdev = 0.839
+  Confidence interval (99.9%): [245.850, 276.470]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -118,19 +118,19 @@ Result: 237.747 ±(99.9%) 10.384 ops/s [Average]
 
 # Run progress: 33.33% complete, ETA 00:04:56
 # Fork: 1 of 1
-# Warmup Iteration   1: 496.941 ops/s
-# Warmup Iteration   2: 236.159 ops/s
-# Warmup Iteration   3: 171.758 ops/s
-# Warmup Iteration   4: 143.630 ops/s
-# Warmup Iteration   5: 127.104 ops/s
-Iteration   1: 89.521 ops/s
-Iteration   2: 53.752 ops/s
-Iteration   3: 49.452 ops/s
+# Warmup Iteration   1: 503.423 ops/s
+# Warmup Iteration   2: 244.224 ops/s
+# Warmup Iteration   3: 178.325 ops/s
+# Warmup Iteration   4: 145.977 ops/s
+# Warmup Iteration   5: 130.406 ops/s
+Iteration   1: 84.941 ops/s
+Iteration   2: 58.390 ops/s
+Iteration   3: 49.742 ops/s
 
 
-Result: 64.242 ±(99.9%) 401.318 ops/s [Average]
-  Statistics: (min, avg, max) = (49.452, 64.242, 89.521), stdev = 21.998
-  Confidence interval (99.9%): [-337.076, 465.560]
+Result: 64.358 ±(99.9%) 334.642 ops/s [Average]
+  Statistics: (min, avg, max) = (49.742, 64.358, 84.941), stdev = 18.343
+  Confidence interval (99.9%): [-270.285, 399.000]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -145,19 +145,19 @@ Result: 64.242 ±(99.9%) 401.318 ops/s [Average]
 
 # Run progress: 41.67% complete, ETA 00:04:19
 # Fork: 1 of 1
-# Warmup Iteration   1: 125.304 ops/s
-# Warmup Iteration   2: 63.381 ops/s
-# Warmup Iteration   3: 46.842 ops/s
-# Warmup Iteration   4: 38.798 ops/s
-# Warmup Iteration   5: 33.669 ops/s
-Iteration   1: 22.819 ops/s
-Iteration   2: 15.817 ops/s
-Iteration   3: 12.371 ops/s
+# Warmup Iteration   1: 126.634 ops/s
+# Warmup Iteration   2: 62.608 ops/s
+# Warmup Iteration   3: 47.217 ops/s
+# Warmup Iteration   4: 39.029 ops/s
+# Warmup Iteration   5: 33.772 ops/s
+Iteration   1: 23.093 ops/s
+Iteration   2: 16.194 ops/s
+Iteration   3: 12.378 ops/s
 
 
-Result: 17.002 ±(99.9%) 97.132 ops/s [Average]
-  Statistics: (min, avg, max) = (12.371, 17.002, 22.819), stdev = 5.324
-  Confidence interval (99.9%): [-80.129, 114.134]
+Result: 17.222 ±(99.9%) 99.078 ops/s [Average]
+  Statistics: (min, avg, max) = (12.378, 17.222, 23.093), stdev = 5.431
+  Confidence interval (99.9%): [-81.856, 116.300]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -172,19 +172,1035 @@ Result: 17.002 ±(99.9%) 97.132 ops/s [Average]
 
 # Run progress: 50.00% complete, ETA 00:03:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 26.933 ops/s
-# Warmup Iteration   2: 15.772 ops/s
-# Warmup Iteration   3: 11.085 ops/s
-# Warmup Iteration   4: 9.614 ops/s
-# Warmup Iteration   5: 8.414 ops/s
-Iteration   1: 5.687 ops/s
-Iteration   2: 3.962 ops/s
-Iteration   3: 3.178 ops/s
+# Warmup Iteration   1: <failure>
+
+java.lang.StackOverflowError
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:377)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
+	at com.badlogic.ashley.core.Engine.processPendingEntityOperations(Engine.java:383)
+	at com.badlogic.ashley.core.Engine.removeEntityInternal(Engine.java:303)
 
 
-Result: 4.276 ±(99.9%) 23.409 ops/s [Average]
-  Statistics: (min, avg, max) = (3.178, 4.276, 5.687), stdev = 1.283
-  Confidence interval (99.9%): [-19.134, 27.685]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -197,7 +1213,7 @@ Result: 4.276 ±(99.9%) 23.409 ops/s [Average]
 # Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
 # Parameters: (entityCount = 65536)
 
-# Run progress: 58.33% complete, ETA 00:03:06
+# Run progress: 58.33% complete, ETA 00:02:40
 # Fork: 1 of 1
 # Warmup Iteration   1: <failure>
 
@@ -1240,21 +2256,21 @@ java.lang.StackOverflowError
 # Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 1024)
 
-# Run progress: 66.67% complete, ETA 00:02:11
+# Run progress: 66.67% complete, ETA 00:01:53
 # Fork: 1 of 1
-# Warmup Iteration   1: 21184.697 ops/s
-# Warmup Iteration   2: 21437.697 ops/s
-# Warmup Iteration   3: 21199.221 ops/s
-# Warmup Iteration   4: 19822.620 ops/s
-# Warmup Iteration   5: 17769.435 ops/s
-Iteration   1: 18433.912 ops/s
-Iteration   2: 18059.858 ops/s
-Iteration   3: 18321.487 ops/s
+# Warmup Iteration   1: 21229.204 ops/s
+# Warmup Iteration   2: 21296.604 ops/s
+# Warmup Iteration   3: 21386.730 ops/s
+# Warmup Iteration   4: 18944.195 ops/s
+# Warmup Iteration   5: 17118.770 ops/s
+Iteration   1: 17388.419 ops/s
+Iteration   2: 17328.729 ops/s
+Iteration   3: 17714.338 ops/s
 
 
-Result: 18271.753 ±(99.9%) 3501.381 ops/s [Average]
-  Statistics: (min, avg, max) = (18059.858, 18271.753, 18433.912), stdev = 191.923
-  Confidence interval (99.9%): [14770.372, 21773.134]
+Result: 17477.162 ±(99.9%) 3786.615 ops/s [Average]
+  Statistics: (min, avg, max) = (17328.729, 17477.162, 17714.338), stdev = 207.557
+  Confidence interval (99.9%): [13690.547, 21263.777]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -1267,21 +2283,21 @@ Result: 18271.753 ±(99.9%) 3501.381 ops/s [Average]
 # Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 4096)
 
-# Run progress: 75.00% complete, ETA 00:01:39
+# Run progress: 75.00% complete, ETA 00:01:27
 # Fork: 1 of 1
-# Warmup Iteration   1: 4034.914 ops/s
-# Warmup Iteration   2: 4104.797 ops/s
-# Warmup Iteration   3: 4147.632 ops/s
-# Warmup Iteration   4: 4085.825 ops/s
-# Warmup Iteration   5: 4170.743 ops/s
-Iteration   1: 4224.363 ops/s
-Iteration   2: 4025.297 ops/s
-Iteration   3: 3638.445 ops/s
+# Warmup Iteration   1: 4116.991 ops/s
+# Warmup Iteration   2: 4221.521 ops/s
+# Warmup Iteration   3: 4265.371 ops/s
+# Warmup Iteration   4: 4225.626 ops/s
+# Warmup Iteration   5: 4277.003 ops/s
+Iteration   1: 4298.951 ops/s
+Iteration   2: 4154.428 ops/s
+Iteration   3: 3724.237 ops/s
 
 
-Result: 3962.701 ±(99.9%) 5435.390 ops/s [Average]
-  Statistics: (min, avg, max) = (3638.445, 3962.701, 4224.363), stdev = 297.932
-  Confidence interval (99.9%): [-1472.688, 9398.091]
+Result: 4059.205 ±(99.9%) 5454.065 ops/s [Average]
+  Statistics: (min, avg, max) = (3724.237, 4059.205, 4298.951), stdev = 298.956
+  Confidence interval (99.9%): [-1394.860, 9513.271]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -1294,21 +2310,21 @@ Result: 3962.701 ±(99.9%) 5435.390 ops/s [Average]
 # Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 16384)
 
-# Run progress: 83.33% complete, ETA 00:01:07
+# Run progress: 83.33% complete, ETA 00:01:00
 # Fork: 1 of 1
-# Warmup Iteration   1: 273.781 ops/s
-# Warmup Iteration   2: 301.136 ops/s
-# Warmup Iteration   3: 296.460 ops/s
-# Warmup Iteration   4: 301.235 ops/s
-# Warmup Iteration   5: 298.546 ops/s
-Iteration   1: 300.946 ops/s
-Iteration   2: 302.769 ops/s
-Iteration   3: 303.869 ops/s
+# Warmup Iteration   1: 308.159 ops/s
+# Warmup Iteration   2: 328.121 ops/s
+# Warmup Iteration   3: 335.366 ops/s
+# Warmup Iteration   4: 333.438 ops/s
+# Warmup Iteration   5: 331.609 ops/s
+Iteration   1: 337.928 ops/s
+Iteration   2: 338.225 ops/s
+Iteration   3: 338.519 ops/s
 
 
-Result: 302.528 ±(99.9%) 26.926 ops/s [Average]
-  Statistics: (min, avg, max) = (300.946, 302.528, 303.869), stdev = 1.476
-  Confidence interval (99.9%): [275.602, 329.454]
+Result: 338.224 ±(99.9%) 5.399 ops/s [Average]
+  Statistics: (min, avg, max) = (337.928, 338.224, 338.519), stdev = 0.296
+  Confidence interval (99.9%): [332.825, 343.622]
 
 
 # VM invoker: /usr/lib/jvm/java-8-oracle/jre/bin/java
@@ -1321,34 +2337,33 @@ Result: 302.528 ±(99.9%) 26.926 ops/s [Average]
 # Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 65536)
 
-# Run progress: 91.67% complete, ETA 00:00:33
+# Run progress: 91.67% complete, ETA 00:00:30
 # Fork: 1 of 1
-# Warmup Iteration   1: 55.370 ops/s
-# Warmup Iteration   2: 56.587 ops/s
-# Warmup Iteration   3: 57.402 ops/s
-# Warmup Iteration   4: 57.397 ops/s
-# Warmup Iteration   5: 57.950 ops/s
-Iteration   1: 58.030 ops/s
-Iteration   2: 58.412 ops/s
-Iteration   3: 57.838 ops/s
+# Warmup Iteration   1: 56.685 ops/s
+# Warmup Iteration   2: 58.920 ops/s
+# Warmup Iteration   3: 58.201 ops/s
+# Warmup Iteration   4: 58.493 ops/s
+# Warmup Iteration   5: 58.077 ops/s
+Iteration   1: 58.670 ops/s
+Iteration   2: 58.658 ops/s
+Iteration   3: 58.601 ops/s
 
 
-Result: 58.093 ±(99.9%) 5.328 ops/s [Average]
-  Statistics: (min, avg, max) = (57.838, 58.093, 58.412), stdev = 0.292
-  Confidence interval (99.9%): [52.766, 63.421]
+Result: 58.643 ±(99.9%) 0.674 ops/s [Average]
+  Statistics: (min, avg, max) = (58.601, 58.643, 58.670), stdev = 0.037
+  Confidence interval (99.9%): [57.969, 59.317]
 
 
-# Run complete. Total time: 00:06:50
+# Run complete. Total time: 00:06:14
 
 Benchmark                                      (entityCount)   Mode  Samples      Score       Error  Units
-c.g.e.a.BaselineBenchmark.baseline                      1024  thrpt        3  55536.154 ±  7858.251  ops/s
-c.g.e.a.BaselineBenchmark.baseline                      4096  thrpt        3  11409.356 ± 14347.139  ops/s
-c.g.e.a.BaselineBenchmark.baseline                     16384  thrpt        3   2558.439 ±   264.478  ops/s
-c.g.e.a.BaselineBenchmark.baseline                     65536  thrpt        3    237.747 ±    10.384  ops/s
-c.g.e.a.InsertRemoveBenchmark.insert_remove             1024  thrpt        3     64.242 ±   401.318  ops/s
-c.g.e.a.InsertRemoveBenchmark.insert_remove             4096  thrpt        3     17.002 ±    97.132  ops/s
-c.g.e.a.InsertRemoveBenchmark.insert_remove            16384  thrpt        3      4.276 ±    23.409  ops/s
-c.g.e.a.PlainComponentBenchmark.plain                   1024  thrpt        3  18271.753 ±  3501.381  ops/s
-c.g.e.a.PlainComponentBenchmark.plain                   4096  thrpt        3   3962.701 ±  5435.390  ops/s
-c.g.e.a.PlainComponentBenchmark.plain                  16384  thrpt        3    302.528 ±    26.926  ops/s
-c.g.e.a.PlainComponentBenchmark.plain                  65536  thrpt        3     58.093 ±     5.328  ops/s
+c.g.e.a.BaselineBenchmark.baseline                      1024  thrpt        3  56136.220 ± 26714.754  ops/s
+c.g.e.a.BaselineBenchmark.baseline                      4096  thrpt        3  11843.756 ±  3005.416  ops/s
+c.g.e.a.BaselineBenchmark.baseline                     16384  thrpt        3   2182.989 ±  1144.449  ops/s
+c.g.e.a.BaselineBenchmark.baseline                     65536  thrpt        3    261.160 ±    15.310  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove             1024  thrpt        3     64.358 ±   334.642  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove             4096  thrpt        3     17.222 ±    99.078  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                   1024  thrpt        3  17477.162 ±  3786.615  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                   4096  thrpt        3   4059.205 ±  5454.065  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                  16384  thrpt        3    338.224 ±     5.399  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                  65536  thrpt        3     58.643 ±     0.674  ops/s
