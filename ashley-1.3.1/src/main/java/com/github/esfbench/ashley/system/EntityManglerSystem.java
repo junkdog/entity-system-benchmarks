@@ -97,7 +97,7 @@ public final class EntityManglerSystem extends EntitySystem {
 		}
 		
 		this.engine = engine;
-		entities = engine.getEntitiesFor(Family.getFor()); // 
+		entities = engine.getEntitiesFor(Family.all().get()); // 
 		
 		for (int i = 0; ENTITY_COUNT > i; i++)
 			createEntity();
@@ -109,7 +109,7 @@ public final class EntityManglerSystem extends EntitySystem {
 
 		if (counter % 2 == 1) {
 			for (int i = 0; RENEW > i; i++) {
-				Entity e = entities.get(0);
+				Entity e = entities.get(i);
 				engine.removeEntity(e);
 				index = index % ENTITY_COUNT;
 			}

@@ -13,7 +13,7 @@ public class CompSystemA extends IteratingSystem {
 	
 	@SuppressWarnings("unchecked")
 	public CompSystemA() {
-		super(Family.getFor(Comp1.class, Comp4.class, Comp5.class));
+		super(Family.all(Comp1.class, Comp4.class, Comp5.class).get());
 	}
 
 	@Override

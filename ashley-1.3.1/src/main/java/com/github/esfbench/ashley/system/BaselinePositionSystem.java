@@ -13,7 +13,7 @@ public class BaselinePositionSystem extends IteratingSystem {
 	
 	@SuppressWarnings("unchecked")
 	public BaselinePositionSystem() {
-		super(Family.getFor(PlainPosition.class));
+		super(Family.all(PlainPosition.class).get());
 	}
 
 	@Override

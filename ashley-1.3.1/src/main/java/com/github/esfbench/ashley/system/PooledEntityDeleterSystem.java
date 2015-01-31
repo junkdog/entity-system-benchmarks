@@ -84,10 +84,9 @@ public final class PooledEntityDeleterSystem extends EntitySystem {
 	
 	protected final void createEntity() {
 		
-		PooledEngine pooledEngine = (PooledEngine)engine;
-		Entity e = pooledEngine.createEntity();
-		pooledEngine.createComponent(c1);
-		pooledEngine.createComponent(c2);
+		Entity e = engine.createEntity();
+		e.add(engine.createComponent(c1));
+		e.add(engine.createComponent(c2));
 		engine.addEntity(e);
 		ids[creationIndex++] = e.getId();
 		

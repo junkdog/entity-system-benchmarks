@@ -52,7 +52,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	
 	@Benchmark
 	public void insert_remove() {
-		engine.update(0);;
+		engine.update(0);
 	}
 	
 	public static void main(String[] args) throws Exception {

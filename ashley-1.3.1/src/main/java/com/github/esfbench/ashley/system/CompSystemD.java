@@ -17,9 +17,8 @@ public class CompSystemD extends IteratingSystem {
 	
 	@SuppressWarnings("unchecked")
 	public CompSystemD() {
-		super(Family.getFor(
-				getBitsFor(Comp6.class, Comp7.class, Comp8.class),
-				getBitsFor(Comp9.class), new Bits()));
+		super(Family.all(Comp6.class, Comp7.class, Comp8.class).
+				one(Comp9.class).get());
 	}
 
 	@Override
