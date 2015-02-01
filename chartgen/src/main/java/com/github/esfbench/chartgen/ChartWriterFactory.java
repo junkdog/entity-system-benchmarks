@@ -24,7 +24,7 @@ import com.github.esfbench.chartgen.model.ResultTable;
 public final class ChartWriterFactory {
 	private ChartWriterFactory() {}
 	
-	private static void generateChart(String benchmark, DefaultCategoryDataset dataset) {
+	private static void generateChart(String benchmark, DefaultCategoryDataset dataset, int benchmarkCount) {
 		JFreeChart chart = ChartFactory.createBarChart(
 				benchmark, "framework", "throughput", dataset,
 				PlotOrientation.HORIZONTAL, true, false, false);
@@ -37,19 +37,20 @@ public final class ChartWriterFactory {
 		String pngFile = getOutputName(benchmark);
 		
 		try {
-			ChartUtilities.saveChartAsPNG(new File(pngFile), chart, 700, 450);
+			int height = 100 + benchmarkCount * 20;
+			ChartUtilities.saveChartAsPNG(new File(pngFile), chart, 700, height);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
 	}
 	
-	public static void generate(String benchmark, Map<Integer, DefaultCategoryDataset> data) {
-		
-		for (Entry<Integer, DefaultCategoryDataset> entry : data.entrySet()) {
-			String title = benchmark + ": " + entry.getKey() + " entities";
-			generateChart(title, entry.getValue());
-		}
-	}
+//	public static void generate(String benchmark, Map<Integer, DefaultCategoryDataset> data) {
+//
+//		for (Entry<Integer, DefaultCategoryDataset> entry : data.entrySet()) {
+//			String title = benchmark + ": " + entry.getKey() + " entities";
+//			generateChart(title, entry.getValue());
+//		}
+//	}
 	
 	private static String getOutputName(String benchmark) {
 		return benchmark.replaceAll("[: /]", "_") + ".png";
@@ -59,10 +60,12 @@ public final class ChartWriterFactory {
 		switch (group) {
 			case ITERATION:
 				return "iteration: " + entityCount + " entities";
-			case PROCESSING:
+			case INSERT_REMOVE:
 				return "insert/remove: " + entityCount + " entities";
 			case THRESHOLD:
 				return "baseline: " + entityCount + " entities";
+			case TRANSMUTE:
+				return "add/remove components: " + entityCount + " entities";
 			default:
 				throw new RuntimeException(group.name());
 		}
@@ -78,8 +81,9 @@ public final class ChartWriterFactory {
 			Map<Integer, Set<Benchmark>> benchmarks = bc.getBenchmarks(group);
 			Map<Integer, DefaultCategoryDataset> datasets = toDatasets(benchmarks);
 			for (Entry<Integer, DefaultCategoryDataset> entry : datasets.entrySet()) {
-				System.out.printf("\t%d: %s benchmarks\n", entry.getKey(), benchmarks.get(entry.getKey()).size());
-				generateChart(title(group, entry.getKey()), entry.getValue());
+				int benchmarkCount = benchmarks.get(entry.getKey()).size();
+				System.out.printf("\t%d: %s benchmarks\n", entry.getKey(), benchmarkCount);
+				generateChart(title(group, entry.getKey()), entry.getValue(), benchmarkCount);
 			}
 		}
 

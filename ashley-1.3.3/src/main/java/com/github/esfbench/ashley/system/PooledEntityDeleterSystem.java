@@ -31,15 +31,12 @@ public final class PooledEntityDeleterSystem extends EntitySystem {
 	
 		ENTITY_COUNT = entityCount;
 		ids = new long[ENTITY_COUNT];
-		
-		// ashley is backed up am IntMap, hence we only need to track ids
-//		for (int i = 0; ids.length > i; i++)
 	}
 	
 	@Override
 	public void addedToEngine(Engine engine) {
 		this.engine = (PooledEngine) engine;
-		entities = engine.getEntitiesFor(Family.getFor(PlainPosition.class));
+		entities = engine.getEntitiesFor(Family.all(PlainPosition.class).get());
 //		engine.addEntityListener(new EntityListener() {
 //			
 //			@Override

@@ -21,7 +21,7 @@ public class ResultTable {
 			case BASELINE:
 				summary.baseline = benchmark.score;
 				break;
-			case INSERT_REMOVE:
+			case CREATE_DELETE:
 				summary.insertRemove = benchmark.score;
 				break;
 			case PACKED:
@@ -33,6 +33,11 @@ public class ResultTable {
 			case POOLED:
 				summary.pooled = benchmark.score;
 				break;
+			case ENTITY_EDIT:
+				summary.entityEdit = benchmark.score;
+				break;
+			case ENTITY_TRANSMUTE:
+				summary.entityTransmute = benchmark.score;
 			default:
 				throw new RuntimeException("missing case: " + benchmark.type);
 			
@@ -75,7 +80,9 @@ public class ResultTable {
 		public float pooled;
 		public float packed;
 		public float insertRemove;
-		
+		public float entityEdit;
+		public float entityTransmute;
+
 		@Override
 		public String toString() {
 			return super.toString();

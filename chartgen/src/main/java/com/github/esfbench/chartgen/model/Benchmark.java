@@ -64,6 +64,6 @@ public class Benchmark implements Comparable<Benchmark> {
 	}
 	
 	public static enum BenchmarkGroup {
-		THRESHOLD, ITERATION, PROCESSING;
+		THRESHOLD, ITERATION, INSERT_REMOVE, TRANSMUTE;
 	}
 }

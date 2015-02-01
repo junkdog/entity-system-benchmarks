@@ -1,8 +1,6 @@
 package com.github.esfbench.chartgen.model;
 
-import static com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup.ITERATION;
-import static com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup.PROCESSING;
-import static com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup.THRESHOLD;
+import static com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup.*;
 import static java.lang.String.format;
 
 import com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup;
@@ -12,8 +10,10 @@ public enum BenchmarkType {
 	PLAIN("plain", ITERATION),
 	POOLED("pooled", ITERATION),
 	PACKED("packed", ITERATION),
-	INSERT_REMOVE("insert_remove", PROCESSING);
-	
+	CREATE_DELETE("insert_remove", INSERT_REMOVE),
+	ENTITY_EDIT("entity_edit", TRANSMUTE),
+	ENTITY_TRANSMUTE("entity_edit", TRANSMUTE);
+
 	public final String id;
 	public final BenchmarkGroup group;
 	
