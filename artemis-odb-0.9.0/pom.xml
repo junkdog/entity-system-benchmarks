@@ -9,7 +9,7 @@
 
 	<artifactId>artemis-odb-0.8.2-SNAPSHOT-benchmark</artifactId>
 	<packaging>jar</packaging>
-	<name>artemis-odb-0.8.2-SNAPSHOT-benchmarks</name>
+	<name>artemis-odb-0.9.0-benchmarks</name>
 
 	<properties>
 		<artemis.version>0.8.2-SNAPSHOT</artemis.version>
