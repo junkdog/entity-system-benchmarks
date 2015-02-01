@@ -2,6 +2,7 @@ package com.github.esfbench.chartgen;
 
 import static com.github.esfbench.chartgen.BenchmarkUtil.toDatasets;
 
+import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
@@ -11,15 +12,18 @@ import java.util.Set;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.StandardChartTheme;
 import org.jfree.chart.plot.CategoryPlot;
 import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.chart.renderer.category.BarRenderer;
+import org.jfree.chart.renderer.category.StandardBarPainter;
 import org.jfree.data.category.DefaultCategoryDataset;
 
 import com.github.esfbench.chartgen.model.Benchmark;
 import com.github.esfbench.chartgen.model.Benchmark.BenchmarkGroup;
 import com.github.esfbench.chartgen.model.BenchmarkCollection;
 import com.github.esfbench.chartgen.model.ResultTable;
+import org.jfree.ui.RectangleInsets;
 
 public final class ChartWriterFactory {
 	private ChartWriterFactory() {}
@@ -32,7 +36,7 @@ public final class ChartWriterFactory {
 		CategoryPlot plot = chart.getCategoryPlot();
 		BarRenderer renderer = (BarRenderer) plot.getRenderer();
 		renderer.setItemMargin(0);
-		
+		notSoUglyPlease(chart);
 		
 		String pngFile = getOutputName(benchmark);
 		
@@ -43,14 +47,40 @@ public final class ChartWriterFactory {
 			throw new RuntimeException(e);
 		}
 	}
-	
-//	public static void generate(String benchmark, Map<Integer, DefaultCategoryDataset> data) {
-//
-//		for (Entry<Integer, DefaultCategoryDataset> entry : data.entrySet()) {
-//			String title = benchmark + ": " + entry.getKey() + " entities";
-//			generateChart(title, entry.getValue());
-//		}
-//	}
+
+	// based off http://stackoverflow.com/a/13345781/431535
+	private static void notSoUglyPlease(JFreeChart chart) {
+		String fontName = "Lucida Sans";
+
+		StandardChartTheme theme = (StandardChartTheme)org.jfree.chart.StandardChartTheme.createJFreeTheme();
+
+		theme.setTitlePaint( Color.decode("#4572a7") );
+		theme.setExtraLargeFont(new Font(fontName, Font.BOLD, 14)); //title
+		theme.setLargeFont(new Font(fontName, Font.BOLD, 15)); //axis-title
+		theme.setRegularFont(new Font(fontName, Font.PLAIN, 11));
+		theme.setRangeGridlinePaint(Color.decode("#C0C0C0"));
+		theme.setPlotBackgroundPaint(Color.white);
+		theme.setChartBackgroundPaint(Color.white);
+		theme.setGridBandPaint(Color.red);
+		theme.setAxisOffset(new RectangleInsets(0, 0, 0, 0));
+		theme.setBarPainter(new StandardBarPainter());
+		theme.setAxisLabelPaint(Color.decode("#666666"));
+		theme.apply(chart);
+		chart.getCategoryPlot().setOutlineVisible(false);
+		chart.getCategoryPlot().getRangeAxis().setAxisLineVisible(false);
+		chart.getCategoryPlot().getRangeAxis().setTickMarksVisible(false);
+		chart.getCategoryPlot().setRangeGridlineStroke(new BasicStroke());
+		chart.getCategoryPlot().getRangeAxis().setTickLabelPaint(Color.decode("#666666"));
+		chart.getCategoryPlot().getDomainAxis().setTickLabelPaint(Color.decode("#666666"));
+		chart.setTextAntiAlias(true);
+		chart.setAntiAlias(true);
+		BarRenderer rend = (BarRenderer) chart.getCategoryPlot().getRenderer();
+		rend.setShadowVisible(true);
+		rend.setShadowXOffset(2);
+		rend.setShadowYOffset(0);
+		rend.setShadowPaint(Color.decode("#C0C0C0"));
+		rend.setMaximumBarWidth(0.1);
+	}
 	
 	private static String getOutputName(String benchmark) {
 		return benchmark.replaceAll("[: /]", "_") + ".png";
