@@ -123,7 +123,7 @@ public final class ChartWriterFactory {
 			int entityCount = entry.getKey();
 			System.out.println("#### Benchmarks: " + entityCount + " entites");
 			System.out.println();
-			System.out.printf(" ![it%1$dk][it%1$dk] ![ir%1$dk][ir%1$dk]\n", (entityCount / 1024));
+			System.out.printf(" ![it%1$dk][it%1$dk] ![ir%1$dk][ir%1$dk] ![arc%1$dk][arc%1$dk]\n", (entityCount / 1024));
 			System.out.println();
 			ResultTable table = new ResultTable(entry.getValue());
 			table.printTable(System.out);

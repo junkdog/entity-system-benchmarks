@@ -38,6 +38,7 @@ public class ResultTable {
 				break;
 			case ENTITY_TRANSMUTE:
 				summary.entityTransmute = benchmark.score;
+				break;
 			default:
 				throw new RuntimeException("missing case: " + benchmark.type);
 			

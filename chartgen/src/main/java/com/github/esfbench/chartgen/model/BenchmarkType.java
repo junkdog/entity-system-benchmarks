@@ -12,7 +12,7 @@ public enum BenchmarkType {
 	PACKED("packed", ITERATION),
 	CREATE_DELETE("insert_remove", INSERT_REMOVE),
 	ENTITY_EDIT("entity_edit", TRANSMUTE),
-	ENTITY_TRANSMUTE("transmute", TRANSMUTE);
+	ENTITY_TRANSMUTE("transmuter", TRANSMUTE);
 
 	public final String id;
 	public final BenchmarkGroup group;
