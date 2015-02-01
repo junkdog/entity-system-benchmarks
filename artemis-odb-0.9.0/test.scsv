@@ -1,0 +1,31 @@
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 65536)
+
+# Run progress: 0.00% complete, ETA 00:00:35
+# Fork: 1 of 1
+# Warmup Iteration   1: 86.657 ops/s
+# Warmup Iteration   2: 94.385 ops/s
+# Warmup Iteration   3: 104.140 ops/s
+# Warmup Iteration   4: 101.652 ops/s
+# Warmup Iteration   5: 103.006 ops/s
+Iteration   1: 102.460 ops/s
+Iteration   2: 102.310 ops/s
+Iteration   3: 102.308 ops/s
+
+
+Result: 102.359 ±(99.9%) 1.588 ops/s [Average]
+  Statistics: (min, avg, max) = (102.308, 102.359, 102.460), stdev = 0.087
+  Confidence interval (99.9%): [100.771, 103.948]
+
+
+# Run complete. Total time: 00:00:37
+
+Benchmark                                  (entityCount)   Mode  Samples    Score   Error  Units
+c.a.InsertRemoveBenchmark.insert_remove            65536  thrpt        3  102.359 ± 1.588  ops/s
