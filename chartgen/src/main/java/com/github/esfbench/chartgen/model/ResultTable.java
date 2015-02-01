@@ -56,17 +56,19 @@ public class ResultTable {
 	}
 
 	public void printTable(PrintStream out) {
-		out.println("| ECS                    |  baseline | plain     | pooled    | packed    | insert/remove |");
-		out.println("|------------------------|-----------|-----------|-----------|-----------|---------------|");
+		out.println("| ECS                    |  baseline | plain     | pooled    | packed    | insert/remove | edit      | transmute |");
+		out.println("|------------------------|-----------|-----------|-----------|-----------|---------------|-----------|-----------|");
 		for (FrameworkSummary summary : frameworks.values()) {
 			String row = String.format(
-				"| %-22s | %9.2f | %9.2f | %9.2f | %9.2f | %13.2f |",
+				"| %-22s | %9.2f | %9.2f | %9.2f | %9.2f | %13.2f | %9.2f | %9.2f |",
 					summary.framework,
 					summary.baseline,
 					summary.plain,
 					summary.pooled,
 					summary.packed,
-					summary.insertRemove);
+					summary.insertRemove,
+					summary.entityEdit,
+					summary.entityTransmute);
 			
 			out.println(row.replaceAll("0\\.00", "    "));
 		}
