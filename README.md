@@ -2,8 +2,8 @@
 
 ## Benchmarks description:
 #### Tested frameworks
-- [artemis-odb](https://github.com/junkdog/artemis-odb) 0.4.0, 0.6.5, 0.7.0, 0.8.0
-- [ashley](https://github.com/libgdx/ashley) 1.0.1, 1.2.0, 1.3.1
+- [artemis-odb](https://github.com/junkdog/artemis-odb) 0.4.0, 0.6.5, 0.7.0, 0.8.0, 0.9.0
+- [ashley](https://github.com/libgdx/ashley) 1.0.1, 1.2.0, 1.3.1, 1.3.3
 - [gdx-artemis](https://github.com/apotapov/gdx-artemis) 0.5.0
 
 
