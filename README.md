@@ -52,7 +52,7 @@ they aim to give a hint of each framework's performance.
 
 Artemis-odb-0.7.0 added support for automatically rewriting the generated class files
 of EntitySystems in order to achieve higher performance. The source code itself remains
-identical. More about it on the artemis-odb wiki: [Optimizing Entity System][fast].
+identical. More about it on the artemis-odb wiki: [Hotspot Optimization][fast].
 
 #### Benchmarks: 1024 entites
 
@@ -141,7 +141,7 @@ identical. More about it on the artemis-odb wiki: [Optimizing Entity System][fas
 
 
 
- [fast]: https://github.com/junkdog/artemis-odb/wiki/Optimizing-Entity-Systems
+ [fast]: https://github.com/junkdog/artemis-odb/wiki/Hotspot-Optimization
  [it1k]: http://junkdog.github.io/images/ecs-bench/iteration__1024_entities.png
  [it4k]: http://junkdog.github.io/images/ecs-bench/iteration__4096_entities.png
  [it16k]: http://junkdog.github.io/images/ecs-bench/iteration__16384_entities.png
