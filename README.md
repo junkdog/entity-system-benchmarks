@@ -13,6 +13,9 @@
 - Run with `entityCount`: 1024, 4096, 16384 and 65536.
 - Share the same random seed.
 - Raw, unprocessed results, here: https://github.com/junkdog/entity-system-benchmarks/tree/master/results
+- Additional data:
+  - `SE Runtime Environment (build 1.7.0_65-b17)`
+  - `Intel(R) Core(TM) i7-3540M CPU @ 3.00GHz`
 
 #### Component iteration benchmarks:
 - Have 3 entity systems updating a position component.
@@ -30,6 +33,15 @@
 - When creating entities, a random composition is selected.
   - The composition is randomly chosen, but shared across all frameworks/benchmarks.
 
+#### Add/remove components benchmarks:
+- Have 3 BaselinePositionSystems.
+- Each tick, toggles the Position component for 1/4 all entities.
+  - Entities are chosen from a shuffled list of entity ids.
+- Two types of benchmarks:
+  - **entity_edit:** Toggling achieve by calling entity.edit().create/remove
+  - **transmuter:** Toggles using the [EntityTransmuter][transmuter] class.
+
+ [transmuter]: https://github.com/junkdog/artemis-odb/wiki/Entity#entity-transmuters
 
 ### Benchmark results
 
