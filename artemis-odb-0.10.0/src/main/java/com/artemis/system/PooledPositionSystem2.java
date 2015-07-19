@@ -1,28 +1,55 @@
 package com.artemis.system;
 
 
+import com.artemis.*;
+import com.artemis.utils.IntBag;
 import org.openjdk.jmh.infra.Blackhole;
 
-import com.artemis.Aspect;
-import com.artemis.ComponentMapper;
-import com.artemis.Entity;
 import com.artemis.annotations.Wire;
 import com.artemis.component.PooledPosition;
 import com.artemis.systems.EntityProcessingSystem;
 
 @Wire
-public class PooledPositionSystem2 extends EntityProcessingSystem {
+public class PooledPositionSystem2 extends BaseSystem {
+
+	ComponentMapper<PooledPosition> positionMapper;
+
+	private final Aspect.Builder aspectConfiguration;
 
 	Blackhole voidness = new Blackhole();
-	ComponentMapper<PooledPosition> positionMapper;
-	
+	private Entity flyweight;
+	private EntitySubscription subscription;
+
+
 	@SuppressWarnings("unchecked")
 	public PooledPositionSystem2() {
-		super(Aspect.getAspectForAll(PooledPosition.class));
+		aspectConfiguration = Aspect.all(PooledPosition.class);
+	}
+
+	protected void setWorld(World world) {
+		super.setWorld(world);
+
+		flyweight = Entity.createFlyweight(world);
+		subscription = getSubscription();
+	}
+
+	public EntitySubscription getSubscription() {
+		AspectSubscriptionManager sm = world.getManager(AspectSubscriptionManager.class);
+		return sm.get(aspectConfiguration);
 	}
 
 	@Override
-	protected void process(Entity e) {
+	protected void processSystem() {
+		IntBag actives = subscription.getEntities();
+		int[] array = actives.getData();
+		Entity e = flyweight;
+		for (int i = 0, s = actives.size(); s > i; i++) {
+			e.id = array[i];
+			process(e);
+		}
+	}
+
+	private void process(Entity e) {
 		PooledPosition pos = positionMapper.get(e);
 		pos.x -= 1;
 		pos.y += 1;
