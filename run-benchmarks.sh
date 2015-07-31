@@ -16,20 +16,20 @@ function run_all() {
 	run_bench artemis-odb-0.7.0
 	run_bench artemis-odb-0.8.0
 	run_bench artemis-odb-0.9.0
-	run_bench artemis-odb-0.10.0
+	run_bench artemis-odb-0.10.2
 	run_bench ashley-1.0.1
 	run_bench ashley-1.2.0
 	run_bench ashley-1.3.1
 	run_bench ashley-1.3.3
+	run_bench ashley-1.6.0
 	run_bench gdx-artemis-0.5.0
-
 
 	# recompoling with bytecode optimizations
 	mvn -Pfast clean install
 	run_bench artemis-odb-0.7.0 _fast
 	run_bench artemis-odb-0.8.0 _fast
 	run_bench artemis-odb-0.9.0 _fast
-	run_bench artemis-odb-0.10.0 _fast
+	run_bench artemis-odb-0.10.2 _fast
 }
 
 
@@ -42,8 +42,8 @@ function run_dev() {
 	# recompoling with bytecode optimizations
 #	mvn -Pfast clean install
 #	run_bench artemis-odb-0.9.0 _fast
-	run_bench artemis-odb-0.10.0 _fast
+	run_bench artemis-odb-0.10.2 _fast
 }
 
-run_dev
+run_all
 
