@@ -1,0 +1,59 @@
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 4096)
+
+# Run progress: 0.00% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 11771.810 ops/s
+# Warmup Iteration   2: 12309.673 ops/s
+# Warmup Iteration   3: 11972.658 ops/s
+# Warmup Iteration   4: 11654.094 ops/s
+# Warmup Iteration   5: 11624.347 ops/s
+Iteration   1: 11141.382 ops/s
+Iteration   2: 10564.470 ops/s
+Iteration   3: 11583.158 ops/s
+
+
+Result: 11096.337 ±(99.9%) 9319.544 ops/s [Average]
+  Statistics: (min, avg, max) = (10564.470, 11096.337, 11583.158), stdev = 510.836
+  Confidence interval (99.9%): [1776.793, 20415.880]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 16384)
+
+# Run progress: 50.00% complete, ETA 00:00:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 3042.267 ops/s
+# Warmup Iteration   2: 3199.866 ops/s
+# Warmup Iteration   3: 3167.001 ops/s
+# Warmup Iteration   4: 3208.082 ops/s
+# Warmup Iteration   5: 3206.339 ops/s
+Iteration   1: 3180.898 ops/s
+Iteration   2: 3126.129 ops/s
+Iteration   3: 3340.923 ops/s
+
+
+Result: 3215.983 ±(99.9%) 2036.234 ops/s [Average]
+  Statistics: (min, avg, max) = (3126.129, 3215.983, 3340.923), stdev = 111.613
+  Confidence interval (99.9%): [1179.749, 5252.217]
+
+
+# Run complete. Total time: 00:01:13
+
+Benchmark                            (entityCount)   Mode  Samples      Score      Error  Units
+c.a.PlainComponentBenchmark.plain             4096  thrpt        3  11096.337 ± 9319.544  ops/s
+c.a.PlainComponentBenchmark.plain            16384  thrpt        3   3215.983 ± 2036.234  ops/s

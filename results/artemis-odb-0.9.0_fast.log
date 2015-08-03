@@ -5,186 +5,24 @@
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.BaselineBenchmark.baseline
-# Parameters: (entityCount = 4096)
-
-# Run progress: 0.00% complete, ETA 00:08:10
-# Fork: 1 of 1
-# Warmup Iteration   1: 26991.491 ops/s
-# Warmup Iteration   2: 28265.987 ops/s
-# Warmup Iteration   3: 27841.964 ops/s
-# Warmup Iteration   4: 27941.200 ops/s
-# Warmup Iteration   5: 26684.679 ops/s
-Iteration   1: 28106.791 ops/s
-Iteration   2: 28229.035 ops/s
-Iteration   3: 28166.240 ops/s
-
-
-Result: 28167.355 ±(99.9%) 1115.236 ops/s [Average]
-  Statistics: (min, avg, max) = (28106.791, 28167.355, 28229.035), stdev = 61.130
-  Confidence interval (99.9%): [27052.119, 29282.591]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.BaselineBenchmark.baseline
-# Parameters: (entityCount = 16384)
-
-# Run progress: 7.14% complete, ETA 00:08:00
-# Fork: 1 of 1
-# Warmup Iteration   1: 6602.635 ops/s
-# Warmup Iteration   2: 6986.527 ops/s
-# Warmup Iteration   3: 7005.526 ops/s
-# Warmup Iteration   4: 7015.525 ops/s
-# Warmup Iteration   5: 7040.308 ops/s
-Iteration   1: 7059.582 ops/s
-Iteration   2: 7028.876 ops/s
-Iteration   3: 7022.034 ops/s
-
-
-Result: 7036.831 ±(99.9%) 364.841 ops/s [Average]
-  Statistics: (min, avg, max) = (7022.034, 7036.831, 7059.582), stdev = 19.998
-  Confidence interval (99.9%): [6671.990, 7401.672]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.InsertRemoveBenchmark.insert_remove
-# Parameters: (entityCount = 4096)
-
-# Run progress: 14.29% complete, ETA 00:07:23
-# Fork: 1 of 1
-# Warmup Iteration   1: 4372.121 ops/s
-# Warmup Iteration   2: 4889.213 ops/s
-# Warmup Iteration   3: 4960.802 ops/s
-# Warmup Iteration   4: 4984.982 ops/s
-# Warmup Iteration   5: 4879.768 ops/s
-Iteration   1: 4942.409 ops/s
-Iteration   2: 4930.208 ops/s
-Iteration   3: 4945.034 ops/s
-
-
-Result: 4939.217 ±(99.9%) 144.334 ops/s [Average]
-  Statistics: (min, avg, max) = (4930.208, 4939.217, 4945.034), stdev = 7.911
-  Confidence interval (99.9%): [4794.883, 5083.551]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.InsertRemoveBenchmark.insert_remove
-# Parameters: (entityCount = 16384)
-
-# Run progress: 21.43% complete, ETA 00:06:46
-# Fork: 1 of 1
-# Warmup Iteration   1: 1084.135 ops/s
-# Warmup Iteration   2: 1217.018 ops/s
-# Warmup Iteration   3: 1193.183 ops/s
-# Warmup Iteration   4: 1213.225 ops/s
-# Warmup Iteration   5: 1217.325 ops/s
-Iteration   1: 1209.858 ops/s
-Iteration   2: 1204.160 ops/s
-Iteration   3: 1210.557 ops/s
-
-
-Result: 1208.192 ±(99.9%) 64.013 ops/s [Average]
-  Statistics: (min, avg, max) = (1204.160, 1208.192, 1210.557), stdev = 3.509
-  Confidence interval (99.9%): [1144.179, 1272.204]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.PackedComponentBenchmark.packed
-# Parameters: (entityCount = 4096)
-
-# Run progress: 28.57% complete, ETA 00:06:09
-# Fork: 1 of 1
-# Warmup Iteration   1: 18939.797 ops/s
-# Warmup Iteration   2: 19203.069 ops/s
-# Warmup Iteration   3: 18653.534 ops/s
-# Warmup Iteration   4: 18173.488 ops/s
-# Warmup Iteration   5: 17609.105 ops/s
-Iteration   1: 19578.854 ops/s
-Iteration   2: 19448.865 ops/s
-Iteration   3: 19674.950 ops/s
-
-
-Result: 19567.556 ±(99.9%) 2070.035 ops/s [Average]
-  Statistics: (min, avg, max) = (19448.865, 19567.556, 19674.950), stdev = 113.466
-  Confidence interval (99.9%): [17497.522, 21637.591]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.PackedComponentBenchmark.packed
-# Parameters: (entityCount = 16384)
-
-# Run progress: 35.71% complete, ETA 00:05:32
-# Fork: 1 of 1
-# Warmup Iteration   1: 4803.978 ops/s
-# Warmup Iteration   2: 5030.208 ops/s
-# Warmup Iteration   3: 4972.365 ops/s
-# Warmup Iteration   4: 5003.489 ops/s
-# Warmup Iteration   5: 4965.274 ops/s
-Iteration   1: 5027.007 ops/s
-Iteration   2: 5103.554 ops/s
-Iteration   3: 5097.835 ops/s
-
-
-Result: 5076.132 ±(99.9%) 777.904 ops/s [Average]
-  Statistics: (min, avg, max) = (5027.007, 5076.132, 5103.554), stdev = 42.640
-  Confidence interval (99.9%): [4298.229, 5854.036]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
 # Benchmark: com.artemis.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 4096)
 
-# Run progress: 42.86% complete, ETA 00:04:55
+# Run progress: 0.00% complete, ETA 00:01:10
 # Fork: 1 of 1
-# Warmup Iteration   1: 17026.536 ops/s
-# Warmup Iteration   2: 17344.265 ops/s
-# Warmup Iteration   3: 16956.582 ops/s
-# Warmup Iteration   4: 16744.639 ops/s
-# Warmup Iteration   5: 16288.042 ops/s
-Iteration   1: 19092.575 ops/s
-Iteration   2: 19597.313 ops/s
-Iteration   3: 19644.686 ops/s
+# Warmup Iteration   1: 18105.947 ops/s
+# Warmup Iteration   2: 18378.055 ops/s
+# Warmup Iteration   3: 17970.197 ops/s
+# Warmup Iteration   4: 17616.999 ops/s
+# Warmup Iteration   5: 17492.011 ops/s
+Iteration   1: 20751.061 ops/s
+Iteration   2: 20953.504 ops/s
+Iteration   3: 20208.379 ops/s
 
 
-Result: 19444.858 ±(99.9%) 5582.653 ops/s [Average]
-  Statistics: (min, avg, max) = (19092.575, 19444.858, 19644.686), stdev = 306.004
-  Confidence interval (99.9%): [13862.205, 25027.511]
+Result: 20637.648 ±(99.9%) 7029.154 ops/s [Average]
+  Statistics: (min, avg, max) = (20208.379, 20637.648, 20953.504), stdev = 385.292
+  Confidence interval (99.9%): [13608.494, 27666.803]
 
 
 # VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
@@ -197,199 +35,25 @@ Result: 19444.858 ±(99.9%) 5582.653 ops/s [Average]
 # Benchmark: com.artemis.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 16384)
 
-# Run progress: 50.00% complete, ETA 00:04:18
+# Run progress: 50.00% complete, ETA 00:00:36
 # Fork: 1 of 1
-# Warmup Iteration   1: 4305.077 ops/s
-# Warmup Iteration   2: 4467.615 ops/s
-# Warmup Iteration   3: 4550.466 ops/s
-# Warmup Iteration   4: 4514.688 ops/s
-# Warmup Iteration   5: 4509.715 ops/s
-Iteration   1: 4931.235 ops/s
-Iteration   2: 5049.906 ops/s
-Iteration   3: 5112.304 ops/s
+# Warmup Iteration   1: 4667.989 ops/s
+# Warmup Iteration   2: 4768.432 ops/s
+# Warmup Iteration   3: 4862.431 ops/s
+# Warmup Iteration   4: 4833.207 ops/s
+# Warmup Iteration   5: 4844.994 ops/s
+Iteration   1: 5424.337 ops/s
+Iteration   2: 5421.423 ops/s
+Iteration   3: 5429.478 ops/s
 
 
-Result: 5031.148 ±(99.9%) 1678.069 ops/s [Average]
-  Statistics: (min, avg, max) = (4931.235, 5031.148, 5112.304), stdev = 91.981
-  Confidence interval (99.9%): [3353.079, 6709.217]
+Result: 5425.080 ±(99.9%) 74.409 ops/s [Average]
+  Statistics: (min, avg, max) = (5421.423, 5425.080, 5429.478), stdev = 4.079
+  Confidence interval (99.9%): [5350.671, 5499.488]
 
 
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.PooledComponentBenchmark.pooled
-# Parameters: (entityCount = 4096)
+# Run complete. Total time: 00:01:13
 
-# Run progress: 57.14% complete, ETA 00:03:41
-# Fork: 1 of 1
-# Warmup Iteration   1: 17308.565 ops/s
-# Warmup Iteration   2: 17961.518 ops/s
-# Warmup Iteration   3: 18079.837 ops/s
-# Warmup Iteration   4: 18137.439 ops/s
-# Warmup Iteration   5: 18077.045 ops/s
-Iteration   1: 19971.678 ops/s
-Iteration   2: 20607.439 ops/s
-Iteration   3: 20624.275 ops/s
-
-
-Result: 20401.131 ±(99.9%) 6786.880 ops/s [Average]
-  Statistics: (min, avg, max) = (19971.678, 20401.131, 20624.275), stdev = 372.012
-  Confidence interval (99.9%): [13614.251, 27188.010]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.PooledComponentBenchmark.pooled
-# Parameters: (entityCount = 16384)
-
-# Run progress: 64.29% complete, ETA 00:03:04
-# Fork: 1 of 1
-# Warmup Iteration   1: 4331.581 ops/s
-# Warmup Iteration   2: 4552.375 ops/s
-# Warmup Iteration   3: 4540.539 ops/s
-# Warmup Iteration   4: 4508.093 ops/s
-# Warmup Iteration   5: 4578.940 ops/s
-Iteration   1: 5067.762 ops/s
-Iteration   2: 5078.308 ops/s
-Iteration   3: 5083.092 ops/s
-
-
-Result: 5076.387 ±(99.9%) 143.090 ops/s [Average]
-  Statistics: (min, avg, max) = (5067.762, 5076.387, 5083.092), stdev = 7.843
-  Confidence interval (99.9%): [4933.298, 5219.477]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.TransmuterBenchmark.entity_edit
-# Parameters: (entityCount = 4096)
-
-# Run progress: 71.43% complete, ETA 00:02:27
-# Fork: 1 of 1
-# Warmup Iteration   1: 4319.744 ops/s
-# Warmup Iteration   2: 5277.908 ops/s
-# Warmup Iteration   3: 5315.501 ops/s
-# Warmup Iteration   4: 5286.269 ops/s
-# Warmup Iteration   5: 5286.126 ops/s
-Iteration   1: 5315.628 ops/s
-Iteration   2: 5280.337 ops/s
-Iteration   3: 5286.113 ops/s
-
-
-Result: 5294.026 ±(99.9%) 345.346 ops/s [Average]
-  Statistics: (min, avg, max) = (5280.337, 5294.026, 5315.628), stdev = 18.930
-  Confidence interval (99.9%): [4948.680, 5639.372]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.TransmuterBenchmark.entity_edit
-# Parameters: (entityCount = 16384)
-
-# Run progress: 78.57% complete, ETA 00:01:50
-# Fork: 1 of 1
-# Warmup Iteration   1: 962.016 ops/s
-# Warmup Iteration   2: 1157.415 ops/s
-# Warmup Iteration   3: 1183.706 ops/s
-# Warmup Iteration   4: 1172.417 ops/s
-# Warmup Iteration   5: 1173.884 ops/s
-Iteration   1: 1172.497 ops/s
-Iteration   2: 1168.056 ops/s
-Iteration   3: 1168.971 ops/s
-
-
-Result: 1169.841 ±(99.9%) 42.783 ops/s [Average]
-  Statistics: (min, avg, max) = (1168.056, 1169.841, 1172.497), stdev = 2.345
-  Confidence interval (99.9%): [1127.058, 1212.625]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.TransmuterBenchmark.transmuter
-# Parameters: (entityCount = 4096)
-
-# Run progress: 85.71% complete, ETA 00:01:13
-# Fork: 1 of 1
-# Warmup Iteration   1: 5943.858 ops/s
-# Warmup Iteration   2: 6532.625 ops/s
-# Warmup Iteration   3: 6588.372 ops/s
-# Warmup Iteration   4: 6566.167 ops/s
-# Warmup Iteration   5: 6528.471 ops/s
-Iteration   1: 6642.756 ops/s
-Iteration   2: 6615.317 ops/s
-Iteration   3: 6628.214 ops/s
-
-
-Result: 6628.762 ±(99.9%) 250.447 ops/s [Average]
-  Statistics: (min, avg, max) = (6615.317, 6628.762, 6642.756), stdev = 13.728
-  Confidence interval (99.9%): [6378.315, 6879.209]
-
-
-# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
-# VM options: <none>
-# Warmup: 5 iterations, 1 s each
-# Measurement: 3 iterations, 10 s each
-# Timeout: 10 min per iteration
-# Threads: 1 thread, will synchronize iterations
-# Benchmark mode: Throughput, ops/time
-# Benchmark: com.artemis.TransmuterBenchmark.transmuter
-# Parameters: (entityCount = 16384)
-
-# Run progress: 92.86% complete, ETA 00:00:36
-# Fork: 1 of 1
-# Warmup Iteration   1: 1295.959 ops/s
-# Warmup Iteration   2: 1481.419 ops/s
-# Warmup Iteration   3: 1454.173 ops/s
-# Warmup Iteration   4: 1501.991 ops/s
-# Warmup Iteration   5: 1522.464 ops/s
-Iteration   1: 1525.697 ops/s
-Iteration   2: 1528.103 ops/s
-Iteration   3: 1520.742 ops/s
-
-
-Result: 1524.847 ±(99.9%) 68.476 ops/s [Average]
-  Statistics: (min, avg, max) = (1520.742, 1524.847, 1528.103), stdev = 3.753
-  Confidence interval (99.9%): [1456.371, 1593.323]
-
-
-# Run complete. Total time: 00:08:37
-
-Benchmark                                  (entityCount)   Mode  Samples      Score      Error  Units
-c.a.BaselineBenchmark.baseline                      4096  thrpt        3  28167.355 ± 1115.236  ops/s
-c.a.BaselineBenchmark.baseline                     16384  thrpt        3   7036.831 ±  364.841  ops/s
-c.a.InsertRemoveBenchmark.insert_remove             4096  thrpt        3   4939.217 ±  144.334  ops/s
-c.a.InsertRemoveBenchmark.insert_remove            16384  thrpt        3   1208.192 ±   64.013  ops/s
-c.a.PackedComponentBenchmark.packed                 4096  thrpt        3  19567.556 ± 2070.035  ops/s
-c.a.PackedComponentBenchmark.packed                16384  thrpt        3   5076.132 ±  777.904  ops/s
-c.a.PlainComponentBenchmark.plain                   4096  thrpt        3  19444.858 ± 5582.653  ops/s
-c.a.PlainComponentBenchmark.plain                  16384  thrpt        3   5031.148 ± 1678.069  ops/s
-c.a.PooledComponentBenchmark.pooled                 4096  thrpt        3  20401.131 ± 6786.880  ops/s
-c.a.PooledComponentBenchmark.pooled                16384  thrpt        3   5076.387 ±  143.090  ops/s
-c.a.TransmuterBenchmark.entity_edit                 4096  thrpt        3   5294.026 ±  345.346  ops/s
-c.a.TransmuterBenchmark.entity_edit                16384  thrpt        3   1169.841 ±   42.783  ops/s
-c.a.TransmuterBenchmark.transmuter                  4096  thrpt        3   6628.762 ±  250.447  ops/s
-c.a.TransmuterBenchmark.transmuter                 16384  thrpt        3   1524.847 ±   68.476  ops/s
+Benchmark                            (entityCount)   Mode  Samples      Score      Error  Units
+c.a.PlainComponentBenchmark.plain             4096  thrpt        3  20637.648 ± 7029.154  ops/s
+c.a.PlainComponentBenchmark.plain            16384  thrpt        3   5425.080 ±   74.409  ops/s

@@ -1,0 +1,91 @@
+[
+    {
+        "benchmark" : "com.artemis.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 16163.313838617856,
+            "scoreError" : 16734.454169742727,
+            "scoreConfidence" : [
+                -571.1403311248705,
+                32897.76800836058
+            ],
+            "scorePercentiles" : {
+                "0.0" : 15319.275317591559,
+                "50.0" : 16031.178814203413,
+                "90.0" : 17139.487384058597,
+                "95.0" : 17139.487384058597,
+                "99.0" : 17139.487384058597,
+                "99.9" : 17139.487384058597,
+                "99.99" : 17139.487384058597,
+                "99.999" : 17139.487384058597,
+                "99.9999" : 17139.487384058597,
+                "100.0" : 17139.487384058597
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    15319.275317591559,
+                    16031.178814203413,
+                    17139.487384058597
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 4502.977157933696,
+            "scoreError" : 3225.8334901264325,
+            "scoreConfidence" : [
+                1277.1436678072632,
+                7728.810648060128
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4326.605951262783,
+                "50.0" : 4502.085307707811,
+                "90.0" : 4680.240214830493,
+                "95.0" : 4680.240214830493,
+                "99.0" : 4680.240214830493,
+                "99.9" : 4680.240214830493,
+                "99.99" : 4680.240214830493,
+                "99.999" : 4680.240214830493,
+                "99.9999" : 4680.240214830493,
+                "100.0" : 4680.240214830493
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4326.605951262783,
+                    4502.085307707811,
+                    4680.240214830493
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

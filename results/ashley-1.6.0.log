@@ -1,0 +1,59 @@
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 4096)
+
+# Run progress: 0.00% complete, ETA 00:01:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 5231.417 ops/s
+# Warmup Iteration   2: 5269.878 ops/s
+# Warmup Iteration   3: 5278.033 ops/s
+# Warmup Iteration   4: 5274.547 ops/s
+# Warmup Iteration   5: 5295.729 ops/s
+Iteration   1: 5324.179 ops/s
+Iteration   2: 5336.083 ops/s
+Iteration   3: 5341.917 ops/s
+
+
+Result: 5334.060 ±(99.9%) 164.935 ops/s [Average]
+  Statistics: (min, avg, max) = (5324.179, 5334.060, 5341.917), stdev = 9.041
+  Confidence interval (99.9%): [5169.124, 5498.995]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 16384)
+
+# Run progress: 50.00% complete, ETA 00:00:36
+# Fork: 1 of 1
+# Warmup Iteration   1: 721.092 ops/s
+# Warmup Iteration   2: 766.287 ops/s
+# Warmup Iteration   3: 710.695 ops/s
+# Warmup Iteration   4: 765.340 ops/s
+# Warmup Iteration   5: 770.543 ops/s
+Iteration   1: 777.416 ops/s
+Iteration   2: 773.708 ops/s
+Iteration   3: 777.942 ops/s
+
+
+Result: 776.355 ±(99.9%) 42.094 ops/s [Average]
+  Statistics: (min, avg, max) = (773.708, 776.355, 777.942), stdev = 2.307
+  Confidence interval (99.9%): [734.261, 818.450]
+
+
+# Run complete. Total time: 00:01:13
+
+Benchmark                                (entityCount)   Mode  Samples     Score     Error  Units
+c.g.e.a.PlainComponentBenchmark.plain             4096  thrpt        3  5334.060 ± 164.935  ops/s
+c.g.e.a.PlainComponentBenchmark.plain            16384  thrpt        3   776.355 ±  42.094  ops/s
