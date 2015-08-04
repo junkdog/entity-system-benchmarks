@@ -5,24 +5,267 @@
 # Timeout: 10 min per iteration
 # Threads: 1 thread, will synchronize iterations
 # Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 1024)
+
+# Run progress: 0.00% complete, ETA 00:07:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 56622.494 ops/s
+# Warmup Iteration   2: 58563.446 ops/s
+# Warmup Iteration   3: 58664.890 ops/s
+# Warmup Iteration   4: 59657.726 ops/s
+# Warmup Iteration   5: 58499.651 ops/s
+Iteration   1: 60088.672 ops/s
+Iteration   2: 60171.231 ops/s
+Iteration   3: 60235.483 ops/s
+
+
+Result: 60165.129 ±(99.9%) 1342.651 ops/s [Average]
+  Statistics: (min, avg, max) = (60088.672, 60165.129, 60235.483), stdev = 73.595
+  Confidence interval (99.9%): [58822.477, 61507.780]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 4096)
+
+# Run progress: 8.33% complete, ETA 00:06:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 13278.950 ops/s
+# Warmup Iteration   2: 13524.280 ops/s
+# Warmup Iteration   3: 13595.081 ops/s
+# Warmup Iteration   4: 13443.327 ops/s
+# Warmup Iteration   5: 13623.088 ops/s
+Iteration   1: 13703.809 ops/s
+Iteration   2: 13666.259 ops/s
+Iteration   3: 13699.102 ops/s
+
+
+Result: 13689.723 ±(99.9%) 373.203 ops/s [Average]
+  Statistics: (min, avg, max) = (13666.259, 13689.723, 13703.809), stdev = 20.456
+  Confidence interval (99.9%): [13316.521, 14062.926]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 16384)
+
+# Run progress: 16.67% complete, ETA 00:06:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 2968.003 ops/s
+# Warmup Iteration   2: 3146.727 ops/s
+# Warmup Iteration   3: 3099.551 ops/s
+# Warmup Iteration   4: 3127.366 ops/s
+# Warmup Iteration   5: 3136.064 ops/s
+Iteration   1: 3186.862 ops/s
+Iteration   2: 3182.999 ops/s
+Iteration   3: 3184.656 ops/s
+
+
+Result: 3184.839 ±(99.9%) 35.350 ops/s [Average]
+  Statistics: (min, avg, max) = (3182.999, 3184.839, 3186.862), stdev = 1.938
+  Confidence interval (99.9%): [3149.489, 3220.189]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 65536)
+
+# Run progress: 25.00% complete, ETA 00:05:32
+# Fork: 1 of 1
+# Warmup Iteration   1: 300.596 ops/s
+# Warmup Iteration   2: 302.725 ops/s
+# Warmup Iteration   3: 303.521 ops/s
+# Warmup Iteration   4: 305.599 ops/s
+# Warmup Iteration   5: 307.769 ops/s
+Iteration   1: 309.829 ops/s
+Iteration   2: 309.172 ops/s
+Iteration   3: 309.238 ops/s
+
+
+Result: 309.413 ±(99.9%) 6.598 ops/s [Average]
+  Statistics: (min, avg, max) = (309.172, 309.413, 309.829), stdev = 0.362
+  Confidence interval (99.9%): [302.815, 316.011]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 1024)
+
+# Run progress: 33.33% complete, ETA 00:04:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 7217.552 ops/s
+# Warmup Iteration   2: 8149.782 ops/s
+# Warmup Iteration   3: 8185.620 ops/s
+# Warmup Iteration   4: 8274.611 ops/s
+# Warmup Iteration   5: 8253.192 ops/s
+Iteration   1: 8243.247 ops/s
+Iteration   2: 8218.222 ops/s
+Iteration   3: 8231.455 ops/s
+
+
+Result: 8230.975 ±(99.9%) 228.395 ops/s [Average]
+  Statistics: (min, avg, max) = (8218.222, 8230.975, 8243.247), stdev = 12.519
+  Confidence interval (99.9%): [8002.580, 8459.369]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 4096)
+
+# Run progress: 41.67% complete, ETA 00:04:19
+# Fork: 1 of 1
+# Warmup Iteration   1: 1418.635 ops/s
+# Warmup Iteration   2: 1578.813 ops/s
+# Warmup Iteration   3: 1597.484 ops/s
+# Warmup Iteration   4: 1586.369 ops/s
+# Warmup Iteration   5: 1615.030 ops/s
+Iteration   1: 1622.766 ops/s
+Iteration   2: 1616.417 ops/s
+Iteration   3: 1606.807 ops/s
+
+
+Result: 1615.330 ±(99.9%) 146.589 ops/s [Average]
+  Statistics: (min, avg, max) = (1606.807, 1615.330, 1622.766), stdev = 8.035
+  Confidence interval (99.9%): [1468.741, 1761.919]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 16384)
+
+# Run progress: 50.00% complete, ETA 00:03:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 142.292 ops/s
+# Warmup Iteration   2: 150.759 ops/s
+# Warmup Iteration   3: 155.167 ops/s
+# Warmup Iteration   4: 152.303 ops/s
+# Warmup Iteration   5: 156.190 ops/s
+Iteration   1: 156.111 ops/s
+Iteration   2: 156.329 ops/s
+Iteration   3: 156.734 ops/s
+
+
+Result: 156.391 ±(99.9%) 5.768 ops/s [Average]
+  Statistics: (min, avg, max) = (156.111, 156.391, 156.734), stdev = 0.316
+  Confidence interval (99.9%): [150.623, 162.159]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 65536)
+
+# Run progress: 58.33% complete, ETA 00:03:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 9.855 ops/s
+# Warmup Iteration   2: 10.730 ops/s
+# Warmup Iteration   3: 10.716 ops/s
+# Warmup Iteration   4: 11.080 ops/s
+# Warmup Iteration   5: 11.580 ops/s
+Iteration   1: 11.077 ops/s
+Iteration   2: 11.034 ops/s
+Iteration   3: 11.112 ops/s
+
+
+Result: 11.074 ±(99.9%) 0.713 ops/s [Average]
+  Statistics: (min, avg, max) = (11.034, 11.074, 11.112), stdev = 0.039
+  Confidence interval (99.9%): [10.361, 11.787]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 1024)
+
+# Run progress: 66.67% complete, ETA 00:02:28
+# Fork: 1 of 1
+# Warmup Iteration   1: 20149.128 ops/s
+# Warmup Iteration   2: 20610.696 ops/s
+# Warmup Iteration   3: 20929.049 ops/s
+# Warmup Iteration   4: 20634.483 ops/s
+# Warmup Iteration   5: 20851.069 ops/s
+Iteration   1: 20905.674 ops/s
+Iteration   2: 21005.606 ops/s
+Iteration   3: 21015.653 ops/s
+
+
+Result: 20975.644 ±(99.9%) 1109.289 ops/s [Average]
+  Statistics: (min, avg, max) = (20905.674, 20975.644, 21015.653), stdev = 60.804
+  Confidence interval (99.9%): [19866.355, 22084.933]
+
+
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
 # Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 4096)
 
-# Run progress: 0.00% complete, ETA 00:01:10
+# Run progress: 75.00% complete, ETA 00:01:51
 # Fork: 1 of 1
-# Warmup Iteration   1: 5231.417 ops/s
-# Warmup Iteration   2: 5269.878 ops/s
-# Warmup Iteration   3: 5278.033 ops/s
-# Warmup Iteration   4: 5274.547 ops/s
-# Warmup Iteration   5: 5295.729 ops/s
-Iteration   1: 5324.179 ops/s
-Iteration   2: 5336.083 ops/s
-Iteration   3: 5341.917 ops/s
+# Warmup Iteration   1: 5276.526 ops/s
+# Warmup Iteration   2: 5379.062 ops/s
+# Warmup Iteration   3: 5368.903 ops/s
+# Warmup Iteration   4: 5349.136 ops/s
+# Warmup Iteration   5: 5333.982 ops/s
+Iteration   1: 5405.486 ops/s
+Iteration   2: 5395.295 ops/s
+Iteration   3: 5404.541 ops/s
 
 
-Result: 5334.060 ±(99.9%) 164.935 ops/s [Average]
-  Statistics: (min, avg, max) = (5324.179, 5334.060, 5341.917), stdev = 9.041
-  Confidence interval (99.9%): [5169.124, 5498.995]
+Result: 5401.774 ±(99.9%) 102.721 ops/s [Average]
+  Statistics: (min, avg, max) = (5395.295, 5401.774, 5405.486), stdev = 5.630
+  Confidence interval (99.9%): [5299.053, 5504.495]
 
 
 # VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
@@ -35,25 +278,62 @@ Result: 5334.060 ±(99.9%) 164.935 ops/s [Average]
 # Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
 # Parameters: (entityCount = 16384)
 
-# Run progress: 50.00% complete, ETA 00:00:36
+# Run progress: 83.33% complete, ETA 00:01:14
 # Fork: 1 of 1
-# Warmup Iteration   1: 721.092 ops/s
-# Warmup Iteration   2: 766.287 ops/s
-# Warmup Iteration   3: 710.695 ops/s
-# Warmup Iteration   4: 765.340 ops/s
-# Warmup Iteration   5: 770.543 ops/s
-Iteration   1: 777.416 ops/s
-Iteration   2: 773.708 ops/s
-Iteration   3: 777.942 ops/s
+# Warmup Iteration   1: 700.857 ops/s
+# Warmup Iteration   2: 721.039 ops/s
+# Warmup Iteration   3: 738.928 ops/s
+# Warmup Iteration   4: 740.250 ops/s
+# Warmup Iteration   5: 741.954 ops/s
+Iteration   1: 737.789 ops/s
+Iteration   2: 740.624 ops/s
+Iteration   3: 739.140 ops/s
 
 
-Result: 776.355 ±(99.9%) 42.094 ops/s [Average]
-  Statistics: (min, avg, max) = (773.708, 776.355, 777.942), stdev = 2.307
-  Confidence interval (99.9%): [734.261, 818.450]
+Result: 739.184 ±(99.9%) 25.866 ops/s [Average]
+  Statistics: (min, avg, max) = (737.789, 739.184, 740.624), stdev = 1.418
+  Confidence interval (99.9%): [713.318, 765.051]
 
 
-# Run complete. Total time: 00:01:13
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 65536)
 
-Benchmark                                (entityCount)   Mode  Samples     Score     Error  Units
-c.g.e.a.PlainComponentBenchmark.plain             4096  thrpt        3  5334.060 ± 164.935  ops/s
-c.g.e.a.PlainComponentBenchmark.plain            16384  thrpt        3   776.355 ±  42.094  ops/s
+# Run progress: 91.67% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 73.277 ops/s
+# Warmup Iteration   2: 74.757 ops/s
+# Warmup Iteration   3: 74.458 ops/s
+# Warmup Iteration   4: 74.396 ops/s
+# Warmup Iteration   5: 73.769 ops/s
+Iteration   1: 74.813 ops/s
+Iteration   2: 74.892 ops/s
+Iteration   3: 74.891 ops/s
+
+
+Result: 74.865 ±(99.9%) 0.824 ops/s [Average]
+  Statistics: (min, avg, max) = (74.813, 74.865, 74.892), stdev = 0.045
+  Confidence interval (99.9%): [74.041, 75.689]
+
+
+# Run complete. Total time: 00:07:24
+
+Benchmark                                      (entityCount)   Mode  Samples      Score      Error  Units
+c.g.e.a.BaselineBenchmark.baseline                      1024  thrpt        3  60165.129 ± 1342.651  ops/s
+c.g.e.a.BaselineBenchmark.baseline                      4096  thrpt        3  13689.723 ±  373.203  ops/s
+c.g.e.a.BaselineBenchmark.baseline                     16384  thrpt        3   3184.839 ±   35.350  ops/s
+c.g.e.a.BaselineBenchmark.baseline                     65536  thrpt        3    309.413 ±    6.598  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove             1024  thrpt        3   8230.975 ±  228.395  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove             4096  thrpt        3   1615.330 ±  146.589  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove            16384  thrpt        3    156.391 ±    5.768  ops/s
+c.g.e.a.InsertRemoveBenchmark.insert_remove            65536  thrpt        3     11.074 ±    0.713  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                   1024  thrpt        3  20975.644 ± 1109.289  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                   4096  thrpt        3   5401.774 ±  102.721  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                  16384  thrpt        3    739.184 ±   25.866  ops/s
+c.g.e.a.PlainComponentBenchmark.plain                  65536  thrpt        3     74.865 ±    0.824  ops/s

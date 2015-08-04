@@ -32,7 +32,7 @@ public final class ChartWriterFactory {
 		JFreeChart chart = ChartFactory.createBarChart(
 				benchmark, "framework", "throughput", dataset,
 				PlotOrientation.HORIZONTAL, true, false, false);
-		
+
 		CategoryPlot plot = chart.getCategoryPlot();
 		BarRenderer renderer = (BarRenderer) plot.getRenderer();
 		renderer.setItemMargin(0);

@@ -53,7 +53,7 @@ public class Benchmark implements Comparable<Benchmark> {
 	}
 
 	private String compareString() {
-		String s = type.ordinal() + framework + entityCount;
+		String s = type.ordinal() + framework.replaceAll("\\.([0-9])\\.", ". $1.") + entityCount;
 		return s;
 	}
 	

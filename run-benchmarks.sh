@@ -2,10 +2,10 @@
 
 # for debugging:
 # PARAMS="-i 1 -wi 1 -r 1 -p entityCount=4096,16384"
-PARAMS="-p entityCount=4096,16384"
+#PARAMS="-p entityCount=4096,16384"
 
 function run_bench() {
-	java -jar $1/target/microbenchmarks.jar ".*\.p[l].*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
+	java -jar $1/target/microbenchmarks.jar .* -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 }
 
 function run_all() {
