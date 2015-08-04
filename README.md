@@ -14,8 +14,8 @@
 - Share the same random seed.
 - Raw, unprocessed results, here: https://github.com/junkdog/entity-system-benchmarks/tree/master/results
 - Additional data:
-  - `SE Runtime Environment (build 1.7.0_65-b17)`
-  - `Intel(R) Core(TM) i7-3540M CPU @ 3.00GHz`
+  - `OpenJDK Runtime Environment (IcedTea 2.5.5) (7u79-2.5.5-0ubuntu1)`
+  - `Intel(R) Core(TM) i7-4710HQ CPU @ 2.50GHz`
 
 #### Component iteration benchmarks:
 - Have 3 entity systems updating a position component.
