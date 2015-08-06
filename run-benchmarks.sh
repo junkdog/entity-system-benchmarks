@@ -5,7 +5,7 @@
 #PARAMS="-p entityCount=4096,16384"
 
 function run_bench() {
-	java -jar $1/target/microbenchmarks.jar .* -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
+	java -jar $1/target/microbenchmarks.jar .* -rf json -rf results/$1$2.json $PARAMS | tee results/$1$2.log
 }
 
 function run_all() {
@@ -40,10 +40,10 @@ function run_dev() {
 #	run_bench artemis-odb-0.10.0
 
 	# recompoling with bytecode optimizations
-#	mvn -Pfast clean install
+	mvn -Pfast clean install
 #	run_bench artemis-odb-0.9.0 _fast
-	run_bench artemis-odb-0.10.2 _fast
+	run_bench artemis-odb-0.11.0 _fast
 }
 
-run_all
+run_dev
 
