@@ -1,6 +1,5 @@
 package com.artemis.component;
 
-import com.artemis.Entity;
 import com.artemis.PackedComponent;
 import com.artemis.World;
 
@@ -13,7 +12,7 @@ public class PComp1 extends PackedComponent {
 	}
 	
 	@Override
-	protected void forEntity(Entity e) {}
+	protected void forEntity(int entityId) {}
 
 	@Override
 	protected void ensureCapacity(int id) {}
