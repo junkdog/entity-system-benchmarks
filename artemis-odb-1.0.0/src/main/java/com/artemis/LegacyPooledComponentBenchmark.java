@@ -25,16 +25,20 @@
 
 package com.artemis;
 
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.component.PooledPosition;
-import com.artemis.system.iterating.*;
-import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class PooledComponentBenchmark extends JmhSettings {
+import com.artemis.component.PlainStructComponentA;
+import com.artemis.component.PooledPosition;
+import com.artemis.system.EntityDeleterSystem;
+import com.artemis.system.PooledPositionSystem;
+import com.artemis.system.PooledPositionSystem2;
+import com.artemis.system.PooledPositionSystem3;
+import com.github.esfbench.JmhSettings;
+
+public class LegacyPooledComponentBenchmark extends JmhSettings {
 	
 	private World worldPooled;
 	
@@ -49,14 +53,14 @@ public class PooledComponentBenchmark extends JmhSettings {
 	}
 	
 	@Benchmark
-	public void pooled() {
+	public void pooled_legacy() {
 		worldPooled.process();
 	}
 	
 	public static void main(String[] args) throws Exception {
 		new Runner(
 			new OptionsBuilder()
-				.include(PooledComponentBenchmark.class.getName() + ".*")
+				.include(LegacyPooledComponentBenchmark.class.getName() + ".*")
 				.param("entityCount", "1024", "4096")
 				.build())
 		.run();

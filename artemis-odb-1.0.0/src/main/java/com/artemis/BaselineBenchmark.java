@@ -25,18 +25,17 @@
 
 package com.artemis;
 
+import com.artemis.component.PlainPosition;
+import com.artemis.component.PlainStructComponentA;
+import com.artemis.system.iterating.BaselinePositionSystem;
+import com.artemis.system.iterating.BaselinePositionSystem2;
+import com.artemis.system.iterating.BaselinePositionSystem3;
+import com.artemis.system.iterating.EntityDeleterSystem;
+import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
-
-import com.artemis.component.PlainPosition;
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.system.BaselinePositionSystem;
-import com.artemis.system.BaselinePositionSystem2;
-import com.artemis.system.BaselinePositionSystem3;
-import com.artemis.system.EntityDeleterSystem;
-import com.github.esfbench.JmhSettings;
 
 public class BaselineBenchmark extends JmhSettings {
 	

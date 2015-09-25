@@ -25,15 +25,10 @@
 
 package com.artemis;
 
+import com.artemis.system.iterating.*;
+import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
-
-import com.artemis.system.CompSystemA;
-import com.artemis.system.CompSystemB;
-import com.artemis.system.CompSystemC;
-import com.artemis.system.CompSystemD;
-import com.artemis.system.EntityManglerSystem;
-import com.github.esfbench.JmhSettings;
 
 public class InsertRemoveBenchmark extends JmhSettings {
 	
@@ -53,26 +48,5 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	@Benchmark
 	public void insert_remove() {
 		world.process();
-	}
-	
-	public static void main(String[] args) throws Exception {
-//		new Runner(
-//			new OptionsBuilder()
-////				.include(".*insert_remove.*")
-//				.include(".*insert.*")
-//				.param("entityCount", "1024", "4096")
-////				.param("entityCount", "1024")
-//				.build())
-//		.run();
-		
-		System.out.println("hello there");
-//		new Scanner(System.in).nextLine();
-//		
-		InsertRemoveBenchmark irb = new InsertRemoveBenchmark();
-		irb.entityCount = 1024;
-		irb.init();
-		for (int i = 0, s = 20000; s > i; i++) {
-			irb.insert_remove();
-		}
 	}
 }

@@ -25,38 +25,40 @@
 
 package com.artemis;
 
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.component.PooledPosition;
-import com.artemis.system.iterating.*;
-import com.github.esfbench.JmhSettings;
-import org.openjdk.jmh.annotations.Benchmark;
-import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class PooledComponentBenchmark extends JmhSettings {
+import com.artemis.component.PackedPosition;
+import com.artemis.component.StructComponentA;
+import com.artemis.system.EntityDeleterSystem;
+import com.artemis.system.PackedPositionSystem;
+import com.artemis.system.PackedPositionSystem2;
+import com.artemis.system.PackedPositionSystem3;
+import com.github.esfbench.JmhSettings;
+
+public class LegacyPackedComponentBenchmark extends JmhSettings {
 	
-	private World worldPooled;
+	private World worldPacked;
 	
-	@Setup
+//	@Setup
 	public void init() {
-		worldPooled = new World(new WorldConfiguration()
-				.setSystem(new PooledPositionSystem())
-				.setSystem(new PooledPositionSystem2())
-				.setSystem(new PooledPositionSystem3())
+		worldPacked = new World(new WorldConfiguration()
+				.setSystem(new PackedPositionSystem())
+				.setSystem(new PackedPositionSystem2())
+				.setSystem(new PackedPositionSystem3())
 				.setSystem(new EntityDeleterSystem(
-						SEED, entityCount, PooledPosition.class, PlainStructComponentA.class)));
+						JmhSettings.SEED, entityCount, PackedPosition.class, StructComponentA.class)));
 	}
 	
-	@Benchmark
-	public void pooled() {
-		worldPooled.process();
+//	@Benchmark
+	public void packed_legacy() {
+		worldPacked.process();
 	}
-	
+
 	public static void main(String[] args) throws Exception {
 		new Runner(
 			new OptionsBuilder()
-				.include(PooledComponentBenchmark.class.getName() + ".*")
+				.include(LegacyPackedComponentBenchmark.class.getName() + ".*")
 				.param("entityCount", "1024", "4096")
 				.build())
 		.run();

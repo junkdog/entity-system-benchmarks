@@ -25,39 +25,45 @@
 
 package com.artemis;
 
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.component.PooledPosition;
-import com.artemis.system.iterating.*;
-import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class PooledComponentBenchmark extends JmhSettings {
+import com.artemis.component.PlainPosition;
+import com.artemis.component.PlainStructComponentA;
+import com.artemis.system.EntityDeleterSystem;
+import com.artemis.system.PlainPositionSystem;
+import com.artemis.system.PlainPositionSystem2;
+import com.artemis.system.PlainPositionSystem3;
+import com.github.esfbench.JmhSettings;
+import org.openjdk.jmh.runner.options.TimeValue;
+
+public class LegacyPlainComponentBenchmark extends JmhSettings {
 	
-	private World worldPooled;
-	
+	private World worldPlain;
+
 	@Setup
 	public void init() {
-		worldPooled = new World(new WorldConfiguration()
-				.setSystem(new PooledPositionSystem())
-				.setSystem(new PooledPositionSystem2())
-				.setSystem(new PooledPositionSystem3())
+		worldPlain = new World(new WorldConfiguration()
+				.setSystem(new PlainPositionSystem())
+				.setSystem(new PlainPositionSystem2())
+				.setSystem(new PlainPositionSystem3())
 				.setSystem(new EntityDeleterSystem(
-						SEED, entityCount, PooledPosition.class, PlainStructComponentA.class)));
+						JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class)));
 	}
 	
 	@Benchmark
-	public void pooled() {
-		worldPooled.process();
+	public void plain_legacy() {
+		worldPlain.process();
 	}
 	
 	public static void main(String[] args) throws Exception {
 		new Runner(
 			new OptionsBuilder()
-				.include(PooledComponentBenchmark.class.getName() + ".*")
-				.param("entityCount", "1024", "4096")
+				.include(LegacyPlainComponentBenchmark.class.getName() + ".*")
+				.measurementTime(TimeValue.seconds(5))
+				.param("entityCount", "1024", "4096", "16384")
 				.build())
 		.run();
 	}

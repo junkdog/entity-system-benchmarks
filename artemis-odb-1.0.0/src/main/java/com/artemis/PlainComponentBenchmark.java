@@ -25,18 +25,14 @@
 
 package com.artemis;
 
+import com.artemis.component.PlainPosition;
+import com.artemis.component.PlainStructComponentA;
+import com.artemis.system.iterating.*;
+import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
-
-import com.artemis.component.PlainPosition;
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.system.EntityDeleterSystem;
-import com.artemis.system.PlainPositionSystem;
-import com.artemis.system.PlainPositionSystem2;
-import com.artemis.system.PlainPositionSystem3;
-import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.runner.options.TimeValue;
 
 public class PlainComponentBenchmark extends JmhSettings {

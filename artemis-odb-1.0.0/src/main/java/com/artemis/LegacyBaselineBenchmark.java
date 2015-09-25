@@ -25,38 +25,42 @@
 
 package com.artemis;
 
-import com.artemis.component.PlainStructComponentA;
-import com.artemis.component.PooledPosition;
-import com.artemis.system.iterating.*;
-import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class PooledComponentBenchmark extends JmhSettings {
+import com.artemis.component.PlainPosition;
+import com.artemis.component.PlainStructComponentA;
+import com.artemis.system.BaselinePositionSystem;
+import com.artemis.system.BaselinePositionSystem2;
+import com.artemis.system.BaselinePositionSystem3;
+import com.artemis.system.EntityDeleterSystem;
+import com.github.esfbench.JmhSettings;
+
+public class LegacyBaselineBenchmark extends JmhSettings {
 	
-	private World worldPooled;
+	private World world;
 	
 	@Setup
 	public void init() {
-		worldPooled = new World(new WorldConfiguration()
-				.setSystem(new PooledPositionSystem())
-				.setSystem(new PooledPositionSystem2())
-				.setSystem(new PooledPositionSystem3())
-				.setSystem(new EntityDeleterSystem(
-						SEED, entityCount, PooledPosition.class, PlainStructComponentA.class)));
+		world = new World(new WorldConfiguration()
+			.setSystem(new BaselinePositionSystem())
+			.setSystem(new BaselinePositionSystem2())
+			.setSystem(new BaselinePositionSystem3())
+			.setSystem(new EntityDeleterSystem(
+					SEED, entityCount, PlainPosition.class, PlainStructComponentA.class)));
 	}
 	
 	@Benchmark
-	public void pooled() {
-		worldPooled.process();
+	public void baseline_legacy() {
+		world.process();
 	}
-	
+
 	public static void main(String[] args) throws Exception {
 		new Runner(
 			new OptionsBuilder()
-				.include(PooledComponentBenchmark.class.getName() + ".*")
+				.include(LegacyBaselineBenchmark.class.getName() + ".*")
 				.param("entityCount", "1024", "4096")
 				.build())
 		.run();

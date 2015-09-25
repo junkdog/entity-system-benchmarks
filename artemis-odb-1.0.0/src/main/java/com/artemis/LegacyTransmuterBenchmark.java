@@ -1,13 +1,13 @@
 package com.artemis;
 
-import com.artemis.system.iterating.*;
+import com.artemis.system.*;
 import com.github.esfbench.JmhSettings;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-public class TransmuterBenchmark extends JmhSettings {
+public class LegacyTransmuterBenchmark extends JmhSettings {
 	
 	private World worldEdit;
 	private World worldTransmuter;
@@ -28,19 +28,19 @@ public class TransmuterBenchmark extends JmhSettings {
 	}
 	
 	@Benchmark
-	public void entity_edit() {
+	public void entity_edit_legacy() {
 		worldEdit.process();
 	}
 
 	@Benchmark
-	public void transmuter() {
+	public void transmuter_legacy() {
 		worldTransmuter.process();
 	}
 
 	public static void main(String[] args) throws Exception {
 		new Runner(
 			new OptionsBuilder()
-				.include(TransmuterBenchmark.class.getName() + ".*")
+				.include(LegacyTransmuterBenchmark.class.getName() + ".*")
 				.param("entityCount", "1024", "4096")
 				.build())
 		.run();
