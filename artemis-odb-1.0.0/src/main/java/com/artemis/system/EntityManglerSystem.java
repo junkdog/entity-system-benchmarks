@@ -47,8 +47,8 @@ public final class EntityManglerSystem extends BaseSystem {
 		for (int i = 0; ids.length > i; i++)
 			ids[i] = idsList.get(i);
 //		ids[i] = (int)(rng.nextFloat() * ENTITY_COUNT);
-		
-		
+
+
 		types = new Bag<Class<? extends Component>>();
 		types.add(Comp1.class);
 		types.add(Comp2.class);

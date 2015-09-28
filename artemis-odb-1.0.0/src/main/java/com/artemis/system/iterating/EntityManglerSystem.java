@@ -85,8 +85,7 @@ public final class EntityManglerSystem extends BaseSystem {
 
 		if (counter % 2 == 1) {
 			for (int i = 0; RENEW > i; i++) {
-				int e = ids[index++];
-				world.deleteEntity(e);
+				world.delete(ids[index++]);
 				index = index % ENTITY_COUNT;
 			}
 		} else {

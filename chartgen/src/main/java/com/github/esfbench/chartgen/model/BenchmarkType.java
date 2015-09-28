@@ -12,12 +12,20 @@ public enum BenchmarkType {
 	PACKED("packed", ITERATION),
 	CREATE_DELETE("insert_remove", INSERT_REMOVE),
 	ENTITY_EDIT("entity_edit", TRANSMUTE),
-	ENTITY_TRANSMUTE("transmuter", TRANSMUTE);
+	ENTITY_TRANSMUTE("transmuter", TRANSMUTE),
+
+	BASELINE_LEGACY("baseline_legacy", THRESHOLD),
+	PLAIN_LEGACY("plain_legacy", ITERATION),
+	POOLED_LEGACY("pooled_legacy", ITERATION),
+	PACKED_LEGACY("packed_legacy", ITERATION),
+	CREATE_DELETE_LEGACY("insert_remove_legacy", INSERT_REMOVE),
+	ENTITY_EDIT_LEGACY("entity_edit_legacy", TRANSMUTE),
+	ENTITY_TRANSMUTE_LEGACY("transmuter_legacy", TRANSMUTE);
 
 	public final String id;
 	public final BenchmarkGroup group;
 	
-	private BenchmarkType(String id, BenchmarkGroup group) {
+	BenchmarkType(String id, BenchmarkGroup group) {
 		this.id = id;
 		this.group = group;
 	}

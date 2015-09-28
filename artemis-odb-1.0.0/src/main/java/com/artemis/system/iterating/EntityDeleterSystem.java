@@ -44,8 +44,7 @@ public final class EntityDeleterSystem extends BaseSystem {
 	@Override
 	protected void processSystem() {
 		if (counter == 100) {
-			int e = ids[index++];
-			world.deleteEntity(e);
+			world.delete(ids[index++]);
 			index = index % ENTITY_COUNT;
 			counter = 0;
 		} else if (counter == 1) { // need to wait one round to reclaim entities

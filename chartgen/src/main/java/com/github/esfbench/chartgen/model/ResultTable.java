@@ -1,9 +1,7 @@
 package com.github.esfbench.chartgen.model;
 
 import java.io.PrintStream;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeMap;
+import java.util.*;
 
 public class ResultTable {
 	private Map<String,FrameworkSummary> frameworks;
@@ -40,7 +38,8 @@ public class ResultTable {
 				summary.entityTransmute = benchmark.score;
 				break;
 			default:
-				throw new RuntimeException("missing case: " + benchmark.type);
+				if (!benchmark.type.name().endsWith("_LEGACY"))
+					throw new RuntimeException("missing case: " + benchmark.type);
 			
 		}
 	}
@@ -57,11 +56,12 @@ public class ResultTable {
 	}
 
 	public void printTable(PrintStream out) {
-		out.println("| ECS                    |  baseline | plain     | pooled    | packed    | insert/remove | edit      | transmute |");
-		out.println("|------------------------|-----------|-----------|-----------|-----------|---------------|-----------|-----------|");
-		for (FrameworkSummary summary : frameworks.values()) {
+		out.println("| ECS                     |  baseline | plain     | pooled    | packed    | insert/remove | edit      | transmute |");
+		out.println("|-------------------------|-----------|-----------|-----------|-----------|---------------|-----------|-----------|");
+		Collection<FrameworkSummary> values = new ArrayList<>(frameworks.values());
+		for (FrameworkSummary summary : values) {
 			String row = String.format(
-				"| %-22s | %9.2f | %9.2f | %9.2f | %9.2f | %13.2f | %9.2f | %9.2f |",
+				"| %-23s | %9.2f | %9.2f | %9.2f | %9.2f | %13.2f | %9.2f | %9.2f |",
 					summary.framework,
 					summary.baseline,
 					summary.plain,
@@ -76,7 +76,7 @@ public class ResultTable {
 		
 	}
 
-	private static class FrameworkSummary {
+	private static class FrameworkSummary implements Comparator<FrameworkSummary> {
 		public String framework;
 		public float baseline;
 		public float plain;
@@ -89,6 +89,16 @@ public class ResultTable {
 		@Override
 		public String toString() {
 			return super.toString();
+		}
+
+
+		@Override
+		public int compare(FrameworkSummary o1, FrameworkSummary o2) {
+			return compareString().compareTo(o2.compareString());
+		}
+
+		String compareString() {
+			return framework.replaceAll("\\.([0-9])\\.", ". $1.");
 		}
 	}
 }
