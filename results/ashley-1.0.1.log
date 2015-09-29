@@ -1,0 +1,437 @@
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 4096)
+
+# Run progress: 0.00% complete, ETA 00:08:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 5945.742 ops/s
+# Warmup Iteration   2: 6052.417 ops/s
+# Warmup Iteration   3: 6034.455 ops/s
+# Warmup Iteration   4: 6000.366 ops/s
+# Warmup Iteration   5: 6009.014 ops/s
+# Warmup Iteration   6: 6011.221 ops/s
+# Warmup Iteration   7: 6017.280 ops/s
+# Warmup Iteration   8: 6008.786 ops/s
+# Warmup Iteration   9: 6030.307 ops/s
+# Warmup Iteration  10: 5997.999 ops/s
+Iteration   1: 6014.825 ops/s
+Iteration   2: 6022.613 ops/s
+Iteration   3: 6032.661 ops/s
+
+
+Result "baseline":
+  6023.366 ±(99.9%) 163.125 ops/s [Average]
+  (min, avg, max) = (6014.825, 6023.366, 6032.661), stdev = 8.941
+  CI (99.9%): [5860.241, 6186.491] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 16384)
+
+# Run progress: 8.33% complete, ETA 00:07:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 1534.504 ops/s
+# Warmup Iteration   2: 1573.953 ops/s
+# Warmup Iteration   3: 1580.523 ops/s
+# Warmup Iteration   4: 1581.458 ops/s
+# Warmup Iteration   5: 1582.165 ops/s
+# Warmup Iteration   6: 1583.640 ops/s
+# Warmup Iteration   7: 1474.618 ops/s
+# Warmup Iteration   8: 1557.869 ops/s
+# Warmup Iteration   9: 1525.042 ops/s
+# Warmup Iteration  10: 1526.923 ops/s
+Iteration   1: 1524.870 ops/s
+Iteration   2: 1527.576 ops/s
+Iteration   3: 1527.589 ops/s
+
+
+Result "baseline":
+  1526.678 ±(99.9%) 28.565 ops/s [Average]
+  (min, avg, max) = (1524.870, 1526.678, 1527.589), stdev = 1.566
+  CI (99.9%): [1498.113, 1555.243] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 65536)
+
+# Run progress: 16.67% complete, ETA 00:06:43
+# Fork: 1 of 1
+# Warmup Iteration   1: 195.513 ops/s
+# Warmup Iteration   2: 191.852 ops/s
+# Warmup Iteration   3: 195.026 ops/s
+# Warmup Iteration   4: 182.641 ops/s
+# Warmup Iteration   5: 193.642 ops/s
+# Warmup Iteration   6: 191.923 ops/s
+# Warmup Iteration   7: 194.619 ops/s
+# Warmup Iteration   8: 194.376 ops/s
+# Warmup Iteration   9: 193.451 ops/s
+# Warmup Iteration  10: 194.736 ops/s
+Iteration   1: 196.773 ops/s
+Iteration   2: 197.793 ops/s
+Iteration   3: 196.423 ops/s
+
+
+Result "baseline":
+  196.997 ±(99.9%) 12.986 ops/s [Average]
+  (min, avg, max) = (196.423, 196.997, 197.793), stdev = 0.712
+  CI (99.9%): [184.011, 209.982] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.BaselineBenchmark.baseline
+# Parameters: (entityCount = 262144)
+
+# Run progress: 25.00% complete, ETA 00:06:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 36.146 ops/s
+# Warmup Iteration   2: 37.511 ops/s
+# Warmup Iteration   3: 37.544 ops/s
+# Warmup Iteration   4: 37.647 ops/s
+# Warmup Iteration   5: 37.603 ops/s
+# Warmup Iteration   6: 37.613 ops/s
+# Warmup Iteration   7: 37.621 ops/s
+# Warmup Iteration   8: 37.655 ops/s
+# Warmup Iteration   9: 36.942 ops/s
+# Warmup Iteration  10: 37.579 ops/s
+Iteration   1: 37.714 ops/s
+Iteration   2: 37.733 ops/s
+Iteration   3: 37.738 ops/s
+
+
+Result "baseline":
+  37.728 ±(99.9%) 0.229 ops/s [Average]
+  (min, avg, max) = (37.714, 37.728, 37.738), stdev = 0.013
+  CI (99.9%): [37.500, 37.957] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 4096)
+
+# Run progress: 33.33% complete, ETA 00:05:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 1416.978 ops/s
+# Warmup Iteration   2: 1603.319 ops/s
+# Warmup Iteration   3: 1660.583 ops/s
+# Warmup Iteration   4: 1600.212 ops/s
+# Warmup Iteration   5: 1652.359 ops/s
+# Warmup Iteration   6: 1664.521 ops/s
+# Warmup Iteration   7: 1629.180 ops/s
+# Warmup Iteration   8: 1663.364 ops/s
+# Warmup Iteration   9: 1666.911 ops/s
+# Warmup Iteration  10: 1664.910 ops/s
+Iteration   1: 1664.275 ops/s
+Iteration   2: 1657.331 ops/s
+Iteration   3: 1658.097 ops/s
+
+
+Result "insert_remove":
+  1659.901 ±(99.9%) 69.457 ops/s [Average]
+  (min, avg, max) = (1657.331, 1659.901, 1664.275), stdev = 3.807
+  CI (99.9%): [1590.445, 1729.358] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 16384)
+
+# Run progress: 41.67% complete, ETA 00:04:44
+# Fork: 1 of 1
+# Warmup Iteration   1: 174.285 ops/s
+# Warmup Iteration   2: 187.701 ops/s
+# Warmup Iteration   3: 191.799 ops/s
+# Warmup Iteration   4: 189.510 ops/s
+# Warmup Iteration   5: 191.577 ops/s
+# Warmup Iteration   6: 194.536 ops/s
+# Warmup Iteration   7: 190.975 ops/s
+# Warmup Iteration   8: 189.592 ops/s
+# Warmup Iteration   9: 194.760 ops/s
+# Warmup Iteration  10: 193.638 ops/s
+Iteration   1: 193.195 ops/s
+Iteration   2: 193.122 ops/s
+Iteration   3: 193.854 ops/s
+
+
+Result "insert_remove":
+  193.390 ±(99.9%) 7.354 ops/s [Average]
+  (min, avg, max) = (193.122, 193.390, 193.854), stdev = 0.403
+  CI (99.9%): [186.036, 200.744] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 65536)
+
+# Run progress: 50.00% complete, ETA 00:04:03
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.826 ops/s
+# Warmup Iteration   2: 12.795 ops/s
+# Warmup Iteration   3: 14.593 ops/s
+# Warmup Iteration   4: 14.972 ops/s
+# Warmup Iteration   5: 14.584 ops/s
+# Warmup Iteration   6: 14.976 ops/s
+# Warmup Iteration   7: 14.498 ops/s
+# Warmup Iteration   8: 14.945 ops/s
+# Warmup Iteration   9: 14.362 ops/s
+# Warmup Iteration  10: 14.986 ops/s
+Iteration   1: 14.791 ops/s
+Iteration   2: 14.880 ops/s
+Iteration   3: 14.845 ops/s
+
+
+Result "insert_remove":
+  14.839 ±(99.9%) 0.815 ops/s [Average]
+  (min, avg, max) = (14.791, 14.839, 14.880), stdev = 0.045
+  CI (99.9%): [14.024, 15.653] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 262144)
+
+# Run progress: 58.33% complete, ETA 00:03:23
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.408 ops/s
+# Warmup Iteration   2: 0.798 ops/s
+# Warmup Iteration   3: 0.699 ops/s
+# Warmup Iteration   4: 0.821 ops/s
+# Warmup Iteration   5: 0.684 ops/s
+# Warmup Iteration   6: 0.819 ops/s
+# Warmup Iteration   7: 0.819 ops/s
+# Warmup Iteration   8: 0.818 ops/s
+# Warmup Iteration   9: 0.769 ops/s
+# Warmup Iteration  10: 0.819 ops/s
+Iteration   1: 0.893 ops/s
+Iteration   2: 0.733 ops/s
+Iteration   3: 0.810 ops/s
+
+
+Result "insert_remove":
+  0.812 ±(99.9%) 1.461 ops/s [Average]
+  (min, avg, max) = (0.733, 0.812, 0.893), stdev = 0.080
+  CI (99.9%): [≈ 0, 2.273] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 4096)
+
+# Run progress: 66.67% complete, ETA 00:02:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 3755.905 ops/s
+# Warmup Iteration   2: 3937.572 ops/s
+# Warmup Iteration   3: 3960.912 ops/s
+# Warmup Iteration   4: 3931.890 ops/s
+# Warmup Iteration   5: 3910.683 ops/s
+# Warmup Iteration   6: 3974.823 ops/s
+# Warmup Iteration   7: 3950.091 ops/s
+# Warmup Iteration   8: 3974.341 ops/s
+# Warmup Iteration   9: 3946.994 ops/s
+# Warmup Iteration  10: 3950.919 ops/s
+Iteration   1: 3978.097 ops/s
+Iteration   2: 3959.685 ops/s
+Iteration   3: 3975.071 ops/s
+
+
+Result "plain":
+  3970.951 ±(99.9%) 180.129 ops/s [Average]
+  (min, avg, max) = (3959.685, 3970.951, 3978.097), stdev = 9.874
+  CI (99.9%): [3790.822, 4151.081] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 16384)
+
+# Run progress: 75.00% complete, ETA 00:02:09
+# Fork: 1 of 1
+# Warmup Iteration   1: 429.168 ops/s
+# Warmup Iteration   2: 435.227 ops/s
+# Warmup Iteration   3: 440.494 ops/s
+# Warmup Iteration   4: 439.747 ops/s
+# Warmup Iteration   5: 439.759 ops/s
+# Warmup Iteration   6: 441.974 ops/s
+# Warmup Iteration   7: 441.909 ops/s
+# Warmup Iteration   8: 440.902 ops/s
+# Warmup Iteration   9: 442.483 ops/s
+# Warmup Iteration  10: 442.502 ops/s
+Iteration   1: 446.910 ops/s
+Iteration   2: 447.286 ops/s
+Iteration   3: 445.811 ops/s
+
+
+Result "plain":
+  446.669 ±(99.9%) 13.982 ops/s [Average]
+  (min, avg, max) = (445.811, 446.669, 447.286), stdev = 0.766
+  CI (99.9%): [432.687, 460.651] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 65536)
+
+# Run progress: 83.33% complete, ETA 00:01:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 59.295 ops/s
+# Warmup Iteration   2: 59.636 ops/s
+# Warmup Iteration   3: 61.326 ops/s
+# Warmup Iteration   4: 60.869 ops/s
+# Warmup Iteration   5: 61.314 ops/s
+# Warmup Iteration   6: 61.540 ops/s
+# Warmup Iteration   7: 61.547 ops/s
+# Warmup Iteration   8: 61.501 ops/s
+# Warmup Iteration   9: 61.531 ops/s
+# Warmup Iteration  10: 61.492 ops/s
+Iteration   1: 61.711 ops/s
+Iteration   2: 61.628 ops/s
+Iteration   3: 61.586 ops/s
+
+
+Result "plain":
+  61.642 ±(99.9%) 1.163 ops/s [Average]
+  (min, avg, max) = (61.586, 61.642, 61.711), stdev = 0.064
+  CI (99.9%): [60.479, 62.804] (assumes normal distribution)
+
+
+# JMH 1.11 (released 18 days ago)
+# VM version: JDK 1.7.0_79, VM 24.79-b02
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 10 iterations, 1 s each
+# Measurement: 3 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.github.esfbench.ashley.PlainComponentBenchmark.plain
+# Parameters: (entityCount = 262144)
+
+# Run progress: 91.67% complete, ETA 00:00:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 13.424 ops/s
+# Warmup Iteration   2: 13.720 ops/s
+# Warmup Iteration   3: 13.741 ops/s
+# Warmup Iteration   4: 13.720 ops/s
+# Warmup Iteration   5: 13.743 ops/s
+# Warmup Iteration   6: 13.731 ops/s
+# Warmup Iteration   7: 13.747 ops/s
+# Warmup Iteration   8: 13.689 ops/s
+# Warmup Iteration   9: 13.475 ops/s
+# Warmup Iteration  10: 13.727 ops/s
+Iteration   1: 13.831 ops/s
+Iteration   2: 13.829 ops/s
+Iteration   3: 13.838 ops/s
+
+
+Result "plain":
+  13.833 ±(99.9%) 0.091 ops/s [Average]
+  (min, avg, max) = (13.829, 13.833, 13.838), stdev = 0.005
+  CI (99.9%): [13.741, 13.924] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:08:30
+
+Benchmark                            (entityCount)   Mode  Cnt     Score     Error  Units
+BaselineBenchmark.baseline                    4096  thrpt    3  6023.366 ± 163.125  ops/s
+BaselineBenchmark.baseline                   16384  thrpt    3  1526.678 ±  28.565  ops/s
+BaselineBenchmark.baseline                   65536  thrpt    3   196.997 ±  12.986  ops/s
+BaselineBenchmark.baseline                  262144  thrpt    3    37.728 ±   0.229  ops/s
+InsertRemoveBenchmark.insert_remove           4096  thrpt    3  1659.901 ±  69.457  ops/s
+InsertRemoveBenchmark.insert_remove          16384  thrpt    3   193.390 ±   7.354  ops/s
+InsertRemoveBenchmark.insert_remove          65536  thrpt    3    14.839 ±   0.815  ops/s
+InsertRemoveBenchmark.insert_remove         262144  thrpt    3     0.812 ±   1.461  ops/s
+PlainComponentBenchmark.plain                 4096  thrpt    3  3970.951 ± 180.129  ops/s
+PlainComponentBenchmark.plain                16384  thrpt    3   446.669 ±  13.982  ops/s
+PlainComponentBenchmark.plain                65536  thrpt    3    61.642 ±   1.163  ops/s
+PlainComponentBenchmark.plain               262144  thrpt    3    13.833 ±   0.091  ops/s
+
+Benchmark result is saved to results/ashley-1.0.1.json
