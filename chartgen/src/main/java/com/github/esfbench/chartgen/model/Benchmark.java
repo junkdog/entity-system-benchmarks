@@ -63,7 +63,7 @@ public class Benchmark implements Comparable<Benchmark> {
 				this.type, this.framework, this.entityCount);
 	}
 	
-	public static enum BenchmarkGroup {
+	public enum BenchmarkGroup {
 		THRESHOLD, ITERATION, INSERT_REMOVE, TRANSMUTE;
 	}
 }

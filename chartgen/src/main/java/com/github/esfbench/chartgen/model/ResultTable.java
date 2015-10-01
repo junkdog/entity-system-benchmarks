@@ -56,17 +56,22 @@ public class ResultTable {
 	}
 
 	public void printTable(PrintStream out) {
-		out.println("| ECS                     |  baseline | plain     | pooled    | packed    | insert/remove | edit      | transmute |");
-		out.println("|-------------------------|-----------|-----------|-----------|-----------|---------------|-----------|-----------|");
-		Collection<FrameworkSummary> values = new ArrayList<>(frameworks.values());
+		out.println("| ECS                     |  baseline | plain     | pooled    | insert/remove | edit      | transmute |");
+		out.println("|-------------------------|-----------|-----------|-----------|---------------|-----------|-----------|");
+		List<FrameworkSummary> values = new ArrayList<>(frameworks.values());
+		Collections.sort(values, new Comparator<FrameworkSummary>() {
+			@Override
+			public int compare(FrameworkSummary o1, FrameworkSummary o2) {
+				return o1.compareString().compareTo(o2.compareString());
+			}
+		});
 		for (FrameworkSummary summary : values) {
 			String row = String.format(
-				"| %-23s | %9.2f | %9.2f | %9.2f | %9.2f | %13.2f | %9.2f | %9.2f |",
+				"| %-23s | %9.2f | %9.2f | %9.2f | %13.2f | %9.2f | %9.2f |",
 					summary.framework,
 					summary.baseline,
 					summary.plain,
 					summary.pooled,
-					summary.packed,
 					summary.insertRemove,
 					summary.entityEdit,
 					summary.entityTransmute);
