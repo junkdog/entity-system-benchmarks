@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.Random;
 
 import com.badlogic.gdx.utils.Array;
-import com.badlogic.gdx.utils.ObjectSet;
 import com.github.antag99.retinazer.Component;
 import com.github.antag99.retinazer.EntitySystem;
 import com.github.antag99.retinazer.Mapper;
@@ -20,21 +19,42 @@ import com.github.antag99.retinazer.component.Comp7;
 import com.github.antag99.retinazer.component.Comp8;
 import com.github.antag99.retinazer.component.Comp9;
 
-@SkipWire
 public final class EntityManglerSystem extends EntitySystem {
 
+    @SkipWire
     int[] ids; // = new int[ENTITY_COUNT];
+    @SkipWire
     int[] cmp; // = new int[ENTITY_COUNT];
 
+    @SkipWire
     private Array<Class<? extends Component>> types;
 
     private static int ENTITY_COUNT = 0;
     private static int RENEW = 0;
 
+    @SkipWire
     int counter;
+    @SkipWire
     int index;
 
+    @SkipWire
     private Random rng;
+
+    private Mapper<Comp1> mComp1;
+    private Mapper<Comp2> mComp2;
+    private Mapper<Comp3> mComp3;
+    private Mapper<Comp4> mComp4;
+    private Mapper<Comp5> mComp5;
+    private Mapper<Comp6> mComp6;
+    private Mapper<Comp7> mComp7;
+    private Mapper<Comp8> mComp8;
+    private Mapper<Comp9> mComp9;
+
+    @SkipWire
+    int cmpIndex = 0;
+
+    @SkipWire
+    private int[] permutations;
 
     @SuppressWarnings("unchecked")
     // public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
@@ -53,18 +73,7 @@ public final class EntityManglerSystem extends EntitySystem {
             ids[i] = idsList.get(i);
         // ids[i] = (int)(rng.nextFloat() * ENTITY_COUNT);
 
-        types = new Array<Class<? extends Component>>();
-        types.add(Comp1.class);
-        types.add(Comp2.class);
-        types.add(Comp3.class);
-        types.add(Comp4.class);
-        types.add(Comp5.class);
-        types.add(Comp6.class);
-        types.add(Comp7.class);
-        types.add(Comp8.class);
-        types.add(Comp9.class);
-
-        permutations = new Mapper<?>[entityPermutations][];
+        permutations = new int[entityPermutations];
 
         cmp = new int[ENTITY_COUNT * 4];
         for (int i = 0; cmp.length > i; i++)
@@ -74,12 +83,10 @@ public final class EntityManglerSystem extends EntitySystem {
     @Override
     protected void initialize() {
         for (int i = 0; permutations.length > i; i++) {
-            ObjectSet<Mapper<?>> set = new ObjectSet<>();
+            permutations[i] = 0;
             for (int classIndex = 0, s = (int) (rng.nextFloat() * 7) + 3; s > classIndex; classIndex++) {
-                set.add(engine.getMapper(types.get((int) (rng.nextFloat() * types.size))));
+                permutations[i] |= 1 << (int) (rng.nextFloat() * 9);
             }
-
-            permutations[i] = set.iterator().toArray().toArray(Mapper.class);
         }
 
         for (int i = 0; ENTITY_COUNT > i; i++)
@@ -103,15 +110,27 @@ public final class EntityManglerSystem extends EntitySystem {
         }
     }
 
-    int cmpIndex = 0;
-
-    private Mapper<?>[][] permutations;
-
     private final void createEntity() {
-        Mapper<?>[] mappers = permutations[cmp[cmpIndex++]];
+        int permutation = permutations[cmp[cmpIndex++]];
         int entity = engine.createEntity();
-        for (int i = 0; i < mappers.length; i++)
-            mappers[i].create(entity);
+        if ((permutation & 1) != 0)
+            mComp1.create(entity);
+        if ((permutation & 2) != 0)
+            mComp2.create(entity);
+        if ((permutation & 4) != 0)
+            mComp3.create(entity);
+        if ((permutation & 8) != 0)
+            mComp4.create(entity);
+        if ((permutation & 16) != 0)
+            mComp5.create(entity);
+        if ((permutation & 32) != 0)
+            mComp6.create(entity);
+        if ((permutation & 64) != 0)
+            mComp7.create(entity);
+        if ((permutation & 128) != 0)
+            mComp8.create(entity);
+        if ((permutation & 256) != 0)
+            mComp9.create(entity);
         if (cmpIndex == cmp.length)
             cmpIndex = 0;
     }

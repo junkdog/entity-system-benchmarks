@@ -1,4 +1,4 @@
-package com.github.antag99.retinazer.system;//
+package com.github.antag99.retinazer.system;
 
 import java.util.ArrayList;
 import java.util.Collections;
