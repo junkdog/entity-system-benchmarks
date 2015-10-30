@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.github.esfbench</groupId>
+		<artifactId>esf-benchmarks</artifactId>
+		<version>0.1.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>retinazer-0.2.0-benchmark</artifactId>
+	<packaging>jar</packaging>
+	<name>retinazer-0.2.0-benchmark</name>
+
+	<properties>
+		<retinazer.version>0.2.0</retinazer.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>bintray-antag99-maven</id>
+			<name>bintray</name>
+			<url>http://dl.bintray.com/antag99/maven</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.antag99.retinazer</groupId>
+			<artifactId>retinazer</artifactId>
+			<version>${retinazer.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.esfbench</groupId>
+			<artifactId>common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+</project>
