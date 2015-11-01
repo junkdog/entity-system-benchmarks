@@ -12,7 +12,7 @@
 	<name>retinazer-0.2.0-benchmark</name>
 
 	<properties>
-		<retinazer.version>0.2.0</retinazer.version>
+		<retinazer.version>0.2.1</retinazer.version>
 	</properties>
 
 	<repositories>
