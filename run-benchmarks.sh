@@ -5,7 +5,8 @@
 #PARAMS="-f 1 -p entityCount=4096,16384"
 #PARAMS="-f 1 -p entityCount=16384,65535"
 #PARAMS="-i 1 -r 3 -f 1 -p entityCount=65535"
-PARAMS="-i 3 -wi 10 -r 10 -p entityCount=4096,16384,65536,262144"
+#PARAMS="-i 3 -wi 10 -r 10 -p entityCount=4096,16384,65536,262144"
+PARAMS="-i 1 -wi 3 -r 10 -p entityCount=16384"
 
 
 function run_bench() {
@@ -20,7 +21,7 @@ function run_all() {
 	run_bench artemis-odb-0.4.0
 	run_bench artemis-odb-0.9.0
 	run_bench artemis-odb-0.13.1
-	run_bench artemis-odb-1.0.0
+	run_bench artemis-odb-1.0.1
 	run_bench ashley-1.0.1
 	run_bench ashley-1.6.0
 	run_bench gdx-artemis-0.5.0
@@ -30,14 +31,14 @@ function run_all() {
 	mvn -Pfast clean install
 	run_bench artemis-odb-0.9.0 _fast
 	run_bench artemis-odb-0.13.1 _fast
-	run_bench artemis-odb-1.0.0 _fast
+	run_bench artemis-odb-1.0.1 _fast
 }
 
 
 function run_dev() {
 	# running basic benchmarks
 #	run_bench artemis-odb-0.9.0
-#	mvn clean install -f artemis-odb-1.0.0
+#	mvn clean install -f artemis-odb-1.0.1
 #	mvn clean install -f artemis-odb-0.13.1
 #	run_bench artemis-odb-0.10.0
 
@@ -48,10 +49,12 @@ function run_dev() {
 #	run_bench artemis-odb-0.11.4 _fast
 #	run_bench artemis-odb-0.11.4
 #	run_bench artemis-odb-0.13.1
-	#run_bench artemis-odb-1.0.0
+	#run_bench artemis-odb-1.0.1
 
-	run_bench artemis-odb-1.0.0
+	run_bench artemis-odb-1.0.1
+	run_bench artemis-odb-1.4.0
 }
 
-run_all
+# run_all
+run_dev
 
