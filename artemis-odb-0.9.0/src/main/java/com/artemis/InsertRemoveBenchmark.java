@@ -38,8 +38,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	@Setup
 	public void init() throws Exception{
 		
-		world = new World(new WorldConfiguration()
-			.maxRebuiltIndicesPerTick(0));
+		world = new World(new WorldConfiguration());
 		world.setSystem(new EntityManglerSystem(SEED, entityCount));
 		world.setSystem(new CompSystemA());
 		world.setSystem(new CompSystemB());
@@ -55,18 +54,6 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	}
 	
 	public static void main(String[] args) throws Exception {
-//		new Runner(
-//			new OptionsBuilder()
-////				.include(".*insert_remove.*")
-//				.include(".*insert.*")
-//				.param("entityCount", "1024", "4096")
-////				.param("entityCount", "1024")
-//				.build())
-//		.run();
-		
-		System.out.println("hello there");
-//		new Scanner(System.in).nextLine();
-//		
 		InsertRemoveBenchmark irb = new InsertRemoveBenchmark();
 		irb.entityCount = 1024;
 		irb.init();

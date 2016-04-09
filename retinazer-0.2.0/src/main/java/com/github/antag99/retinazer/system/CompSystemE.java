@@ -7,8 +7,6 @@ import com.github.antag99.retinazer.component.*;
 import org.openjdk.jmh.infra.Blackhole;
 
 public class CompSystemE extends EntityProcessorSystem {
-    @SkipWire
-    Blackhole voidness = new Blackhole();
 
     @SuppressWarnings("unchecked")
     public CompSystemE() {
@@ -17,6 +15,5 @@ public class CompSystemE extends EntityProcessorSystem {
 
     @Override
     protected void process(int e) {
-        voidness.consume(e);
     }
 }

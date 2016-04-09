@@ -13,9 +13,7 @@ import com.github.esfbench.ashley.component.Comp9;
 import org.openjdk.jmh.infra.Blackhole;
 
 public class CompSystemD extends IteratingSystem {
-	
-	Blackhole voidness = new Blackhole();
-	
+
 	@SuppressWarnings("unchecked")
 	public CompSystemD() {
 		super(Family.all(Comp6.class, Comp7.class, Comp8.class).one(Comp9.class).get());
@@ -23,6 +21,5 @@ public class CompSystemD extends IteratingSystem {
 
 	@Override
 	public void processEntity(Entity entity, float deltaTime) {
-		voidness.consume(entity);
 	}
 }

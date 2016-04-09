@@ -10,8 +10,6 @@ import org.openjdk.jmh.infra.Blackhole;
 
 public class CompSystemA extends IteratingSystem {
 	
-	Blackhole voidness = new Blackhole();
-	
 	@SuppressWarnings("unchecked")
 	public CompSystemA() {
 		super(Family.all(Comp1.class, Comp4.class, Comp5.class).get());
@@ -19,6 +17,5 @@ public class CompSystemA extends IteratingSystem {
 
 	@Override
 	public void processEntity(Entity entity, float deltaTime) {
-		voidness.consume(entity);
 	}
 }

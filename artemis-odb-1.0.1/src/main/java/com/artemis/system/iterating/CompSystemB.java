@@ -10,8 +10,6 @@ import org.openjdk.jmh.infra.Blackhole;
 
 public class CompSystemB extends IteratingSystem {
 	
-	Blackhole voidness = new Blackhole();
-	
 	@SuppressWarnings("unchecked")
 	public CompSystemB() {
 		super(Aspect.all(Comp2.class, Comp8.class, Comp9.class));
@@ -19,6 +17,5 @@ public class CompSystemB extends IteratingSystem {
 
 	@Override
 	protected void process(int e) {
-		voidness.consume(e);
 	}
 }

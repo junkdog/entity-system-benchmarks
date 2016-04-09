@@ -10,8 +10,6 @@ import com.github.antag99.retinazer.component.Comp8;
 import com.github.antag99.retinazer.component.Comp9;
 
 public class CompSystemB extends EntityProcessorSystem {
-    @SkipWire
-    Blackhole voidness = new Blackhole();
 
     @SuppressWarnings("unchecked")
     public CompSystemB() {
@@ -20,6 +18,5 @@ public class CompSystemB extends EntityProcessorSystem {
 
     @Override
     protected void process(int e) {
-        voidness.consume(e);
     }
 }

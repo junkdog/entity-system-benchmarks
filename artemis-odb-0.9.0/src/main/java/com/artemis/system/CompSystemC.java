@@ -11,8 +11,7 @@ import org.openjdk.jmh.infra.Blackhole;
 
 public class CompSystemC extends EntityProcessingSystem {
 	
-	Blackhole voidness = new Blackhole();
-	
+
 	@SuppressWarnings("unchecked")
 	public CompSystemC() {
 		super(Aspect.getAspectForAll(Comp1.class, Comp7.class, Comp9.class).exclude(Comp2.class));
@@ -20,6 +19,5 @@ public class CompSystemC extends EntityProcessingSystem {
 
 	@Override
 	protected void process(Entity e) {
-		voidness.consume(e);
 	}
 }
