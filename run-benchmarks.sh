@@ -8,12 +8,12 @@
 #PARAMS="-i 3 -wi 10 -r 10 -p entityCount=4096,16384,65536,262144"
 #PARAMS="-i 3 -wi 3 -r 5 -p entityCount=262144"
 #PARAMS="-i 3 -wi 3 -r 5 -p entityCount=16384,65536,262144"
-PARAMS="-i 1 -wi 1 -r 1 -p entityCount=262144"
+#PARAMS="-i 1 -wi 1 -r 1 -p entityCount=262144"
 
 
 function run_bench() {
 #	java -jar $1/target/microbenchmarks.jar ".*\.(ins|pla|ent|tra).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
-	 java -jar $1/target/microbenchmarks.jar ".*(ins|tra|edi).*" -e ".*\.packed.*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
+	 java -jar $1/target/microbenchmarks.jar ".*" -e ".*\.packed.*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 	# java -jar $1/target/microbenchmarks.jar ".*\.(plain|pooled).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 }
 
@@ -58,5 +58,8 @@ function run_dev() {
 }
 
 run_all
-# run_dev
+git add .
+git commit -m "updated benchmarks"
+git push
+# run
 
