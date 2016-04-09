@@ -6,8 +6,7 @@ import com.badlogic.ashley.systems.IteratingSystem;
 import com.github.esfbench.ashley.component.Comp1;
 import com.github.esfbench.ashley.component.Comp4;
 import com.github.esfbench.ashley.component.Comp5;
-import org.openjdk.jmh.infra.Blackhole;
-q
+
 public class CompSystemA extends IteratingSystem {
 
 	@SuppressWarnings("unchecked")
