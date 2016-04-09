@@ -1,0 +1,87 @@
+[
+    {
+        "benchmark" : "com.github.antag99.retinazer.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 1,
+        "measurementTime" : "1 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 24.926905325518756,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 24.926905325518756,
+                "50.0" : 24.926905325518756,
+                "90.0" : 24.926905325518756,
+                "95.0" : 24.926905325518756,
+                "99.0" : 24.926905325518756,
+                "99.9" : 24.926905325518756,
+                "99.99" : 24.926905325518756,
+                "99.999" : 24.926905325518756,
+                "99.9999" : 24.926905325518756,
+                "100.0" : 24.926905325518756
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    24.926905325518756
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 1,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 1,
+        "measurementTime" : "1 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 244.67627078353647,
+            "scoreError" : "NaN",
+            "scoreConfidence" : [
+                "NaN",
+                "NaN"
+            ],
+            "scorePercentiles" : {
+                "0.0" : 244.67627078353647,
+                "50.0" : 244.67627078353647,
+                "90.0" : 244.67627078353647,
+                "95.0" : 244.67627078353647,
+                "99.0" : 244.67627078353647,
+                "99.9" : 244.67627078353647,
+                "99.99" : 244.67627078353647,
+                "99.999" : 244.67627078353647,
+                "99.9999" : 244.67627078353647,
+                "100.0" : 244.67627078353647
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    244.67627078353647
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

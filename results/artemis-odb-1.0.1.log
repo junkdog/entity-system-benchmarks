@@ -1,0 +1,143 @@
+# JMH 1.11.3 (released 86 days ago)
+# VM version: JDK 1.7.0_95, VM 24.95-b01
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.InsertRemoveBenchmark.insert_remove
+# Parameters: (entityCount = 262144)
+
+# Run progress: 0.00% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 9.752 ops/s
+Iteration   1: 13.408 ops/s
+
+
+Result "insert_remove":
+  13.408 ops/s
+
+
+# JMH 1.11.3 (released 86 days ago)
+# VM version: JDK 1.7.0_95, VM 24.95-b01
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.LegacyInsertRemoveBenchmark.insert_remove_legacy
+# Parameters: (entityCount = 262144)
+
+# Run progress: 16.67% complete, ETA 00:00:13
+# Fork: 1 of 1
+# Warmup Iteration   1: 10.215 ops/s
+Iteration   1: 13.494 ops/s
+
+
+Result "insert_remove_legacy":
+  13.494 ops/s
+
+
+# JMH 1.11.3 (released 86 days ago)
+# VM version: JDK 1.7.0_95, VM 24.95-b01
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.LegacyTransmuterBenchmark.entity_edit_legacy
+# Parameters: (entityCount = 262144)
+
+# Run progress: 33.33% complete, ETA 00:00:10
+# Fork: 1 of 1
+# Warmup Iteration   1: 30.296 ops/s
+Iteration   1: 39.298 ops/s
+
+
+Result "entity_edit_legacy":
+  39.298 ops/s
+
+
+# JMH 1.11.3 (released 86 days ago)
+# VM version: JDK 1.7.0_95, VM 24.95-b01
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.LegacyTransmuterBenchmark.transmuter_legacy
+# Parameters: (entityCount = 262144)
+
+# Run progress: 50.00% complete, ETA 00:00:07
+# Fork: 1 of 1
+# Warmup Iteration   1: 36.968 ops/s
+Iteration   1: 48.445 ops/s
+
+
+Result "transmuter_legacy":
+  48.445 ops/s
+
+
+# JMH 1.11.3 (released 86 days ago)
+# VM version: JDK 1.7.0_95, VM 24.95-b01
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.TransmuterBenchmark.entity_edit
+# Parameters: (entityCount = 262144)
+
+# Run progress: 66.67% complete, ETA 00:00:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 57.939 ops/s
+Iteration   1: 71.442 ops/s
+
+
+Result "entity_edit":
+  71.442 ops/s
+
+
+# JMH 1.11.3 (released 86 days ago)
+# VM version: JDK 1.7.0_95, VM 24.95-b01
+# VM invoker: /usr/lib/jvm/java-7-openjdk-amd64/jre/bin/java
+# VM options: <none>
+# Warmup: 1 iterations, 1 s each
+# Measurement: 1 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.artemis.TransmuterBenchmark.transmuter
+# Parameters: (entityCount = 262144)
+
+# Run progress: 83.33% complete, ETA 00:00:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 94.795 ops/s
+Iteration   1: 112.807 ops/s
+
+
+Result "transmuter":
+  112.807 ops/s
+
+
+# Run complete. Total time: 00:00:15
+
+Benchmark                                         (entityCount)   Mode  Cnt    Score   Error  Units
+InsertRemoveBenchmark.insert_remove                      262144  thrpt        13.408          ops/s
+LegacyInsertRemoveBenchmark.insert_remove_legacy         262144  thrpt        13.494          ops/s
+LegacyTransmuterBenchmark.entity_edit_legacy             262144  thrpt        39.298          ops/s
+LegacyTransmuterBenchmark.transmuter_legacy              262144  thrpt        48.445          ops/s
+TransmuterBenchmark.entity_edit                          262144  thrpt        71.442          ops/s
+TransmuterBenchmark.transmuter                           262144  thrpt       112.807          ops/s
+
+Benchmark result is saved to results/artemis-odb-1.0.1.json

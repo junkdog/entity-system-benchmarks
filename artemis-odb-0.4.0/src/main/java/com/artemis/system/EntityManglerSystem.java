@@ -4,19 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
-import org.openjdk.jmh.runner.RunnerException;
-
 import com.artemis.Component;
 import com.artemis.Entity;
-import com.artemis.component.Comp1;
-import com.artemis.component.Comp2;
-import com.artemis.component.Comp3;
-import com.artemis.component.Comp4;
-import com.artemis.component.Comp5;
-import com.artemis.component.Comp6;
-import com.artemis.component.Comp7;
-import com.artemis.component.Comp8;
-import com.artemis.component.Comp9;
+import com.artemis.component.*;
 import com.artemis.systems.VoidEntitySystem;
 import com.artemis.utils.Bag;
 
@@ -38,9 +28,9 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 	private Bag[] permutations;
 
 	@SuppressWarnings("unchecked")
-//	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
-	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
-		this.entityPermutations = entityPermutations;
+	public EntityManglerSystem(long seed, int entityCount) {
+		// 4096 entities = 256 compositions, 262144 = 2048
+		entityPermutations = (int)Math.sqrt(entityCount * 16);
 		rng = new Random(seed);
 		ENTITY_COUNT = entityCount;
 		RENEW = ENTITY_COUNT / 4;
@@ -53,9 +43,7 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 		ids = new int[ENTITY_COUNT];
 		for (int i = 0; ids.length > i; i++)
 			ids[i] = idsList.get(i);
-//		ids[i] = (int)(rng.nextFloat() * ENTITY_COUNT);
-		
-		
+
 		types = new Bag<Class<? extends Component>>();
 		types.add(Comp1.class);
 		types.add(Comp2.class);
@@ -66,18 +54,12 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 		types.add(Comp7.class);
 		types.add(Comp8.class);
 		types.add(Comp9.class);
-		
-		permutations = new Bag[entityPermutations];
-//		for (int i = 0; permutations.length > i; i++) {
-//			Bag<Class<? extends Component>> components = new Bag<Class<? extends Component>>();
-//			for (int classIndex = 0, s = (int)(rng.nextFloat() * 7); s > classIndex; classIndex++) {
-//				components.add(types.get((int)(rng.nextFloat() * types.size())));
-//			}
-//			permutations[i] = components;
-//		}
-//		permutations = new Archetype[entityPermutations];
+		types.add(Comp10.class);
+		types.add(Comp11.class);
+		types.add(Comp12.class);
 
-		
+		permutations = new Bag[entityPermutations];
+
 		cmp = new int[ENTITY_COUNT * 4];
 		for (int i = 0; cmp.length > i; i++)
 			cmp[i] = (int)(rng.nextFloat() * permutations.length);

@@ -9,15 +9,7 @@ import com.github.antag99.retinazer.Component;
 import com.github.antag99.retinazer.EntitySystem;
 import com.github.antag99.retinazer.Mapper;
 import com.github.antag99.retinazer.SkipWire;
-import com.github.antag99.retinazer.component.Comp1;
-import com.github.antag99.retinazer.component.Comp2;
-import com.github.antag99.retinazer.component.Comp3;
-import com.github.antag99.retinazer.component.Comp4;
-import com.github.antag99.retinazer.component.Comp5;
-import com.github.antag99.retinazer.component.Comp6;
-import com.github.antag99.retinazer.component.Comp7;
-import com.github.antag99.retinazer.component.Comp8;
-import com.github.antag99.retinazer.component.Comp9;
+import com.github.antag99.retinazer.component.*;
 
 public final class EntityManglerSystem extends EntitySystem {
 
@@ -49,6 +41,9 @@ public final class EntityManglerSystem extends EntitySystem {
     private Mapper<Comp7> mComp7;
     private Mapper<Comp8> mComp8;
     private Mapper<Comp9> mComp9;
+    private Mapper<Comp10> mComp10;
+    private Mapper<Comp11> mComp11;
+    private Mapper<Comp12> mComp12;
 
     @SkipWire
     int cmpIndex = 0;
@@ -57,8 +52,9 @@ public final class EntityManglerSystem extends EntitySystem {
     private int[] permutations;
 
     @SuppressWarnings("unchecked")
-    // public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
-    public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
+    public EntityManglerSystem(long seed, int entityCount) {
+	    // 4096 entities = 256 compositions, 262144 = 2048
+	    int entityPermutations = (int)Math.sqrt(entityCount * 16);
         rng = new Random(seed);
         ENTITY_COUNT = entityCount;
         RENEW = ENTITY_COUNT / 4;
@@ -131,6 +127,12 @@ public final class EntityManglerSystem extends EntitySystem {
             mComp8.create(entity);
         if ((permutation & 256) != 0)
             mComp9.create(entity);
+        if ((permutation & 512) != 0)
+            mComp10.create(entity);
+        if ((permutation & 1024) != 0)
+            mComp11.create(entity);
+        if ((permutation & 2048) != 0)
+            mComp12.create(entity);
         if (cmpIndex == cmp.length)
             cmpIndex = 0;
     }

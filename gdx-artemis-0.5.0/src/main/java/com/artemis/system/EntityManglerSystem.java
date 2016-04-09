@@ -6,15 +6,7 @@ import java.util.Random;
 
 import com.artemis.Component;
 import com.artemis.Entity;
-import com.artemis.component.Comp1;
-import com.artemis.component.Comp2;
-import com.artemis.component.Comp3;
-import com.artemis.component.Comp4;
-import com.artemis.component.Comp5;
-import com.artemis.component.Comp6;
-import com.artemis.component.Comp7;
-import com.artemis.component.Comp8;
-import com.artemis.component.Comp9;
+import com.artemis.component.*;
 import com.artemis.systems.VoidEntitySystem;
 import com.badlogic.gdx.utils.Array;
 
@@ -36,9 +28,9 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 	private Array[] permutations;
 
 	@SuppressWarnings("unchecked")
-//	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
-	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
-		this.entityPermutations = entityPermutations;
+	public EntityManglerSystem(long seed, int entityCount) {
+		// 4096 entities = 256 compositions, 262144 = 2048
+		entityPermutations = (int)Math.sqrt(entityCount * 16);
 		rng = new Random(seed);
 		ENTITY_COUNT = entityCount;
 		RENEW = ENTITY_COUNT / 4;
@@ -64,7 +56,10 @@ public final class EntityManglerSystem extends VoidEntitySystem {
 		types.add(Comp7.class);
 		types.add(Comp8.class);
 		types.add(Comp9.class);
-		
+		types.add(Comp10.class);
+		types.add(Comp11.class);
+		types.add(Comp12.class);
+
 		permutations = new Array[entityPermutations];
 //		for (int i = 0; permutations.length > i; i++) {
 //			Bag<Class<? extends Component>> components = new Bag<Class<? extends Component>>();

@@ -32,6 +32,7 @@ import com.artemis.system.CompSystemA;
 import com.artemis.system.CompSystemB;
 import com.artemis.system.CompSystemC;
 import com.artemis.system.CompSystemD;
+import com.artemis.system.CompSystemE;
 import com.artemis.system.EntityManglerSystem;
 import com.github.esfbench.JmhSettings;
 
@@ -43,13 +44,14 @@ public class LegacyInsertRemoveBenchmark extends JmhSettings {
 	public void init() throws Exception{
 		
 		world = new World(new WorldConfiguration()
-			.setSystem(new EntityManglerSystem(SEED, entityCount, 20))
+			.setSystem(new EntityManglerSystem(SEED, entityCount))
 			.setSystem(new CompSystemA())
 			.setSystem(new CompSystemB())
 			.setSystem(new CompSystemC())
-			.setSystem(new CompSystemD()));
+			.setSystem(new CompSystemD())
+			.setSystem(new CompSystemE()));
 	}
-	
+
 	@Benchmark
 	public void insert_remove_legacy() {
 		world.process();

@@ -8,10 +8,11 @@ import com.artemis.component.Comp2;
 import com.artemis.component.Comp7;
 import com.artemis.component.Comp9;
 import com.artemis.systems.EntityProcessingSystem;
+import org.openjdk.jmh.infra.Blackhole;
 
 public class CompSystemC extends EntityProcessingSystem {
 	
-//	Blackhole voidness = new Blackhole();
+	Blackhole voidness = new Blackhole();
 	
 	@SuppressWarnings("unchecked")
 	public CompSystemC() {
@@ -20,6 +21,6 @@ public class CompSystemC extends EntityProcessingSystem {
 
 	@Override
 	protected void process(Entity e) {
-//		voidness.consume(e);
+		voidness.consume(e);
 	}
 }

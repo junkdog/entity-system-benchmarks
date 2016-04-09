@@ -25,14 +25,10 @@
 
 package com.artemis;
 
+import com.artemis.system.*;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 
-import com.artemis.system.CompSystemA;
-import com.artemis.system.CompSystemB;
-import com.artemis.system.CompSystemC;
-import com.artemis.system.CompSystemD;
-import com.artemis.system.EntityManglerSystem;
 import com.github.esfbench.JmhSettings;
 
 public class InsertRemoveBenchmark extends JmhSettings {
@@ -42,11 +38,12 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	@Setup
 	public void init() throws Exception {
 		world = new World();
-		world.setSystem(new EntityManglerSystem(SEED, entityCount, 20));
+		world.setSystem(new EntityManglerSystem(SEED, entityCount));
 		world.setSystem(new CompSystemA());
 		world.setSystem(new CompSystemB());
 		world.setSystem(new CompSystemC());
 		world.setSystem(new CompSystemD());
+		world.setSystem(new CompSystemE());
 		world.initialize();
 	}		
 	

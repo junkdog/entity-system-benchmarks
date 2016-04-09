@@ -51,7 +51,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	@Setup
 	public void init() throws Exception {
 		engine = new Engine();
-		engine.addSystem(new EntityManglerSystem(SEED, entityCount, 20));
+		engine.addSystem(new EntityManglerSystem(SEED, entityCount));
 		engine.addSystem(new CompSystemA());
 		engine.addSystem(new CompSystemB());
 		engine.addSystem(new CompSystemC());

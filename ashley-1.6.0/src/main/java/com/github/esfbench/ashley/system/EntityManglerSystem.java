@@ -11,15 +11,7 @@ import com.badlogic.ashley.core.EntitySystem;
 import com.badlogic.ashley.core.Family;
 import com.badlogic.ashley.utils.ImmutableArray;
 import com.badlogic.gdx.utils.Array;
-import com.github.esfbench.ashley.component.Comp1;
-import com.github.esfbench.ashley.component.Comp2;
-import com.github.esfbench.ashley.component.Comp3;
-import com.github.esfbench.ashley.component.Comp4;
-import com.github.esfbench.ashley.component.Comp5;
-import com.github.esfbench.ashley.component.Comp6;
-import com.github.esfbench.ashley.component.Comp7;
-import com.github.esfbench.ashley.component.Comp8;
-import com.github.esfbench.ashley.component.Comp9;
+import com.github.esfbench.ashley.component.*;
 
 public final class EntityManglerSystem extends EntitySystem {
 
@@ -42,8 +34,10 @@ public final class EntityManglerSystem extends EntitySystem {
 	private ImmutableArray<Entity> entities;
 
 	@SuppressWarnings("unchecked")
-	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
+	public EntityManglerSystem(long seed, int entityCount) {
+		// 4096 entities = 256 compositions, 262144 = 2048
 		super(0);
+		int entityPermutations = (int)Math.sqrt(entityCount * 16);
 		rng = new Random(seed);
 		ENTITY_COUNT = entityCount;
 		RENEW = ENTITY_COUNT / 4;
@@ -56,9 +50,7 @@ public final class EntityManglerSystem extends EntitySystem {
 		ids = new int[ENTITY_COUNT];
 		for (int i = 0; ids.length > i; i++)
 			ids[i] = idsList.get(i);
-//		ids[i] = (int)(rng.nextFloat() * ENTITY_COUNT);
-		
-		
+
 		types = new Array<Class<? extends Component>>();
 		types.add(Comp1.class);
 		types.add(Comp2.class);
@@ -69,7 +61,10 @@ public final class EntityManglerSystem extends EntitySystem {
 		types.add(Comp7.class);
 		types.add(Comp8.class);
 		types.add(Comp9.class);
-		
+		types.add(Comp10.class);
+		types.add(Comp11.class);
+		types.add(Comp12.class);
+
 		permutations = new Array[entityPermutations];
 		for (int i = 0; permutations.length > i; i++) {
 			Array<Class<? extends Component>> components = new Array<Class<? extends Component>>();
@@ -78,9 +73,7 @@ public final class EntityManglerSystem extends EntitySystem {
 			}
 			permutations[i] = components;
 		}
-//		permutations = new Archetype[entityPermutations];
 
-		
 		cmp = new int[ENTITY_COUNT * 4];
 		for (int i = 0; cmp.length > i; i++)
 			cmp[i] = (int)(rng.nextFloat() * permutations.length);

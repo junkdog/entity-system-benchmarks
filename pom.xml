@@ -58,14 +58,11 @@
 	<modules>
 		<module>chartgen</module>
 		<module>common</module>
-		<module>ashley-1.0.1</module>
 		<module>ashley-1.6.0</module>
 		<module>retinazer-0.2.0</module>
 		<module>artemis-odb-0.4.0</module>
 		<module>artemis-odb-0.9.0</module>
-		<module>artemis-odb-0.13.1</module>
 		<module>artemis-odb-1.0.1</module>
-		<module>artemis-odb-1.4.0</module>
 		<module>artemis-odb-1.5.0</module>
 		<module>gdx-artemis-0.5.0</module>
 	</modules>

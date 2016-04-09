@@ -6,10 +6,11 @@ import com.badlogic.ashley.systems.IteratingSystem;
 import com.github.esfbench.ashley.component.Comp1;
 import com.github.esfbench.ashley.component.Comp4;
 import com.github.esfbench.ashley.component.Comp5;
+import org.openjdk.jmh.infra.Blackhole;
 
 public class CompSystemA extends IteratingSystem {
 	
-//	Blackhole voidness = new Blackhole();
+	Blackhole voidness = new Blackhole();
 	
 	@SuppressWarnings("unchecked")
 	public CompSystemA() {
@@ -17,5 +18,7 @@ public class CompSystemA extends IteratingSystem {
 	}
 
 	@Override
-	public void processEntity(Entity entity, float deltaTime) {}
+	public void processEntity(Entity entity, float deltaTime) {
+		voidness.consume(entity);
+	}
 }

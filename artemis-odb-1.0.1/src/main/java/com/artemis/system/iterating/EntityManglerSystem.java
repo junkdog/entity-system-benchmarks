@@ -24,8 +24,9 @@ public final class EntityManglerSystem extends BaseSystem {
 	private Random rng;
 
 	@SuppressWarnings("unchecked")
-//	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
-	public EntityManglerSystem(long seed, int entityCount, int entityPermutations) {
+	public EntityManglerSystem(long seed, int entityCount) {
+		// 4096 entities = 256 compositions, 262144 = 2048
+		int entityPermutations = (int)Math.sqrt(entityCount * 16);
 		rng = new Random(seed);
 		ENTITY_COUNT = entityCount;
 		RENEW = ENTITY_COUNT / 4;
@@ -51,7 +52,10 @@ public final class EntityManglerSystem extends BaseSystem {
 		types.add(Comp7.class);
 		types.add(Comp8.class);
 		types.add(Comp9.class);
-		
+		types.add(Comp10.class);
+		types.add(Comp11.class);
+		types.add(Comp12.class);
+
 		permutations = new Archetype[entityPermutations];
 
 		
