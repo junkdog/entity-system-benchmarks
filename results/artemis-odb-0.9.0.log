@@ -12,20 +12,20 @@
 
 # Run progress: 0.00% complete, ETA 00:14:00
 # Fork: 1 of 1
-# Warmup Iteration   1: 11099.767 ops/s
-# Warmup Iteration   2: 11792.918 ops/s
-# Warmup Iteration   3: 10897.863 ops/s
-# Warmup Iteration   4: 8754.076 ops/s
-# Warmup Iteration   5: 8761.310 ops/s
-Iteration   1: 10765.514 ops/s
-Iteration   2: 10861.248 ops/s
-Iteration   3: 10713.565 ops/s
+# Warmup Iteration   1: 11346.943 ops/s
+# Warmup Iteration   2: 11808.684 ops/s
+# Warmup Iteration   3: 11814.510 ops/s
+# Warmup Iteration   4: 11804.575 ops/s
+# Warmup Iteration   5: 11808.222 ops/s
+Iteration   1: 11805.273 ops/s
+Iteration   2: 11643.281 ops/s
+Iteration   3: 11721.473 ops/s
 
 
 Result "baseline":
-  10780.109 ±(99.9%) 1366.735 ops/s [Average]
-  (min, avg, max) = (10713.565, 10780.109, 10861.248), stdev = 74.915
-  CI (99.9%): [9413.374, 12146.843] (assumes normal distribution)
+  11723.342 ±(99.9%) 1477.965 ops/s [Average]
+  (min, avg, max) = (11643.281, 11723.342, 11805.273), stdev = 81.012
+  CI (99.9%): [10245.377, 13201.308] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -40,22 +40,22 @@ Result "baseline":
 # Benchmark: com.artemis.BaselineBenchmark.baseline
 # Parameters: (entityCount = 16384)
 
-# Run progress: 4.17% complete, ETA 00:13:30
+# Run progress: 4.17% complete, ETA 00:13:31
 # Fork: 1 of 1
-# Warmup Iteration   1: 2818.709 ops/s
-# Warmup Iteration   2: 2956.685 ops/s
-# Warmup Iteration   3: 2958.267 ops/s
-# Warmup Iteration   4: 2958.099 ops/s
-# Warmup Iteration   5: 2962.435 ops/s
-Iteration   1: 2838.165 ops/s
-Iteration   2: 2943.794 ops/s
-Iteration   3: 2953.117 ops/s
+# Warmup Iteration   1: 2813.104 ops/s
+# Warmup Iteration   2: 2952.478 ops/s
+# Warmup Iteration   3: 2954.914 ops/s
+# Warmup Iteration   4: 2953.656 ops/s
+# Warmup Iteration   5: 2960.548 ops/s
+Iteration   1: 2951.337 ops/s
+Iteration   2: 2945.370 ops/s
+Iteration   3: 2947.683 ops/s
 
 
 Result "baseline":
-  2911.692 ±(99.9%) 1164.803 ops/s [Average]
-  (min, avg, max) = (2838.165, 2911.692, 2953.117), stdev = 63.847
-  CI (99.9%): [1746.889, 4076.495] (assumes normal distribution)
+  2948.130 ±(99.9%) 54.889 ops/s [Average]
+  (min, avg, max) = (2945.370, 2948.130, 2951.337), stdev = 3.009
+  CI (99.9%): [2893.241, 3003.019] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -72,20 +72,20 @@ Result "baseline":
 
 # Run progress: 8.33% complete, ETA 00:12:56
 # Fork: 1 of 1
-# Warmup Iteration   1: 607.827 ops/s
-# Warmup Iteration   2: 643.589 ops/s
-# Warmup Iteration   3: 643.843 ops/s
-# Warmup Iteration   4: 643.679 ops/s
-# Warmup Iteration   5: 644.955 ops/s
-Iteration   1: 644.737 ops/s
-Iteration   2: 629.955 ops/s
-Iteration   3: 614.976 ops/s
+# Warmup Iteration   1: 607.500 ops/s
+# Warmup Iteration   2: 643.104 ops/s
+# Warmup Iteration   3: 623.735 ops/s
+# Warmup Iteration   4: 638.293 ops/s
+# Warmup Iteration   5: 644.345 ops/s
+Iteration   1: 627.749 ops/s
+Iteration   2: 636.672 ops/s
+Iteration   3: 626.868 ops/s
 
 
 Result "baseline":
-  629.889 ±(99.9%) 271.471 ops/s [Average]
-  (min, avg, max) = (614.976, 629.889, 644.737), stdev = 14.880
-  CI (99.9%): [358.419, 901.360] (assumes normal distribution)
+  630.430 ±(99.9%) 98.950 ops/s [Average]
+  (min, avg, max) = (626.868, 630.430, 636.672), stdev = 5.424
+  CI (99.9%): [531.479, 729.380] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -102,20 +102,20 @@ Result "baseline":
 
 # Run progress: 12.50% complete, ETA 00:12:21
 # Fork: 1 of 1
-# Warmup Iteration   1: 148.779 ops/s
-# Warmup Iteration   2: 160.498 ops/s
-# Warmup Iteration   3: 161.904 ops/s
-# Warmup Iteration   4: 156.209 ops/s
-# Warmup Iteration   5: 161.590 ops/s
-Iteration   1: 161.279 ops/s
-Iteration   2: 155.492 ops/s
-Iteration   3: 158.458 ops/s
+# Warmup Iteration   1: 148.612 ops/s
+# Warmup Iteration   2: 160.513 ops/s
+# Warmup Iteration   3: 161.702 ops/s
+# Warmup Iteration   4: 155.454 ops/s
+# Warmup Iteration   5: 161.202 ops/s
+Iteration   1: 160.781 ops/s
+Iteration   2: 160.721 ops/s
+Iteration   3: 161.218 ops/s
 
 
 Result "baseline":
-  158.410 ±(99.9%) 52.790 ops/s [Average]
-  (min, avg, max) = (155.492, 158.410, 161.279), stdev = 2.894
-  CI (99.9%): [105.619, 211.200] (assumes normal distribution)
+  160.907 ±(99.9%) 4.949 ops/s [Average]
+  (min, avg, max) = (160.721, 160.907, 161.218), stdev = 0.271
+  CI (99.9%): [155.957, 165.856] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -132,20 +132,20 @@ Result "baseline":
 
 # Run progress: 16.67% complete, ETA 00:11:46
 # Fork: 1 of 1
-# Warmup Iteration   1: 2664.575 ops/s
-# Warmup Iteration   2: 3112.078 ops/s
-# Warmup Iteration   3: 3109.568 ops/s
-# Warmup Iteration   4: 3109.211 ops/s
-# Warmup Iteration   5: 3090.889 ops/s
-Iteration   1: 3104.650 ops/s
-Iteration   2: 3096.792 ops/s
-Iteration   3: 3096.438 ops/s
+# Warmup Iteration   1: 2760.414 ops/s
+# Warmup Iteration   2: 3100.248 ops/s
+# Warmup Iteration   3: 3098.300 ops/s
+# Warmup Iteration   4: 3075.586 ops/s
+# Warmup Iteration   5: 3103.473 ops/s
+Iteration   1: 3125.342 ops/s
+Iteration   2: 3117.353 ops/s
+Iteration   3: 3115.667 ops/s
 
 
 Result "insert_remove":
-  3099.294 ±(99.9%) 84.694 ops/s [Average]
-  (min, avg, max) = (3096.438, 3099.294, 3104.650), stdev = 4.642
-  CI (99.9%): [3014.600, 3183.987] (assumes normal distribution)
+  3119.454 ±(99.9%) 94.284 ops/s [Average]
+  (min, avg, max) = (3115.667, 3119.454, 3125.342), stdev = 5.168
+  CI (99.9%): [3025.170, 3213.738] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -162,20 +162,20 @@ Result "insert_remove":
 
 # Run progress: 20.83% complete, ETA 00:11:10
 # Fork: 1 of 1
-# Warmup Iteration   1: 428.682 ops/s
-# Warmup Iteration   2: 531.789 ops/s
-# Warmup Iteration   3: 529.542 ops/s
-# Warmup Iteration   4: 520.809 ops/s
-# Warmup Iteration   5: 519.723 ops/s
-Iteration   1: 532.063 ops/s
-Iteration   2: 531.011 ops/s
-Iteration   3: 526.829 ops/s
+# Warmup Iteration   1: 431.294 ops/s
+# Warmup Iteration   2: 536.828 ops/s
+# Warmup Iteration   3: 536.380 ops/s
+# Warmup Iteration   4: 525.886 ops/s
+# Warmup Iteration   5: 527.622 ops/s
+Iteration   1: 531.233 ops/s
+Iteration   2: 527.364 ops/s
+Iteration   3: 524.658 ops/s
 
 
 Result "insert_remove":
-  529.968 ±(99.9%) 50.514 ops/s [Average]
-  (min, avg, max) = (526.829, 529.968, 532.063), stdev = 2.769
-  CI (99.9%): [479.454, 580.482] (assumes normal distribution)
+  527.752 ±(99.9%) 60.282 ops/s [Average]
+  (min, avg, max) = (524.658, 527.752, 531.233), stdev = 3.304
+  CI (99.9%): [467.470, 588.033] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -192,20 +192,20 @@ Result "insert_remove":
 
 # Run progress: 25.00% complete, ETA 00:10:35
 # Fork: 1 of 1
-# Warmup Iteration   1: 58.793 ops/s
-# Warmup Iteration   2: 81.177 ops/s
-# Warmup Iteration   3: 80.824 ops/s
-# Warmup Iteration   4: 81.359 ops/s
-# Warmup Iteration   5: 79.760 ops/s
-Iteration   1: 82.084 ops/s
-Iteration   2: 81.175 ops/s
-Iteration   3: 80.790 ops/s
+# Warmup Iteration   1: 58.045 ops/s
+# Warmup Iteration   2: 79.213 ops/s
+# Warmup Iteration   3: 78.990 ops/s
+# Warmup Iteration   4: 79.874 ops/s
+# Warmup Iteration   5: 77.784 ops/s
+Iteration   1: 78.663 ops/s
+Iteration   2: 78.749 ops/s
+Iteration   3: 78.585 ops/s
 
 
 Result "insert_remove":
-  81.349 ±(99.9%) 12.126 ops/s [Average]
-  (min, avg, max) = (80.790, 81.349, 82.084), stdev = 0.665
-  CI (99.9%): [69.224, 93.475] (assumes normal distribution)
+  78.666 ±(99.9%) 1.495 ops/s [Average]
+  (min, avg, max) = (78.585, 78.666, 78.749), stdev = 0.082
+  CI (99.9%): [77.171, 80.160] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -222,20 +222,20 @@ Result "insert_remove":
 
 # Run progress: 29.17% complete, ETA 00:10:00
 # Fork: 1 of 1
-# Warmup Iteration   1: 9.663 ops/s
-# Warmup Iteration   2: 11.677 ops/s
-# Warmup Iteration   3: 12.835 ops/s
-# Warmup Iteration   4: 11.665 ops/s
-# Warmup Iteration   5: 12.121 ops/s
-Iteration   1: 12.054 ops/s
-Iteration   2: 12.352 ops/s
-Iteration   3: 12.465 ops/s
+# Warmup Iteration   1: 9.617 ops/s
+# Warmup Iteration   2: 11.862 ops/s
+# Warmup Iteration   3: 12.443 ops/s
+# Warmup Iteration   4: 12.988 ops/s
+# Warmup Iteration   5: 11.704 ops/s
+Iteration   1: 12.450 ops/s
+Iteration   2: 12.536 ops/s
+Iteration   3: 12.448 ops/s
 
 
 Result "insert_remove":
-  12.290 ±(99.9%) 3.872 ops/s [Average]
-  (min, avg, max) = (12.054, 12.290, 12.465), stdev = 0.212
-  CI (99.9%): [8.418, 16.162] (assumes normal distribution)
+  12.478 ±(99.9%) 0.911 ops/s [Average]
+  (min, avg, max) = (12.448, 12.478, 12.536), stdev = 0.050
+  CI (99.9%): [11.567, 13.389] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -252,20 +252,20 @@ Result "insert_remove":
 
 # Run progress: 33.33% complete, ETA 00:09:26
 # Fork: 1 of 1
-# Warmup Iteration   1: 10636.687 ops/s
-# Warmup Iteration   2: 10836.065 ops/s
-# Warmup Iteration   3: 10661.332 ops/s
-# Warmup Iteration   4: 10433.119 ops/s
-# Warmup Iteration   5: 10306.753 ops/s
-Iteration   1: 10517.791 ops/s
-Iteration   2: 10914.872 ops/s
-Iteration   3: 11015.524 ops/s
+# Warmup Iteration   1: 10372.252 ops/s
+# Warmup Iteration   2: 10733.430 ops/s
+# Warmup Iteration   3: 10608.088 ops/s
+# Warmup Iteration   4: 10370.438 ops/s
+# Warmup Iteration   5: 10319.127 ops/s
+Iteration   1: 10429.493 ops/s
+Iteration   2: 10728.708 ops/s
+Iteration   3: 10901.091 ops/s
 
 
 Result "plain":
-  10816.062 ±(99.9%) 4801.156 ops/s [Average]
-  (min, avg, max) = (10517.791, 10816.062, 11015.524), stdev = 263.168
-  CI (99.9%): [6014.906, 15617.219] (assumes normal distribution)
+  10686.431 ±(99.9%) 4353.398 ops/s [Average]
+  (min, avg, max) = (10429.493, 10686.431, 10901.091), stdev = 238.624
+  CI (99.9%): [6333.032, 15039.829] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -282,20 +282,20 @@ Result "plain":
 
 # Run progress: 37.50% complete, ETA 00:08:51
 # Fork: 1 of 1
-# Warmup Iteration   1: 2647.699 ops/s
-# Warmup Iteration   2: 2735.549 ops/s
-# Warmup Iteration   3: 2727.059 ops/s
-# Warmup Iteration   4: 2723.824 ops/s
-# Warmup Iteration   5: 2813.949 ops/s
-Iteration   1: 2794.286 ops/s
-Iteration   2: 2803.347 ops/s
-Iteration   3: 2807.864 ops/s
+# Warmup Iteration   1: 2688.344 ops/s
+# Warmup Iteration   2: 2800.575 ops/s
+# Warmup Iteration   3: 2814.025 ops/s
+# Warmup Iteration   4: 2813.037 ops/s
+# Warmup Iteration   5: 2813.288 ops/s
+Iteration   1: 2840.141 ops/s
+Iteration   2: 2855.252 ops/s
+Iteration   3: 2854.487 ops/s
 
 
 Result "plain":
-  2801.833 ±(99.9%) 126.142 ops/s [Average]
-  (min, avg, max) = (2794.286, 2801.833, 2807.864), stdev = 6.914
-  CI (99.9%): [2675.690, 2927.975] (assumes normal distribution)
+  2849.960 ±(99.9%) 155.291 ops/s [Average]
+  (min, avg, max) = (2840.141, 2849.960, 2855.252), stdev = 8.512
+  CI (99.9%): [2694.670, 3005.251] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -312,20 +312,20 @@ Result "plain":
 
 # Run progress: 41.67% complete, ETA 00:08:15
 # Fork: 1 of 1
-# Warmup Iteration   1: 568.501 ops/s
-# Warmup Iteration   2: 593.267 ops/s
-# Warmup Iteration   3: 594.818 ops/s
-# Warmup Iteration   4: 590.860 ops/s
-# Warmup Iteration   5: 596.284 ops/s
-Iteration   1: 624.335 ops/s
-Iteration   2: 647.495 ops/s
-Iteration   3: 631.665 ops/s
+# Warmup Iteration   1: 573.874 ops/s
+# Warmup Iteration   2: 602.726 ops/s
+# Warmup Iteration   3: 603.271 ops/s
+# Warmup Iteration   4: 597.846 ops/s
+# Warmup Iteration   5: 606.941 ops/s
+Iteration   1: 630.026 ops/s
+Iteration   2: 648.586 ops/s
+Iteration   3: 591.175 ops/s
 
 
 Result "plain":
-  634.498 ±(99.9%) 215.949 ops/s [Average]
-  (min, avg, max) = (624.335, 634.498, 647.495), stdev = 11.837
-  CI (99.9%): [418.549, 850.447] (assumes normal distribution)
+  623.263 ±(99.9%) 534.490 ops/s [Average]
+  (min, avg, max) = (591.175, 623.263, 648.586), stdev = 29.297
+  CI (99.9%): [88.773, 1157.752] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -342,20 +342,20 @@ Result "plain":
 
 # Run progress: 45.83% complete, ETA 00:07:40
 # Fork: 1 of 1
-# Warmup Iteration   1: 119.616 ops/s
-# Warmup Iteration   2: 130.167 ops/s
-# Warmup Iteration   3: 130.234 ops/s
-# Warmup Iteration   4: 125.497 ops/s
-# Warmup Iteration   5: 134.211 ops/s
-Iteration   1: 133.923 ops/s
-Iteration   2: 133.492 ops/s
-Iteration   3: 134.197 ops/s
+# Warmup Iteration   1: 119.636 ops/s
+# Warmup Iteration   2: 129.865 ops/s
+# Warmup Iteration   3: 129.894 ops/s
+# Warmup Iteration   4: 125.474 ops/s
+# Warmup Iteration   5: 133.950 ops/s
+Iteration   1: 134.187 ops/s
+Iteration   2: 133.943 ops/s
+Iteration   3: 134.114 ops/s
 
 
 Result "plain":
-  133.871 ±(99.9%) 6.484 ops/s [Average]
-  (min, avg, max) = (133.492, 133.871, 134.197), stdev = 0.355
-  CI (99.9%): [127.387, 140.355] (assumes normal distribution)
+  134.081 ±(99.9%) 2.284 ops/s [Average]
+  (min, avg, max) = (133.943, 134.081, 134.187), stdev = 0.125
+  CI (99.9%): [131.797, 136.366] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -372,20 +372,20 @@ Result "plain":
 
 # Run progress: 50.00% complete, ETA 00:07:04
 # Fork: 1 of 1
-# Warmup Iteration   1: 10679.252 ops/s
-# Warmup Iteration   2: 11224.023 ops/s
-# Warmup Iteration   3: 11223.673 ops/s
-# Warmup Iteration   4: 11241.482 ops/s
-# Warmup Iteration   5: 11233.176 ops/s
-Iteration   1: 11096.060 ops/s
-Iteration   2: 11163.495 ops/s
-Iteration   3: 10954.226 ops/s
+# Warmup Iteration   1: 10664.364 ops/s
+# Warmup Iteration   2: 11104.868 ops/s
+# Warmup Iteration   3: 11129.476 ops/s
+# Warmup Iteration   4: 11107.745 ops/s
+# Warmup Iteration   5: 11128.036 ops/s
+Iteration   1: 11349.871 ops/s
+Iteration   2: 11318.159 ops/s
+Iteration   3: 11228.419 ops/s
 
 
 Result "pooled":
-  11071.260 ±(99.9%) 1948.721 ops/s [Average]
-  (min, avg, max) = (10954.226, 11071.260, 11163.495), stdev = 106.816
-  CI (99.9%): [9122.540, 13019.981] (assumes normal distribution)
+  11298.816 ±(99.9%) 1149.244 ops/s [Average]
+  (min, avg, max) = (11228.419, 11298.816, 11349.871), stdev = 62.994
+  CI (99.9%): [10149.572, 12448.061] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -402,20 +402,20 @@ Result "pooled":
 
 # Run progress: 54.17% complete, ETA 00:06:29
 # Fork: 1 of 1
-# Warmup Iteration   1: 2626.397 ops/s
-# Warmup Iteration   2: 2798.954 ops/s
-# Warmup Iteration   3: 2799.734 ops/s
-# Warmup Iteration   4: 2789.646 ops/s
-# Warmup Iteration   5: 2820.457 ops/s
-Iteration   1: 2834.440 ops/s
-Iteration   2: 2815.964 ops/s
-Iteration   3: 2823.519 ops/s
+# Warmup Iteration   1: 2636.616 ops/s
+# Warmup Iteration   2: 2685.142 ops/s
+# Warmup Iteration   3: 2740.342 ops/s
+# Warmup Iteration   4: 2720.450 ops/s
+# Warmup Iteration   5: 2828.338 ops/s
+Iteration   1: 2731.140 ops/s
+Iteration   2: 2676.831 ops/s
+Iteration   3: 2530.418 ops/s
 
 
 Result "pooled":
-  2824.641 ±(99.9%) 169.461 ops/s [Average]
-  (min, avg, max) = (2815.964, 2824.641, 2834.440), stdev = 9.289
-  CI (99.9%): [2655.180, 2994.102] (assumes normal distribution)
+  2646.130 ±(99.9%) 1894.127 ops/s [Average]
+  (min, avg, max) = (2530.418, 2646.130, 2731.140), stdev = 103.823
+  CI (99.9%): [752.002, 4540.257] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -432,20 +432,20 @@ Result "pooled":
 
 # Run progress: 58.33% complete, ETA 00:05:53
 # Fork: 1 of 1
-# Warmup Iteration   1: 575.466 ops/s
-# Warmup Iteration   2: 600.356 ops/s
-# Warmup Iteration   3: 601.155 ops/s
-# Warmup Iteration   4: 594.560 ops/s
-# Warmup Iteration   5: 596.023 ops/s
-Iteration   1: 623.766 ops/s
-Iteration   2: 646.978 ops/s
-Iteration   3: 635.413 ops/s
+# Warmup Iteration   1: 560.985 ops/s
+# Warmup Iteration   2: 591.498 ops/s
+# Warmup Iteration   3: 591.970 ops/s
+# Warmup Iteration   4: 591.545 ops/s
+# Warmup Iteration   5: 605.867 ops/s
+Iteration   1: 628.898 ops/s
+Iteration   2: 649.476 ops/s
+Iteration   3: 638.329 ops/s
 
 
 Result "pooled":
-  635.386 ±(99.9%) 211.742 ops/s [Average]
-  (min, avg, max) = (623.766, 635.386, 646.978), stdev = 11.606
-  CI (99.9%): [423.643, 847.128] (assumes normal distribution)
+  638.901 ±(99.9%) 187.922 ops/s [Average]
+  (min, avg, max) = (628.898, 638.901, 649.476), stdev = 10.301
+  CI (99.9%): [450.979, 826.823] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -462,20 +462,20 @@ Result "pooled":
 
 # Run progress: 62.50% complete, ETA 00:05:18
 # Fork: 1 of 1
-# Warmup Iteration   1: 119.250 ops/s
-# Warmup Iteration   2: 129.566 ops/s
-# Warmup Iteration   3: 130.616 ops/s
-# Warmup Iteration   4: 125.724 ops/s
-# Warmup Iteration   5: 137.591 ops/s
-Iteration   1: 137.336 ops/s
-Iteration   2: 134.570 ops/s
-Iteration   3: 132.476 ops/s
+# Warmup Iteration   1: 117.171 ops/s
+# Warmup Iteration   2: 127.380 ops/s
+# Warmup Iteration   3: 127.393 ops/s
+# Warmup Iteration   4: 123.448 ops/s
+# Warmup Iteration   5: 132.559 ops/s
+Iteration   1: 132.466 ops/s
+Iteration   2: 132.405 ops/s
+Iteration   3: 132.525 ops/s
 
 
 Result "pooled":
-  134.794 ±(99.9%) 44.474 ops/s [Average]
-  (min, avg, max) = (132.476, 134.794, 137.336), stdev = 2.438
-  CI (99.9%): [90.319, 179.268] (assumes normal distribution)
+  132.465 ±(99.9%) 1.094 ops/s [Average]
+  (min, avg, max) = (132.405, 132.465, 132.525), stdev = 0.060
+  CI (99.9%): [131.371, 133.560] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -492,20 +492,20 @@ Result "pooled":
 
 # Run progress: 66.67% complete, ETA 00:04:42
 # Fork: 1 of 1
-# Warmup Iteration   1: 4365.259 ops/s
-# Warmup Iteration   2: 4998.330 ops/s
-# Warmup Iteration   3: 5101.400 ops/s
-# Warmup Iteration   4: 5118.670 ops/s
-# Warmup Iteration   5: 5068.989 ops/s
-Iteration   1: 5172.282 ops/s
-Iteration   2: 5131.081 ops/s
-Iteration   3: 5160.436 ops/s
+# Warmup Iteration   1: 4379.719 ops/s
+# Warmup Iteration   2: 5105.901 ops/s
+# Warmup Iteration   3: 5162.308 ops/s
+# Warmup Iteration   4: 5162.881 ops/s
+# Warmup Iteration   5: 5121.740 ops/s
+Iteration   1: 5156.015 ops/s
+Iteration   2: 5161.003 ops/s
+Iteration   3: 5145.322 ops/s
 
 
 Result "entity_edit":
-  5154.600 ±(99.9%) 386.982 ops/s [Average]
-  (min, avg, max) = (5131.081, 5154.600, 5172.282), stdev = 21.212
-  CI (99.9%): [4767.618, 5541.582] (assumes normal distribution)
+  5154.114 ±(99.9%) 146.161 ops/s [Average]
+  (min, avg, max) = (5145.322, 5154.114, 5161.003), stdev = 8.012
+  CI (99.9%): [5007.952, 5300.275] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -522,20 +522,20 @@ Result "entity_edit":
 
 # Run progress: 70.83% complete, ETA 00:04:07
 # Fork: 1 of 1
-# Warmup Iteration   1: 985.158 ops/s
-# Warmup Iteration   2: 1170.011 ops/s
-# Warmup Iteration   3: 1196.987 ops/s
-# Warmup Iteration   4: 1174.419 ops/s
-# Warmup Iteration   5: 1200.787 ops/s
-Iteration   1: 1198.029 ops/s
-Iteration   2: 1185.282 ops/s
-Iteration   3: 1201.426 ops/s
+# Warmup Iteration   1: 977.285 ops/s
+# Warmup Iteration   2: 1147.237 ops/s
+# Warmup Iteration   3: 1133.025 ops/s
+# Warmup Iteration   4: 1151.321 ops/s
+# Warmup Iteration   5: 1150.536 ops/s
+Iteration   1: 1147.219 ops/s
+Iteration   2: 1132.372 ops/s
+Iteration   3: 1126.050 ops/s
 
 
 Result "entity_edit":
-  1194.913 ±(99.9%) 155.276 ops/s [Average]
-  (min, avg, max) = (1185.282, 1194.913, 1201.426), stdev = 8.511
-  CI (99.9%): [1039.637, 1350.189] (assumes normal distribution)
+  1135.214 ±(99.9%) 198.249 ops/s [Average]
+  (min, avg, max) = (1126.050, 1135.214, 1147.219), stdev = 10.867
+  CI (99.9%): [936.965, 1333.463] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -552,20 +552,20 @@ Result "entity_edit":
 
 # Run progress: 75.00% complete, ETA 00:03:32
 # Fork: 1 of 1
-# Warmup Iteration   1: 174.504 ops/s
-# Warmup Iteration   2: 253.860 ops/s
-# Warmup Iteration   3: 254.464 ops/s
-# Warmup Iteration   4: 253.243 ops/s
-# Warmup Iteration   5: 256.220 ops/s
-Iteration   1: 259.019 ops/s
-Iteration   2: 256.284 ops/s
-Iteration   3: 259.236 ops/s
+# Warmup Iteration   1: 183.407 ops/s
+# Warmup Iteration   2: 263.723 ops/s
+# Warmup Iteration   3: 261.458 ops/s
+# Warmup Iteration   4: 263.051 ops/s
+# Warmup Iteration   5: 266.911 ops/s
+Iteration   1: 268.581 ops/s
+Iteration   2: 273.623 ops/s
+Iteration   3: 273.091 ops/s
 
 
 Result "entity_edit":
-  258.180 ±(99.9%) 30.015 ops/s [Average]
-  (min, avg, max) = (256.284, 258.180, 259.236), stdev = 1.645
-  CI (99.9%): [228.165, 288.195] (assumes normal distribution)
+  271.765 ±(99.9%) 50.530 ops/s [Average]
+  (min, avg, max) = (268.581, 271.765, 273.623), stdev = 2.770
+  CI (99.9%): [221.234, 322.295] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -582,20 +582,20 @@ Result "entity_edit":
 
 # Run progress: 79.17% complete, ETA 00:02:56
 # Fork: 1 of 1
-# Warmup Iteration   1: 22.869 ops/s
-# Warmup Iteration   2: 32.980 ops/s
-# Warmup Iteration   3: 33.073 ops/s
-# Warmup Iteration   4: 32.464 ops/s
-# Warmup Iteration   5: 31.487 ops/s
-Iteration   1: 32.456 ops/s
-Iteration   2: 32.340 ops/s
-Iteration   3: 32.426 ops/s
+# Warmup Iteration   1: 23.869 ops/s
+# Warmup Iteration   2: 33.150 ops/s
+# Warmup Iteration   3: 32.896 ops/s
+# Warmup Iteration   4: 32.745 ops/s
+# Warmup Iteration   5: 31.527 ops/s
+Iteration   1: 32.715 ops/s
+Iteration   2: 32.957 ops/s
+Iteration   3: 32.813 ops/s
 
 
 Result "entity_edit":
-  32.407 ±(99.9%) 1.099 ops/s [Average]
-  (min, avg, max) = (32.340, 32.407, 32.456), stdev = 0.060
-  CI (99.9%): [31.308, 33.507] (assumes normal distribution)
+  32.828 ±(99.9%) 2.216 ops/s [Average]
+  (min, avg, max) = (32.715, 32.828, 32.957), stdev = 0.121
+  CI (99.9%): [30.613, 35.044] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -612,20 +612,20 @@ Result "entity_edit":
 
 # Run progress: 83.33% complete, ETA 00:02:21
 # Fork: 1 of 1
-# Warmup Iteration   1: 5569.954 ops/s
-# Warmup Iteration   2: 5964.384 ops/s
-# Warmup Iteration   3: 6081.406 ops/s
-# Warmup Iteration   4: 6127.313 ops/s
-# Warmup Iteration   5: 6182.427 ops/s
-Iteration   1: 6203.633 ops/s
-Iteration   2: 6196.993 ops/s
-Iteration   3: 6176.318 ops/s
+# Warmup Iteration   1: 5615.173 ops/s
+# Warmup Iteration   2: 6083.891 ops/s
+# Warmup Iteration   3: 6105.290 ops/s
+# Warmup Iteration   4: 6177.776 ops/s
+# Warmup Iteration   5: 6145.284 ops/s
+Iteration   1: 6185.739 ops/s
+Iteration   2: 6162.579 ops/s
+Iteration   3: 6176.629 ops/s
 
 
 Result "transmuter":
-  6192.315 ±(99.9%) 259.896 ops/s [Average]
-  (min, avg, max) = (6176.318, 6192.315, 6203.633), stdev = 14.246
-  CI (99.9%): [5932.419, 6452.211] (assumes normal distribution)
+  6174.982 ±(99.9%) 212.857 ops/s [Average]
+  (min, avg, max) = (6162.579, 6174.982, 6185.739), stdev = 11.667
+  CI (99.9%): [5962.125, 6387.840] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -642,20 +642,20 @@ Result "transmuter":
 
 # Run progress: 87.50% complete, ETA 00:01:46
 # Fork: 1 of 1
-# Warmup Iteration   1: 1214.984 ops/s
-# Warmup Iteration   2: 1399.320 ops/s
-# Warmup Iteration   3: 1371.123 ops/s
-# Warmup Iteration   4: 1351.564 ops/s
-# Warmup Iteration   5: 1369.638 ops/s
-Iteration   1: 1378.347 ops/s
-Iteration   2: 1373.385 ops/s
-Iteration   3: 1383.907 ops/s
+# Warmup Iteration   1: 1218.613 ops/s
+# Warmup Iteration   2: 1382.403 ops/s
+# Warmup Iteration   3: 1375.972 ops/s
+# Warmup Iteration   4: 1333.484 ops/s
+# Warmup Iteration   5: 1325.467 ops/s
+Iteration   1: 1333.906 ops/s
+Iteration   2: 1329.077 ops/s
+Iteration   3: 1340.026 ops/s
 
 
 Result "transmuter":
-  1378.546 ±(99.9%) 96.033 ops/s [Average]
-  (min, avg, max) = (1373.385, 1378.546, 1383.907), stdev = 5.264
-  CI (99.9%): [1282.513, 1474.579] (assumes normal distribution)
+  1334.337 ±(99.9%) 100.108 ops/s [Average]
+  (min, avg, max) = (1329.077, 1334.337, 1340.026), stdev = 5.487
+  CI (99.9%): [1234.229, 1434.445] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -672,20 +672,20 @@ Result "transmuter":
 
 # Run progress: 91.67% complete, ETA 00:01:10
 # Fork: 1 of 1
-# Warmup Iteration   1: 232.451 ops/s
-# Warmup Iteration   2: 308.587 ops/s
-# Warmup Iteration   3: 309.662 ops/s
-# Warmup Iteration   4: 318.874 ops/s
-# Warmup Iteration   5: 314.392 ops/s
-Iteration   1: 308.998 ops/s
-Iteration   2: 303.559 ops/s
-Iteration   3: 303.461 ops/s
+# Warmup Iteration   1: 223.839 ops/s
+# Warmup Iteration   2: 303.735 ops/s
+# Warmup Iteration   3: 302.293 ops/s
+# Warmup Iteration   4: 306.578 ops/s
+# Warmup Iteration   5: 298.512 ops/s
+Iteration   1: 302.471 ops/s
+Iteration   2: 300.674 ops/s
+Iteration   3: 303.062 ops/s
 
 
 Result "transmuter":
-  305.339 ±(99.9%) 57.818 ops/s [Average]
-  (min, avg, max) = (303.461, 305.339, 308.998), stdev = 3.169
-  CI (99.9%): [247.522, 363.157] (assumes normal distribution)
+  302.069 ±(99.9%) 22.687 ops/s [Average]
+  (min, avg, max) = (300.674, 302.069, 303.062), stdev = 1.244
+  CI (99.9%): [279.382, 324.757] (assumes normal distribution)
 
 
 # JMH 1.11.3 (released 86 days ago)
@@ -702,48 +702,48 @@ Result "transmuter":
 
 # Run progress: 95.83% complete, ETA 00:00:35
 # Fork: 1 of 1
-# Warmup Iteration   1: 34.463 ops/s
-# Warmup Iteration   2: 48.594 ops/s
-# Warmup Iteration   3: 47.208 ops/s
-# Warmup Iteration   4: 48.358 ops/s
-# Warmup Iteration   5: 48.995 ops/s
-Iteration   1: 47.847 ops/s
-Iteration   2: 46.473 ops/s
-Iteration   3: 46.887 ops/s
+# Warmup Iteration   1: 31.898 ops/s
+# Warmup Iteration   2: 50.636 ops/s
+# Warmup Iteration   3: 48.801 ops/s
+# Warmup Iteration   4: 48.967 ops/s
+# Warmup Iteration   5: 49.341 ops/s
+Iteration   1: 48.531 ops/s
+Iteration   2: 49.668 ops/s
+Iteration   3: 49.934 ops/s
 
 
 Result "transmuter":
-  47.069 ±(99.9%) 12.863 ops/s [Average]
-  (min, avg, max) = (46.473, 47.069, 47.847), stdev = 0.705
-  CI (99.9%): [34.206, 59.932] (assumes normal distribution)
+  49.378 ±(99.9%) 13.591 ops/s [Average]
+  (min, avg, max) = (48.531, 49.378, 49.934), stdev = 0.745
+  CI (99.9%): [35.787, 62.968] (assumes normal distribution)
 
 
 # Run complete. Total time: 00:14:09
 
 Benchmark                            (entityCount)   Mode  Cnt      Score      Error  Units
-BaselineBenchmark.baseline                    4096  thrpt    3  10780.109 ± 1366.735  ops/s
-BaselineBenchmark.baseline                   16384  thrpt    3   2911.692 ± 1164.803  ops/s
-BaselineBenchmark.baseline                   65536  thrpt    3    629.889 ±  271.471  ops/s
-BaselineBenchmark.baseline                  262144  thrpt    3    158.410 ±   52.790  ops/s
-InsertRemoveBenchmark.insert_remove           4096  thrpt    3   3099.294 ±   84.694  ops/s
-InsertRemoveBenchmark.insert_remove          16384  thrpt    3    529.968 ±   50.514  ops/s
-InsertRemoveBenchmark.insert_remove          65536  thrpt    3     81.349 ±   12.126  ops/s
-InsertRemoveBenchmark.insert_remove         262144  thrpt    3     12.290 ±    3.872  ops/s
-PlainComponentBenchmark.plain                 4096  thrpt    3  10816.062 ± 4801.156  ops/s
-PlainComponentBenchmark.plain                16384  thrpt    3   2801.833 ±  126.142  ops/s
-PlainComponentBenchmark.plain                65536  thrpt    3    634.498 ±  215.949  ops/s
-PlainComponentBenchmark.plain               262144  thrpt    3    133.871 ±    6.484  ops/s
-PooledComponentBenchmark.pooled               4096  thrpt    3  11071.260 ± 1948.721  ops/s
-PooledComponentBenchmark.pooled              16384  thrpt    3   2824.641 ±  169.461  ops/s
-PooledComponentBenchmark.pooled              65536  thrpt    3    635.386 ±  211.742  ops/s
-PooledComponentBenchmark.pooled             262144  thrpt    3    134.794 ±   44.474  ops/s
-TransmuterBenchmark.entity_edit               4096  thrpt    3   5154.600 ±  386.982  ops/s
-TransmuterBenchmark.entity_edit              16384  thrpt    3   1194.913 ±  155.276  ops/s
-TransmuterBenchmark.entity_edit              65536  thrpt    3    258.180 ±   30.015  ops/s
-TransmuterBenchmark.entity_edit             262144  thrpt    3     32.407 ±    1.099  ops/s
-TransmuterBenchmark.transmuter                4096  thrpt    3   6192.315 ±  259.896  ops/s
-TransmuterBenchmark.transmuter               16384  thrpt    3   1378.546 ±   96.033  ops/s
-TransmuterBenchmark.transmuter               65536  thrpt    3    305.339 ±   57.818  ops/s
-TransmuterBenchmark.transmuter              262144  thrpt    3     47.069 ±   12.863  ops/s
+BaselineBenchmark.baseline                    4096  thrpt    3  11723.342 ± 1477.965  ops/s
+BaselineBenchmark.baseline                   16384  thrpt    3   2948.130 ±   54.889  ops/s
+BaselineBenchmark.baseline                   65536  thrpt    3    630.430 ±   98.950  ops/s
+BaselineBenchmark.baseline                  262144  thrpt    3    160.907 ±    4.949  ops/s
+InsertRemoveBenchmark.insert_remove           4096  thrpt    3   3119.454 ±   94.284  ops/s
+InsertRemoveBenchmark.insert_remove          16384  thrpt    3    527.752 ±   60.282  ops/s
+InsertRemoveBenchmark.insert_remove          65536  thrpt    3     78.666 ±    1.495  ops/s
+InsertRemoveBenchmark.insert_remove         262144  thrpt    3     12.478 ±    0.911  ops/s
+PlainComponentBenchmark.plain                 4096  thrpt    3  10686.431 ± 4353.398  ops/s
+PlainComponentBenchmark.plain                16384  thrpt    3   2849.960 ±  155.291  ops/s
+PlainComponentBenchmark.plain                65536  thrpt    3    623.263 ±  534.490  ops/s
+PlainComponentBenchmark.plain               262144  thrpt    3    134.081 ±    2.284  ops/s
+PooledComponentBenchmark.pooled               4096  thrpt    3  11298.816 ± 1149.244  ops/s
+PooledComponentBenchmark.pooled              16384  thrpt    3   2646.130 ± 1894.127  ops/s
+PooledComponentBenchmark.pooled              65536  thrpt    3    638.901 ±  187.922  ops/s
+PooledComponentBenchmark.pooled             262144  thrpt    3    132.465 ±    1.094  ops/s
+TransmuterBenchmark.entity_edit               4096  thrpt    3   5154.114 ±  146.161  ops/s
+TransmuterBenchmark.entity_edit              16384  thrpt    3   1135.214 ±  198.249  ops/s
+TransmuterBenchmark.entity_edit              65536  thrpt    3    271.765 ±   50.530  ops/s
+TransmuterBenchmark.entity_edit             262144  thrpt    3     32.828 ±    2.216  ops/s
+TransmuterBenchmark.transmuter                4096  thrpt    3   6174.982 ±  212.857  ops/s
+TransmuterBenchmark.transmuter               16384  thrpt    3   1334.337 ±  100.108  ops/s
+TransmuterBenchmark.transmuter               65536  thrpt    3    302.069 ±   22.687  ops/s
+TransmuterBenchmark.transmuter              262144  thrpt    3     49.378 ±   13.591  ops/s
 
 Benchmark result is saved to results/artemis-odb-0.9.0.json

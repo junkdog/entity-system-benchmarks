@@ -13,7 +13,7 @@
 
 function run_bench() {
 #	java -jar $1/target/microbenchmarks.jar ".*\.(ins|pla|ent|tra).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
-	 java -jar $1/target/microbenchmarks.jar ".*" -e ".*\.packed.*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
+	 java -jar $1/target/microbenchmarks.jar ".*" -e ".*(\.packed|baseline_legacy).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 	# java -jar $1/target/microbenchmarks.jar ".*\.(plain|pooled).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 }
 

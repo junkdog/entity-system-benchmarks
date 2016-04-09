@@ -7,9 +7,9 @@ import com.github.esfbench.ashley.component.Comp1;
 import com.github.esfbench.ashley.component.Comp4;
 import com.github.esfbench.ashley.component.Comp5;
 import org.openjdk.jmh.infra.Blackhole;
-
+q
 public class CompSystemA extends IteratingSystem {
-	
+
 	@SuppressWarnings("unchecked")
 	public CompSystemA() {
 		super(Family.all(Comp1.class, Comp4.class, Comp5.class).get());

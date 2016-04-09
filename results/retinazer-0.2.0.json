@@ -1,39 +1,525 @@
 [
     {
-        "benchmark" : "com.github.antag99.retinazer.InsertRemoveBenchmark.insert_remove",
+        "benchmark" : "com.github.antag99.retinazer.BaselineBenchmark.baseline",
         "mode" : "thrpt",
         "threads" : 1,
         "forks" : 1,
-        "warmupIterations" : 1,
+        "warmupIterations" : 5,
         "warmupTime" : "1 s",
-        "measurementIterations" : 1,
-        "measurementTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
         "params" : {
-            "entityCount" : "262144"
+            "entityCount" : "4096"
         },
         "primaryMetric" : {
-            "score" : 24.926905325518756,
-            "scoreError" : "NaN",
+            "score" : 19960.78981129806,
+            "scoreError" : 713.4508144802397,
             "scoreConfidence" : [
-                "NaN",
-                "NaN"
+                19247.33899681782,
+                20674.240625778297
             ],
             "scorePercentiles" : {
-                "0.0" : 24.926905325518756,
-                "50.0" : 24.926905325518756,
-                "90.0" : 24.926905325518756,
-                "95.0" : 24.926905325518756,
-                "99.0" : 24.926905325518756,
-                "99.9" : 24.926905325518756,
-                "99.99" : 24.926905325518756,
-                "99.999" : 24.926905325518756,
-                "99.9999" : 24.926905325518756,
-                "100.0" : 24.926905325518756
+                "0.0" : 19916.228675241888,
+                "50.0" : 19976.7411873342,
+                "90.0" : 19989.39957131808,
+                "95.0" : 19989.39957131808,
+                "99.0" : 19989.39957131808,
+                "99.9" : 19989.39957131808,
+                "99.99" : 19989.39957131808,
+                "99.999" : 19989.39957131808,
+                "99.9999" : 19989.39957131808,
+                "100.0" : 19989.39957131808
             },
             "scoreUnit" : "ops/s",
             "rawData" : [
                 [
-                    24.926905325518756
+                    19916.228675241888,
+                    19976.7411873342,
+                    19989.39957131808
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 5001.970946797297,
+            "scoreError" : 93.75856136104139,
+            "scoreConfidence" : [
+                4908.212385436255,
+                5095.729508158339
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4996.056058628895,
+                "50.0" : 5004.513435742726,
+                "90.0" : 5005.34334602027,
+                "95.0" : 5005.34334602027,
+                "99.0" : 5005.34334602027,
+                "99.9" : 5005.34334602027,
+                "99.99" : 5005.34334602027,
+                "99.999" : 5005.34334602027,
+                "99.9999" : 5005.34334602027,
+                "100.0" : 5005.34334602027
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5005.34334602027,
+                    4996.056058628895,
+                    5004.513435742726
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 1112.6852985797743,
+            "scoreError" : 424.57670452413964,
+            "scoreConfidence" : [
+                688.1085940556347,
+                1537.262003103914
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1085.952687539095,
+                "50.0" : 1123.6779905191997,
+                "90.0" : 1128.425217681029,
+                "95.0" : 1128.425217681029,
+                "99.0" : 1128.425217681029,
+                "99.9" : 1128.425217681029,
+                "99.99" : 1128.425217681029,
+                "99.999" : 1128.425217681029,
+                "99.9999" : 1128.425217681029,
+                "100.0" : 1128.425217681029
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1123.6779905191997,
+                    1128.425217681029,
+                    1085.952687539095
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 274.9502534368769,
+            "scoreError" : 136.79000719580847,
+            "scoreConfidence" : [
+                138.16024624106842,
+                411.74026063268536
+            ],
+            "scorePercentiles" : {
+                "0.0" : 270.5180326844232,
+                "50.0" : 270.7254479780789,
+                "90.0" : 283.6072796481286,
+                "95.0" : 283.6072796481286,
+                "99.0" : 283.6072796481286,
+                "99.9" : 283.6072796481286,
+                "99.99" : 283.6072796481286,
+                "99.999" : 283.6072796481286,
+                "99.9999" : 283.6072796481286,
+                "100.0" : 283.6072796481286
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    283.6072796481286,
+                    270.5180326844232,
+                    270.7254479780789
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 8451.564353732758,
+            "scoreError" : 538.5587188492927,
+            "scoreConfidence" : [
+                7913.005634883465,
+                8990.12307258205
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8425.643551807965,
+                "50.0" : 8445.353749275519,
+                "90.0" : 8483.695760114793,
+                "95.0" : 8483.695760114793,
+                "99.0" : 8483.695760114793,
+                "99.9" : 8483.695760114793,
+                "99.99" : 8483.695760114793,
+                "99.999" : 8483.695760114793,
+                "99.9999" : 8483.695760114793,
+                "100.0" : 8483.695760114793
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    8483.695760114793,
+                    8425.643551807965,
+                    8445.353749275519
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 1765.795316157203,
+            "scoreError" : 151.89211254345335,
+            "scoreConfidence" : [
+                1613.9032036137496,
+                1917.6874287006563
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1757.593331891361,
+                "50.0" : 1765.5531307438148,
+                "90.0" : 1774.2394858364326,
+                "95.0" : 1774.2394858364326,
+                "99.0" : 1774.2394858364326,
+                "99.9" : 1774.2394858364326,
+                "99.99" : 1774.2394858364326,
+                "99.999" : 1774.2394858364326,
+                "99.9999" : 1774.2394858364326,
+                "100.0" : 1774.2394858364326
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1774.2394858364326,
+                    1765.5531307438148,
+                    1757.593331891361
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 271.7153922910529,
+            "scoreError" : 20.741798353130136,
+            "scoreConfidence" : [
+                250.97359393792277,
+                292.4571906441831
+            ],
+            "scorePercentiles" : {
+                "0.0" : 270.46619532278504,
+                "50.0" : 271.9903690051593,
+                "90.0" : 272.6896125452145,
+                "95.0" : 272.6896125452145,
+                "99.0" : 272.6896125452145,
+                "99.9" : 272.6896125452145,
+                "99.99" : 272.6896125452145,
+                "99.999" : 272.6896125452145,
+                "99.9999" : 272.6896125452145,
+                "100.0" : 272.6896125452145
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    270.46619532278504,
+                    271.9903690051593,
+                    272.6896125452145
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 26.675431053915805,
+            "scoreError" : 1.9985490209904173,
+            "scoreConfidence" : [
+                24.676882032925388,
+                28.673980074906222
+            ],
+            "scorePercentiles" : {
+                "0.0" : 26.56122318670633,
+                "50.0" : 26.685439183508556,
+                "90.0" : 26.779630791532526,
+                "95.0" : 26.779630791532526,
+                "99.0" : 26.779630791532526,
+                "99.9" : 26.779630791532526,
+                "99.99" : 26.779630791532526,
+                "99.999" : 26.779630791532526,
+                "99.9999" : 26.779630791532526,
+                "100.0" : 26.779630791532526
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    26.685439183508556,
+                    26.56122318670633,
+                    26.779630791532526
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 10211.498070796759,
+            "scoreError" : 7716.588148179553,
+            "scoreConfidence" : [
+                2494.9099226172057,
+                17928.086218976314
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9842.872703111618,
+                "50.0" : 10118.336404133637,
+                "90.0" : 10673.285105145022,
+                "95.0" : 10673.285105145022,
+                "99.0" : 10673.285105145022,
+                "99.9" : 10673.285105145022,
+                "99.99" : 10673.285105145022,
+                "99.999" : 10673.285105145022,
+                "99.9999" : 10673.285105145022,
+                "100.0" : 10673.285105145022
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    10673.285105145022,
+                    10118.336404133637,
+                    9842.872703111618
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 2748.9643473354063,
+            "scoreError" : 1128.6851903376548,
+            "scoreConfidence" : [
+                1620.2791569977514,
+                3877.649537673061
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2680.1323877642276,
+                "50.0" : 2766.8227873832016,
+                "90.0" : 2799.93786685879,
+                "95.0" : 2799.93786685879,
+                "99.0" : 2799.93786685879,
+                "99.9" : 2799.93786685879,
+                "99.99" : 2799.93786685879,
+                "99.999" : 2799.93786685879,
+                "99.9999" : 2799.93786685879,
+                "100.0" : 2799.93786685879
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2799.93786685879,
+                    2766.8227873832016,
+                    2680.1323877642276
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 674.7968479040793,
+            "scoreError" : 160.6015304246671,
+            "scoreConfidence" : [
+                514.1953174794122,
+                835.3983783287464
+            ],
+            "scorePercentiles" : {
+                "0.0" : 664.6349967034174,
+                "50.0" : 679.6601439135687,
+                "90.0" : 680.095403095252,
+                "95.0" : 680.095403095252,
+                "99.0" : 680.095403095252,
+                "99.9" : 680.095403095252,
+                "99.99" : 680.095403095252,
+                "99.999" : 680.095403095252,
+                "99.9999" : 680.095403095252,
+                "100.0" : 680.095403095252
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    679.6601439135687,
+                    680.095403095252,
+                    664.6349967034174
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 153.3514253076822,
+            "scoreError" : 7.142582166199875,
+            "scoreConfidence" : [
+                146.20884314148233,
+                160.49400747388208
+            ],
+            "scorePercentiles" : {
+                "0.0" : 152.89952852718847,
+                "50.0" : 153.56636027524374,
+                "90.0" : 153.58838712061444,
+                "95.0" : 153.58838712061444,
+                "99.0" : 153.58838712061444,
+                "99.9" : 153.58838712061444,
+                "99.99" : 153.58838712061444,
+                "99.999" : 153.58838712061444,
+                "99.9999" : 153.58838712061444,
+                "100.0" : 153.58838712061444
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    152.89952852718847,
+                    153.58838712061444,
+                    153.56636027524374
                 ]
             ]
         },
@@ -46,36 +532,170 @@
         "mode" : "thrpt",
         "threads" : 1,
         "forks" : 1,
-        "warmupIterations" : 1,
+        "warmupIterations" : 5,
         "warmupTime" : "1 s",
-        "measurementIterations" : 1,
-        "measurementTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
         "params" : {
-            "entityCount" : "262144"
+            "entityCount" : "4096"
         },
         "primaryMetric" : {
-            "score" : 244.67627078353647,
-            "scoreError" : "NaN",
+            "score" : 19814.42086837239,
+            "scoreError" : 872.6668489210103,
             "scoreConfidence" : [
-                "NaN",
-                "NaN"
+                18941.75401945138,
+                20687.087717293398
             ],
             "scorePercentiles" : {
-                "0.0" : 244.67627078353647,
-                "50.0" : 244.67627078353647,
-                "90.0" : 244.67627078353647,
-                "95.0" : 244.67627078353647,
-                "99.0" : 244.67627078353647,
-                "99.9" : 244.67627078353647,
-                "99.99" : 244.67627078353647,
-                "99.999" : 244.67627078353647,
-                "99.9999" : 244.67627078353647,
-                "100.0" : 244.67627078353647
+                "0.0" : 19782.47189425133,
+                "50.0" : 19791.375858825322,
+                "90.0" : 19869.414852040518,
+                "95.0" : 19869.414852040518,
+                "99.0" : 19869.414852040518,
+                "99.9" : 19869.414852040518,
+                "99.99" : 19869.414852040518,
+                "99.999" : 19869.414852040518,
+                "99.9999" : 19869.414852040518,
+                "100.0" : 19869.414852040518
             },
             "scoreUnit" : "ops/s",
             "rawData" : [
                 [
-                    244.67627078353647
+                    19869.414852040518,
+                    19782.47189425133,
+                    19791.375858825322
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 4735.290332611523,
+            "scoreError" : 95.49364891747294,
+            "scoreConfidence" : [
+                4639.7966836940495,
+                4830.783981528996
+            ],
+            "scorePercentiles" : {
+                "0.0" : 4731.1177828910395,
+                "50.0" : 4733.589712566646,
+                "90.0" : 4741.163502376883,
+                "95.0" : 4741.163502376883,
+                "99.0" : 4741.163502376883,
+                "99.9" : 4741.163502376883,
+                "99.99" : 4741.163502376883,
+                "99.999" : 4741.163502376883,
+                "99.9999" : 4741.163502376883,
+                "100.0" : 4741.163502376883
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    4741.163502376883,
+                    4731.1177828910395,
+                    4733.589712566646
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 1155.8917385691796,
+            "scoreError" : 411.67589816827956,
+            "scoreConfidence" : [
+                744.2158404009,
+                1567.567636737459
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1130.5131240232147,
+                "50.0" : 1163.468390658069,
+                "90.0" : 1173.6937010262548,
+                "95.0" : 1173.6937010262548,
+                "99.0" : 1173.6937010262548,
+                "99.9" : 1173.6937010262548,
+                "99.99" : 1173.6937010262548,
+                "99.999" : 1173.6937010262548,
+                "99.9999" : 1173.6937010262548,
+                "100.0" : 1173.6937010262548
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1173.6937010262548,
+                    1163.468390658069,
+                    1130.5131240232147
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.github.antag99.retinazer.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 276.1731858564497,
+            "scoreError" : 24.402736371390347,
+            "scoreConfidence" : [
+                251.77044948505937,
+                300.57592222784007
+            ],
+            "scorePercentiles" : {
+                "0.0" : 274.8874742849255,
+                "50.0" : 276.0748444742838,
+                "90.0" : 277.55723881014006,
+                "95.0" : 277.55723881014006,
+                "99.0" : 277.55723881014006,
+                "99.9" : 277.55723881014006,
+                "99.99" : 277.55723881014006,
+                "99.999" : 277.55723881014006,
+                "99.9999" : 277.55723881014006,
+                "100.0" : 277.55723881014006
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    274.8874742849255,
+                    276.0748444742838,
+                    277.55723881014006
                 ]
             ]
         },
