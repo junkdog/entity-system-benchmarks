@@ -25,12 +25,12 @@
 
 package com.artemis;
 
+import com.artemis.component.PlainStructComponentA;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Setup;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.options.OptionsBuilder;
 
-import com.artemis.component.PlainStructComponentA;
 import com.artemis.component.PooledPosition;
 import com.artemis.system.EntityDeleterSystem;
 import com.artemis.system.PooledPositionSystem;

@@ -38,6 +38,7 @@ public class InsertRemoveBenchmark extends JmhSettings {
 	public void init() throws Exception{
 		
 		world = new World(new WorldConfiguration()
+			.expectedEntityCount(entityCount + 1)
 			.setSystem(new EntityManglerSystem(SEED, entityCount))
 			.setSystem(new CompSystemA())
 			.setSystem(new CompSystemB())

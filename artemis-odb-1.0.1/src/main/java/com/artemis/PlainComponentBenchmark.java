@@ -42,11 +42,12 @@ public class PlainComponentBenchmark extends JmhSettings {
 	@Setup
 	public void init() {
 		worldPlain = new World(new WorldConfiguration()
-				.setSystem(new PlainPositionSystem())
-				.setSystem(new PlainPositionSystem2())
-				.setSystem(new PlainPositionSystem3())
-				.setSystem(new EntityDeleterSystem(
-						JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class)));
+			.expectedEntityCount(entityCount + 1)
+			.setSystem(new PlainPositionSystem())
+			.setSystem(new PlainPositionSystem2())
+			.setSystem(new PlainPositionSystem3())
+			.setSystem(new EntityDeleterSystem(
+				JmhSettings.SEED, entityCount, PlainPosition.class, PlainStructComponentA.class)));
 	}
 	
 	@Benchmark

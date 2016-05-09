@@ -41,11 +41,12 @@ public class PooledComponentBenchmark extends JmhSettings {
 	@Setup
 	public void init() {
 		worldPooled = new World(new WorldConfiguration()
-				.setSystem(new PooledPositionSystem())
-				.setSystem(new PooledPositionSystem2())
-				.setSystem(new PooledPositionSystem3())
-				.setSystem(new EntityDeleterSystem(
-						SEED, entityCount, PooledPosition.class, PlainStructComponentA.class)));
+			.expectedEntityCount(entityCount + 1)
+			.setSystem(new PooledPositionSystem())
+			.setSystem(new PooledPositionSystem2())
+			.setSystem(new PooledPositionSystem3())
+			.setSystem(new EntityDeleterSystem(
+					SEED, entityCount, PooledPosition.class, PlainStructComponentA.class)));
 	}
 	
 	@Benchmark

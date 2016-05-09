@@ -15,16 +15,18 @@ public class TransmuterBenchmark extends JmhSettings {
 	@Setup
 	public void init() {
 		worldEdit = new World(new WorldConfiguration()
-				.setSystem(new BaselinePositionSystem())
-				.setSystem(new BaselinePositionSystem2())
-				.setSystem(new BaselinePositionSystem3())
-				.setSystem(new CompositionManglerSystem(SEED, entityCount)));
+			.expectedEntityCount(entityCount + 1)
+			.setSystem(new BaselinePositionSystem())
+			.setSystem(new BaselinePositionSystem2())
+			.setSystem(new BaselinePositionSystem3())
+			.setSystem(new CompositionManglerSystem(SEED, entityCount)));
 
 		worldTransmuter = new World(new WorldConfiguration()
-				.setSystem(new BaselinePositionSystem())
-				.setSystem(new BaselinePositionSystem2())
-				.setSystem(new BaselinePositionSystem3())
-				.setSystem(new TransmutingCompositionManglerSystem(SEED, entityCount)));
+			.expectedEntityCount(entityCount + 1)
+			.setSystem(new BaselinePositionSystem())
+			.setSystem(new BaselinePositionSystem2())
+			.setSystem(new BaselinePositionSystem3())
+			.setSystem(new TransmutingCompositionManglerSystem(SEED, entityCount)));
 	}
 	
 	@Benchmark
