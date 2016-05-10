@@ -12,7 +12,7 @@
 	<name>artemis-odb-2.0.0</name>
 
 	<properties>
-		<artemis.version>2.0.0-SNAPSHOT</artemis.version>
+		<artemis.version>2.0.0-RC1</artemis.version>
 		<optimizeSystems>false</optimizeSystems>
 	</properties>
 
@@ -31,7 +31,7 @@
 			<artifactId>artemis-odb</artifactId>
 			<version>${artemis.version}</version>
 		</dependency>
-		<!-- For @PackedWeaver and @PooledWeaver components -->
+		<!-- For @PooledWeaver components -->
 		<dependency>
 			<groupId>net.onedaybeard.artemis</groupId>
 			<artifactId>artemis-odb-test</artifactId>
