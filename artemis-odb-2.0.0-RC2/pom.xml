@@ -7,12 +7,12 @@
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>artemis-odb-2.0.0</artifactId>
+	<artifactId>artemis-odb-2.0.0-RC2</artifactId>
 	<packaging>jar</packaging>
-	<name>artemis-odb-2.0.0</name>
+	<name>artemis-odb-2.0.0-RC2</name>
 
 	<properties>
-		<artemis.version>2.0.0-RC1</artemis.version>
+		<artemis.version>2.0.0-RC2-SNAPSHOT</artemis.version>
 		<optimizeSystems>false</optimizeSystems>
 	</properties>
 

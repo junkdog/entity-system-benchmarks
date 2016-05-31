@@ -9,12 +9,26 @@
 #PARAMS="-i 3 -wi 5 -r 5 -p entityCount=65356,262144"
 #PARAMS="-i 3 -wi 3 -r 5 -p entityCount=16384,262144"
 #PARAMS="-i 3 -wi 5 -r 5 -p entityCount=16384,65536,262144"
+#PARAMS="-i 5 -wi 5 -r 5 -p entityCount=16384,65536,262144"
+PARAMS="-i 3 -wi 5 -r 5 -p entityCount=65536,262144"
 #PARAMS="-i 1 -wi 1 -r 1 -p entityCount=262144"
 
 
 function run_bench() {
 #	java -jar $1/target/microbenchmarks.jar ".*\.(ins|pla|ent|tra).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
-	java -jar $1/target/microbenchmarks.jar ".*" -e ".*.packed.*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
+#	java -XX:+UnlockCommercialFeatures -XX:+FlightRecorder -jar $1/target/microbenchmarks.jar ".*" -e ".*(baseline|packed|plain|legacy).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
+#		-prof stack -prof hs_rt \
+	java -jar $1/target/microbenchmarks.jar \
+		".*(insert|transmuter|pool)" \
+		-e ".*(baseline|packed|plain|legacy).*" \
+		-rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
+#	java -XX:+UnlockCommercialFeatures \
+#		-XX:+FlightRecorder \
+#		-XX:StartFlightRecording=duration=60s,filename=./profiling-data.jfr,name=FULL,settings=profile \
+#		-jar $1/target/microbenchmarks.jar \
+#		".*insert.*" \
+#		-e ".*(baseline|packed|plain|pool|trans|edit|legacy).*" \
+#		-rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 #	java -jar $1/target/microbenchmarks.jar ".*" -e ".*(\.packed|_legacy|baseline).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 	#java -XX:-UseCompressedOops -jar $1/target/microbenchmarks.jar ".*" -e ".*(\.packed|_legacy|baseline).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
 	# java -jar $1/target/microbenchmarks.jar ".*\.(plain|pooled).*" -rf json -rff results/$1$2.json $PARAMS | tee results/$1$2.log
@@ -40,10 +54,11 @@ function run_all() {
 
 
 function run_dev() {
-	mvn -P fast clean install
-	run_bench artemis-odb-2.0.0 _fast
+	mvn -P fast clean install -DskipTests
+#	run_bench artemis-odb-2.0.0-RC1 _fast
+	run_bench artemis-odb-2.0.0-RC2 _fast
 }
 
-run_all
-#run_dev
+#run_all
+run_dev
 
