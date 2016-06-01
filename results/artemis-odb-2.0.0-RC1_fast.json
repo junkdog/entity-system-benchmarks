@@ -1,0 +1,2115 @@
+[
+    {
+        "benchmark" : "com.artemis.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 15010.387374884966,
+            "scoreError" : 643.844597797218,
+            "scoreConfidence" : [
+                14366.542777087747,
+                15654.231972682184
+            ],
+            "scorePercentiles" : {
+                "0.0" : 14974.032295330502,
+                "50.0" : 15012.621055562066,
+                "90.0" : 15044.508773762329,
+                "95.0" : 15044.508773762329,
+                "99.0" : 15044.508773762329,
+                "99.9" : 15044.508773762329,
+                "99.99" : 15044.508773762329,
+                "99.999" : 15044.508773762329,
+                "99.9999" : 15044.508773762329,
+                "100.0" : 15044.508773762329
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    15044.508773762329,
+                    14974.032295330502,
+                    15012.621055562066
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 3768.3487470599807,
+            "scoreError" : 59.73826862966547,
+            "scoreConfidence" : [
+                3708.610478430315,
+                3828.0870156896463
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3764.850826068689,
+                "50.0" : 3768.854536536537,
+                "90.0" : 3771.340878574717,
+                "95.0" : 3771.340878574717,
+                "99.0" : 3771.340878574717,
+                "99.9" : 3771.340878574717,
+                "99.99" : 3771.340878574717,
+                "99.999" : 3771.340878574717,
+                "99.9999" : 3771.340878574717,
+                "100.0" : 3771.340878574717
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3768.854536536537,
+                    3764.850826068689,
+                    3771.340878574717
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 942.2523370099481,
+            "scoreError" : 10.953638918013162,
+            "scoreConfidence" : [
+                931.2986980919349,
+                953.2059759279613
+            ],
+            "scorePercentiles" : {
+                "0.0" : 941.8291823568519,
+                "50.0" : 941.9883174882833,
+                "90.0" : 942.9395111847091,
+                "95.0" : 942.9395111847091,
+                "99.0" : 942.9395111847091,
+                "99.9" : 942.9395111847091,
+                "99.99" : 942.9395111847091,
+                "99.999" : 942.9395111847091,
+                "99.9999" : 942.9395111847091,
+                "100.0" : 942.9395111847091
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    941.8291823568519,
+                    941.9883174882833,
+                    942.9395111847091
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.BaselineBenchmark.baseline",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 235.91622627653067,
+            "scoreError" : 4.986406019303787,
+            "scoreConfidence" : [
+                230.92982025722688,
+                240.90263229583445
+            ],
+            "scorePercentiles" : {
+                "0.0" : 235.60223659276338,
+                "50.0" : 236.04560532024615,
+                "90.0" : 236.10083691658244,
+                "95.0" : 236.10083691658244,
+                "99.0" : 236.10083691658244,
+                "99.9" : 236.10083691658244,
+                "99.99" : 236.10083691658244,
+                "99.999" : 236.10083691658244,
+                "99.9999" : 236.10083691658244,
+                "100.0" : 236.10083691658244
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    235.60223659276338,
+                    236.10083691658244,
+                    236.04560532024615
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 6225.450760264386,
+            "scoreError" : 233.2133862044596,
+            "scoreConfidence" : [
+                5992.237374059927,
+                6458.6641464688455
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6213.884764128437,
+                "50.0" : 6223.291383028504,
+                "90.0" : 6239.176133636219,
+                "95.0" : 6239.176133636219,
+                "99.0" : 6239.176133636219,
+                "99.9" : 6239.176133636219,
+                "99.99" : 6239.176133636219,
+                "99.999" : 6239.176133636219,
+                "99.9999" : 6239.176133636219,
+                "100.0" : 6239.176133636219
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    6223.291383028504,
+                    6213.884764128437,
+                    6239.176133636219
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 1513.2913956314544,
+            "scoreError" : 83.61624281574828,
+            "scoreConfidence" : [
+                1429.675152815706,
+                1596.9076384472028
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1508.2836906639632,
+                "50.0" : 1514.312446391562,
+                "90.0" : 1517.2780498388388,
+                "95.0" : 1517.2780498388388,
+                "99.0" : 1517.2780498388388,
+                "99.9" : 1517.2780498388388,
+                "99.99" : 1517.2780498388388,
+                "99.999" : 1517.2780498388388,
+                "99.9999" : 1517.2780498388388,
+                "100.0" : 1517.2780498388388
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1517.2780498388388,
+                    1514.312446391562,
+                    1508.2836906639632
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 334.10342937522114,
+            "scoreError" : 8.310397942695639,
+            "scoreConfidence" : [
+                325.7930314325255,
+                342.4138273179168
+            ],
+            "scorePercentiles" : {
+                "0.0" : 333.67064910270057,
+                "50.0" : 334.0609271288331,
+                "90.0" : 334.5787118941298,
+                "95.0" : 334.5787118941298,
+                "99.0" : 334.5787118941298,
+                "99.9" : 334.5787118941298,
+                "99.99" : 334.5787118941298,
+                "99.999" : 334.5787118941298,
+                "99.9999" : 334.5787118941298,
+                "100.0" : 334.5787118941298
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    334.5787118941298,
+                    333.67064910270057,
+                    334.0609271288331
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.InsertRemoveBenchmark.insert_remove",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 62.89404638416212,
+            "scoreError" : 31.609402529481212,
+            "scoreConfidence" : [
+                31.284643854680905,
+                94.50344891364333
+            ],
+            "scorePercentiles" : {
+                "0.0" : 61.593296204119135,
+                "50.0" : 62.22798617058657,
+                "90.0" : 64.86085677778064,
+                "95.0" : 64.86085677778064,
+                "99.0" : 64.86085677778064,
+                "99.9" : 64.86085677778064,
+                "99.99" : 64.86085677778064,
+                "99.999" : 64.86085677778064,
+                "99.9999" : 64.86085677778064,
+                "100.0" : 64.86085677778064
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    64.86085677778064,
+                    62.22798617058657,
+                    61.593296204119135
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyBaselineBenchmark.baseline_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 13506.330796215227,
+            "scoreError" : 651.6023600532286,
+            "scoreConfidence" : [
+                12854.728436161999,
+                14157.933156268455
+            ],
+            "scorePercentiles" : {
+                "0.0" : 13474.059504829513,
+                "50.0" : 13500.226997059643,
+                "90.0" : 13544.705886756525,
+                "95.0" : 13544.705886756525,
+                "99.0" : 13544.705886756525,
+                "99.9" : 13544.705886756525,
+                "99.99" : 13544.705886756525,
+                "99.999" : 13544.705886756525,
+                "99.9999" : 13544.705886756525,
+                "100.0" : 13544.705886756525
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    13500.226997059643,
+                    13474.059504829513,
+                    13544.705886756525
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyBaselineBenchmark.baseline_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 3407.780325235854,
+            "scoreError" : 26.634371546315233,
+            "scoreConfidence" : [
+                3381.1459536895386,
+                3434.4146967821694
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3406.337675942712,
+                "50.0" : 3407.746376407929,
+                "90.0" : 3409.256923356922,
+                "95.0" : 3409.256923356922,
+                "99.0" : 3409.256923356922,
+                "99.9" : 3409.256923356922,
+                "99.99" : 3409.256923356922,
+                "99.999" : 3409.256923356922,
+                "99.9999" : 3409.256923356922,
+                "100.0" : 3409.256923356922
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3407.746376407929,
+                    3409.256923356922,
+                    3406.337675942712
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyBaselineBenchmark.baseline_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 840.9603426239364,
+            "scoreError" : 15.453851156215336,
+            "scoreConfidence" : [
+                825.506491467721,
+                856.4141937801518
+            ],
+            "scorePercentiles" : {
+                "0.0" : 840.376978040762,
+                "50.0" : 840.572094771655,
+                "90.0" : 841.9319550593921,
+                "95.0" : 841.9319550593921,
+                "99.0" : 841.9319550593921,
+                "99.9" : 841.9319550593921,
+                "99.99" : 841.9319550593921,
+                "99.999" : 841.9319550593921,
+                "99.9999" : 841.9319550593921,
+                "100.0" : 841.9319550593921
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    840.572094771655,
+                    840.376978040762,
+                    841.9319550593921
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyBaselineBenchmark.baseline_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 185.31929388713266,
+            "scoreError" : 2.142687721452832,
+            "scoreConfidence" : [
+                183.17660616567983,
+                187.4619816085855
+            ],
+            "scorePercentiles" : {
+                "0.0" : 185.19702156890062,
+                "50.0" : 185.32962522620394,
+                "90.0" : 185.4312348662934,
+                "95.0" : 185.4312348662934,
+                "99.0" : 185.4312348662934,
+                "99.9" : 185.4312348662934,
+                "99.99" : 185.4312348662934,
+                "99.999" : 185.4312348662934,
+                "99.9999" : 185.4312348662934,
+                "100.0" : 185.4312348662934
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    185.32962522620394,
+                    185.19702156890062,
+                    185.4312348662934
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyInsertRemoveBenchmark.insert_remove_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 5922.17342160381,
+            "scoreError" : 215.7166746628993,
+            "scoreConfidence" : [
+                5706.456746940911,
+                6137.890096266709
+            ],
+            "scorePercentiles" : {
+                "0.0" : 5908.675594607958,
+                "50.0" : 5927.142663192733,
+                "90.0" : 5930.702007010738,
+                "95.0" : 5930.702007010738,
+                "99.0" : 5930.702007010738,
+                "99.9" : 5930.702007010738,
+                "99.99" : 5930.702007010738,
+                "99.999" : 5930.702007010738,
+                "99.9999" : 5930.702007010738,
+                "100.0" : 5930.702007010738
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    5908.675594607958,
+                    5927.142663192733,
+                    5930.702007010738
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyInsertRemoveBenchmark.insert_remove_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 1428.0883975324268,
+            "scoreError" : 21.633420014602475,
+            "scoreConfidence" : [
+                1406.4549775178243,
+                1449.7218175470293
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1426.8813200023376,
+                "50.0" : 1428.1321628653845,
+                "90.0" : 1429.2517097295581,
+                "95.0" : 1429.2517097295581,
+                "99.0" : 1429.2517097295581,
+                "99.9" : 1429.2517097295581,
+                "99.99" : 1429.2517097295581,
+                "99.999" : 1429.2517097295581,
+                "99.9999" : 1429.2517097295581,
+                "100.0" : 1429.2517097295581
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1428.1321628653845,
+                    1426.8813200023376,
+                    1429.2517097295581
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyInsertRemoveBenchmark.insert_remove_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 297.4000957284917,
+            "scoreError" : 23.25894557593951,
+            "scoreConfidence" : [
+                274.1411501525522,
+                320.6590413044312
+            ],
+            "scorePercentiles" : {
+                "0.0" : 296.2653743475081,
+                "50.0" : 297.15525026167313,
+                "90.0" : 298.77966257629384,
+                "95.0" : 298.77966257629384,
+                "99.0" : 298.77966257629384,
+                "99.9" : 298.77966257629384,
+                "99.99" : 298.77966257629384,
+                "99.999" : 298.77966257629384,
+                "99.9999" : 298.77966257629384,
+                "100.0" : 298.77966257629384
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    298.77966257629384,
+                    297.15525026167313,
+                    296.2653743475081
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyInsertRemoveBenchmark.insert_remove_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 53.509561876327346,
+            "scoreError" : 7.744057506465784,
+            "scoreConfidence" : [
+                45.76550436986156,
+                61.25361938279313
+            ],
+            "scorePercentiles" : {
+                "0.0" : 53.09907402117787,
+                "50.0" : 53.48284395840957,
+                "90.0" : 53.94676764939459,
+                "95.0" : 53.94676764939459,
+                "99.0" : 53.94676764939459,
+                "99.9" : 53.94676764939459,
+                "99.99" : 53.94676764939459,
+                "99.999" : 53.94676764939459,
+                "99.9999" : 53.94676764939459,
+                "100.0" : 53.94676764939459
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    53.94676764939459,
+                    53.09907402117787,
+                    53.48284395840957
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPlainComponentBenchmark.plain_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 11594.372441484787,
+            "scoreError" : 9896.082632477113,
+            "scoreConfidence" : [
+                1698.2898090076742,
+                21490.4550739619
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10989.794449082583,
+                "50.0" : 11754.8773515009,
+                "90.0" : 12038.445523870882,
+                "95.0" : 12038.445523870882,
+                "99.0" : 12038.445523870882,
+                "99.9" : 12038.445523870882,
+                "99.99" : 12038.445523870882,
+                "99.999" : 12038.445523870882,
+                "99.9999" : 12038.445523870882,
+                "100.0" : 12038.445523870882
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    12038.445523870882,
+                    11754.8773515009,
+                    10989.794449082583
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPlainComponentBenchmark.plain_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 3189.9280265767316,
+            "scoreError" : 1573.7396831440062,
+            "scoreConfidence" : [
+                1616.1883434327253,
+                4763.667709720738
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3090.498898346189,
+                "50.0" : 3234.493226790989,
+                "90.0" : 3244.7919545930167,
+                "95.0" : 3244.7919545930167,
+                "99.0" : 3244.7919545930167,
+                "99.9" : 3244.7919545930167,
+                "99.99" : 3244.7919545930167,
+                "99.999" : 3244.7919545930167,
+                "99.9999" : 3244.7919545930167,
+                "100.0" : 3244.7919545930167
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3234.493226790989,
+                    3244.7919545930167,
+                    3090.498898346189
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPlainComponentBenchmark.plain_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 781.0329238137361,
+            "scoreError" : 48.781421241029406,
+            "scoreConfidence" : [
+                732.2515025727067,
+                829.8143450547656
+            ],
+            "scorePercentiles" : {
+                "0.0" : 778.5163683462403,
+                "50.0" : 780.742067845527,
+                "90.0" : 783.8403352494413,
+                "95.0" : 783.8403352494413,
+                "99.0" : 783.8403352494413,
+                "99.9" : 783.8403352494413,
+                "99.99" : 783.8403352494413,
+                "99.999" : 783.8403352494413,
+                "99.9999" : 783.8403352494413,
+                "100.0" : 783.8403352494413
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    783.8403352494413,
+                    780.742067845527,
+                    778.5163683462403
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPlainComponentBenchmark.plain_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 146.02868703351768,
+            "scoreError" : 0.14989359143202263,
+            "scoreConfidence" : [
+                145.87879344208565,
+                146.17858062494972
+            ],
+            "scorePercentiles" : {
+                "0.0" : 146.02132569560524,
+                "50.0" : 146.0271846979651,
+                "90.0" : 146.03755070698267,
+                "95.0" : 146.03755070698267,
+                "99.0" : 146.03755070698267,
+                "99.9" : 146.03755070698267,
+                "99.99" : 146.03755070698267,
+                "99.999" : 146.03755070698267,
+                "99.9999" : 146.03755070698267,
+                "100.0" : 146.03755070698267
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    146.02132569560524,
+                    146.0271846979651,
+                    146.03755070698267
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPooledComponentBenchmark.pooled_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 13073.897206042164,
+            "scoreError" : 182.07984647530972,
+            "scoreConfidence" : [
+                12891.817359566854,
+                13255.977052517474
+            ],
+            "scorePercentiles" : {
+                "0.0" : 13062.549066164305,
+                "50.0" : 13077.832486043686,
+                "90.0" : 13081.310065918498,
+                "95.0" : 13081.310065918498,
+                "99.0" : 13081.310065918498,
+                "99.9" : 13081.310065918498,
+                "99.99" : 13081.310065918498,
+                "99.999" : 13081.310065918498,
+                "99.9999" : 13081.310065918498,
+                "100.0" : 13081.310065918498
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    13062.549066164305,
+                    13077.832486043686,
+                    13081.310065918498
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPooledComponentBenchmark.pooled_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 3325.4285403842405,
+            "scoreError" : 149.00176420411978,
+            "scoreConfidence" : [
+                3176.4267761801207,
+                3474.4303045883603
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3316.118620459383,
+                "50.0" : 3328.780173567214,
+                "90.0" : 3331.386827126125,
+                "95.0" : 3331.386827126125,
+                "99.0" : 3331.386827126125,
+                "99.9" : 3331.386827126125,
+                "99.99" : 3331.386827126125,
+                "99.999" : 3331.386827126125,
+                "99.9999" : 3331.386827126125,
+                "100.0" : 3331.386827126125
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3328.780173567214,
+                    3331.386827126125,
+                    3316.118620459383
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPooledComponentBenchmark.pooled_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 814.0588840157947,
+            "scoreError" : 57.542107679758146,
+            "scoreConfidence" : [
+                756.5167763360365,
+                871.6009916955528
+            ],
+            "scorePercentiles" : {
+                "0.0" : 811.5368987748507,
+                "50.0" : 813.0443777641151,
+                "90.0" : 817.5953755084181,
+                "95.0" : 817.5953755084181,
+                "99.0" : 817.5953755084181,
+                "99.9" : 817.5953755084181,
+                "99.99" : 817.5953755084181,
+                "99.999" : 817.5953755084181,
+                "99.9999" : 817.5953755084181,
+                "100.0" : 817.5953755084181
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    811.5368987748507,
+                    813.0443777641151,
+                    817.5953755084181
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyPooledComponentBenchmark.pooled_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 142.8426312198136,
+            "scoreError" : 2.1962539284126574,
+            "scoreConfidence" : [
+                140.64637729140094,
+                145.03888514822626
+            ],
+            "scorePercentiles" : {
+                "0.0" : 142.7169098725516,
+                "50.0" : 142.85413105277274,
+                "90.0" : 142.9568527341164,
+                "95.0" : 142.9568527341164,
+                "99.0" : 142.9568527341164,
+                "99.9" : 142.9568527341164,
+                "99.99" : 142.9568527341164,
+                "99.999" : 142.9568527341164,
+                "99.9999" : 142.9568527341164,
+                "100.0" : 142.9568527341164
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    142.85413105277274,
+                    142.7169098725516,
+                    142.9568527341164
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.entity_edit_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 6198.246224111986,
+            "scoreError" : 155.48667241513536,
+            "scoreConfidence" : [
+                6042.75955169685,
+                6353.732896527121
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6190.221620097706,
+                "50.0" : 6197.324810337006,
+                "90.0" : 6207.192241901243,
+                "95.0" : 6207.192241901243,
+                "99.0" : 6207.192241901243,
+                "99.9" : 6207.192241901243,
+                "99.99" : 6207.192241901243,
+                "99.999" : 6207.192241901243,
+                "99.9999" : 6207.192241901243,
+                "100.0" : 6207.192241901243
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    6207.192241901243,
+                    6190.221620097706,
+                    6197.324810337006
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.entity_edit_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 1507.5117799555892,
+            "scoreError" : 15.423806436646348,
+            "scoreConfidence" : [
+                1492.0879735189428,
+                1522.9355863922356
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1506.9629146975433,
+                "50.0" : 1507.0870605534778,
+                "90.0" : 1508.485364615747,
+                "95.0" : 1508.485364615747,
+                "99.0" : 1508.485364615747,
+                "99.9" : 1508.485364615747,
+                "99.99" : 1508.485364615747,
+                "99.999" : 1508.485364615747,
+                "99.9999" : 1508.485364615747,
+                "100.0" : 1508.485364615747
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1508.485364615747,
+                    1507.0870605534778,
+                    1506.9629146975433
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.entity_edit_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 347.6796008384227,
+            "scoreError" : 34.10240529630933,
+            "scoreConfidence" : [
+                313.5771955421134,
+                381.782006134732
+            ],
+            "scorePercentiles" : {
+                "0.0" : 345.6826041797416,
+                "50.0" : 347.96875738154034,
+                "90.0" : 349.3874409539862,
+                "95.0" : 349.3874409539862,
+                "99.0" : 349.3874409539862,
+                "99.9" : 349.3874409539862,
+                "99.99" : 349.3874409539862,
+                "99.999" : 349.3874409539862,
+                "99.9999" : 349.3874409539862,
+                "100.0" : 349.3874409539862
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    349.3874409539862,
+                    347.96875738154034,
+                    345.6826041797416
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.entity_edit_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 59.63017462752691,
+            "scoreError" : 20.752452508351507,
+            "scoreConfidence" : [
+                38.8777221191754,
+                80.38262713587842
+            ],
+            "scorePercentiles" : {
+                "0.0" : 58.57143781406428,
+                "50.0" : 59.486311497785884,
+                "90.0" : 60.832774570730564,
+                "95.0" : 60.832774570730564,
+                "99.0" : 60.832774570730564,
+                "99.9" : 60.832774570730564,
+                "99.99" : 60.832774570730564,
+                "99.999" : 60.832774570730564,
+                "99.9999" : 60.832774570730564,
+                "100.0" : 60.832774570730564
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    58.57143781406428,
+                    60.832774570730564,
+                    59.486311497785884
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.transmuter_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 7513.49263899124,
+            "scoreError" : 62.701381745720276,
+            "scoreConfidence" : [
+                7450.79125724552,
+                7576.19402073696
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7511.066811419772,
+                "50.0" : 7511.985511331219,
+                "90.0" : 7517.425594222729,
+                "95.0" : 7517.425594222729,
+                "99.0" : 7517.425594222729,
+                "99.9" : 7517.425594222729,
+                "99.99" : 7517.425594222729,
+                "99.999" : 7517.425594222729,
+                "99.9999" : 7517.425594222729,
+                "100.0" : 7517.425594222729
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    7511.066811419772,
+                    7511.985511331219,
+                    7517.425594222729
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.transmuter_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 1812.2422269172177,
+            "scoreError" : 102.77938481615625,
+            "scoreConfidence" : [
+                1709.4628421010616,
+                1915.021611733374
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1807.3584491321508,
+                "50.0" : 1810.9625648684366,
+                "90.0" : 1818.4056667510665,
+                "95.0" : 1818.4056667510665,
+                "99.0" : 1818.4056667510665,
+                "99.9" : 1818.4056667510665,
+                "99.99" : 1818.4056667510665,
+                "99.999" : 1818.4056667510665,
+                "99.9999" : 1818.4056667510665,
+                "100.0" : 1818.4056667510665
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    1818.4056667510665,
+                    1810.9625648684366,
+                    1807.3584491321508
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.transmuter_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 413.80162689887015,
+            "scoreError" : 46.686711021558466,
+            "scoreConfidence" : [
+                367.11491587731166,
+                460.48833792042865
+            ],
+            "scorePercentiles" : {
+                "0.0" : 410.8559281830389,
+                "50.0" : 415.07220718007943,
+                "90.0" : 415.47674533349215,
+                "95.0" : 415.47674533349215,
+                "99.0" : 415.47674533349215,
+                "99.9" : 415.47674533349215,
+                "99.99" : 415.47674533349215,
+                "99.999" : 415.47674533349215,
+                "99.9999" : 415.47674533349215,
+                "100.0" : 415.47674533349215
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    410.8559281830389,
+                    415.47674533349215,
+                    415.07220718007943
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.LegacyTransmuterBenchmark.transmuter_legacy",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 66.07663126916223,
+            "scoreError" : 45.565683098726836,
+            "scoreConfidence" : [
+                20.510948170435398,
+                111.64231436788907
+            ],
+            "scorePercentiles" : {
+                "0.0" : 63.87272421979643,
+                "50.0" : 65.56763934731393,
+                "90.0" : 68.78953024037637,
+                "95.0" : 68.78953024037637,
+                "99.0" : 68.78953024037637,
+                "99.9" : 68.78953024037637,
+                "99.99" : 68.78953024037637,
+                "99.999" : 68.78953024037637,
+                "99.9999" : 68.78953024037637,
+                "100.0" : 68.78953024037637
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    63.87272421979643,
+                    68.78953024037637,
+                    65.56763934731393
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 11920.994567934418,
+            "scoreError" : 9049.580900160548,
+            "scoreConfidence" : [
+                2871.4136677738697,
+                20970.57546809497
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11431.20085933607,
+                "50.0" : 11908.73319318329,
+                "90.0" : 12423.0496512839,
+                "95.0" : 12423.0496512839,
+                "99.0" : 12423.0496512839,
+                "99.9" : 12423.0496512839,
+                "99.99" : 12423.0496512839,
+                "99.999" : 12423.0496512839,
+                "99.9999" : 12423.0496512839,
+                "100.0" : 12423.0496512839
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    12423.0496512839,
+                    11908.73319318329,
+                    11431.20085933607
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 3256.179173768212,
+            "scoreError" : 305.3559308863104,
+            "scoreConfidence" : [
+                2950.8232428819015,
+                3561.5351046545225
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3240.748050484676,
+                "50.0" : 3253.8171757107007,
+                "90.0" : 3273.97229510926,
+                "95.0" : 3273.97229510926,
+                "99.0" : 3273.97229510926,
+                "99.9" : 3273.97229510926,
+                "99.99" : 3273.97229510926,
+                "99.999" : 3273.97229510926,
+                "99.9999" : 3273.97229510926,
+                "100.0" : 3273.97229510926
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3273.97229510926,
+                    3253.8171757107007,
+                    3240.748050484676
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 798.7780200122161,
+            "scoreError" : 477.644440563296,
+            "scoreConfidence" : [
+                321.1335794489201,
+                1276.422460575512
+            ],
+            "scorePercentiles" : {
+                "0.0" : 768.5469502782101,
+                "50.0" : 813.7436502865768,
+                "90.0" : 814.0434594718615,
+                "95.0" : 814.0434594718615,
+                "99.0" : 814.0434594718615,
+                "99.9" : 814.0434594718615,
+                "99.99" : 814.0434594718615,
+                "99.999" : 814.0434594718615,
+                "99.9999" : 814.0434594718615,
+                "100.0" : 814.0434594718615
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    768.5469502782101,
+                    814.0434594718615,
+                    813.7436502865768
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PlainComponentBenchmark.plain",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 145.90427008018514,
+            "scoreError" : 0.5572730103699391,
+            "scoreConfidence" : [
+                145.34699706981522,
+                146.46154309055507
+            ],
+            "scorePercentiles" : {
+                "0.0" : 145.87867148790204,
+                "50.0" : 145.89605526120874,
+                "90.0" : 145.93808349144464,
+                "95.0" : 145.93808349144464,
+                "99.0" : 145.93808349144464,
+                "99.9" : 145.93808349144464,
+                "99.99" : 145.93808349144464,
+                "99.999" : 145.93808349144464,
+                "99.9999" : 145.93808349144464,
+                "100.0" : 145.93808349144464
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    145.87867148790204,
+                    145.93808349144464,
+                    145.89605526120874
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PooledComponentBenchmark.pooled",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 13146.789781899332,
+            "scoreError" : 89.08176059221435,
+            "scoreConfidence" : [
+                13057.708021307117,
+                13235.871542491546
+            ],
+            "scorePercentiles" : {
+                "0.0" : 13143.138940032488,
+                "50.0" : 13144.894187762724,
+                "90.0" : 13152.336217902779,
+                "95.0" : 13152.336217902779,
+                "99.0" : 13152.336217902779,
+                "99.9" : 13152.336217902779,
+                "99.99" : 13152.336217902779,
+                "99.999" : 13152.336217902779,
+                "99.9999" : 13152.336217902779,
+                "100.0" : 13152.336217902779
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    13143.138940032488,
+                    13144.894187762724,
+                    13152.336217902779
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PooledComponentBenchmark.pooled",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 3282.5562924870374,
+            "scoreError" : 1240.2022526248431,
+            "scoreConfidence" : [
+                2042.3540398621942,
+                4522.75854511188
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3204.062965197404,
+                "50.0" : 3321.22523822352,
+                "90.0" : 3322.3806740401874,
+                "95.0" : 3322.3806740401874,
+                "99.0" : 3322.3806740401874,
+                "99.9" : 3322.3806740401874,
+                "99.99" : 3322.3806740401874,
+                "99.999" : 3322.3806740401874,
+                "99.9999" : 3322.3806740401874,
+                "100.0" : 3322.3806740401874
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    3322.3806740401874,
+                    3204.062965197404,
+                    3321.22523822352
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PooledComponentBenchmark.pooled",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 818.3234242416537,
+            "scoreError" : 17.290385330684323,
+            "scoreConfidence" : [
+                801.0330389109694,
+                835.613809572338
+            ],
+            "scorePercentiles" : {
+                "0.0" : 817.3423642858401,
+                "50.0" : 818.3940013634252,
+                "90.0" : 819.2339070756958,
+                "95.0" : 819.2339070756958,
+                "99.0" : 819.2339070756958,
+                "99.9" : 819.2339070756958,
+                "99.99" : 819.2339070756958,
+                "99.999" : 819.2339070756958,
+                "99.9999" : 819.2339070756958,
+                "100.0" : 819.2339070756958
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    817.3423642858401,
+                    819.2339070756958,
+                    818.3940013634252
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.PooledComponentBenchmark.pooled",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 145.43073341329833,
+            "scoreError" : 0.5342914957040752,
+            "scoreConfidence" : [
+                144.89644191759425,
+                145.9650249090024
+            ],
+            "scorePercentiles" : {
+                "0.0" : 145.4124048905468,
+                "50.0" : 145.41528594036475,
+                "90.0" : 145.46450940898345,
+                "95.0" : 145.46450940898345,
+                "99.0" : 145.46450940898345,
+                "99.9" : 145.46450940898345,
+                "99.99" : 145.46450940898345,
+                "99.999" : 145.46450940898345,
+                "99.9999" : 145.46450940898345,
+                "100.0" : 145.46450940898345
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    145.41528594036475,
+                    145.46450940898345,
+                    145.4124048905468
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 9274.83381567235,
+            "scoreError" : 145.78085233350458,
+            "scoreConfidence" : [
+                9129.052963338845,
+                9420.614668005854
+            ],
+            "scorePercentiles" : {
+                "0.0" : 9268.126412626354,
+                "50.0" : 9272.700260054193,
+                "90.0" : 9283.674774336505,
+                "95.0" : 9283.674774336505,
+                "99.0" : 9283.674774336505,
+                "99.9" : 9283.674774336505,
+                "99.99" : 9283.674774336505,
+                "99.999" : 9283.674774336505,
+                "99.9999" : 9283.674774336505,
+                "100.0" : 9283.674774336505
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    9283.674774336505,
+                    9272.700260054193,
+                    9268.126412626354
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 2299.3299780555813,
+            "scoreError" : 31.504202519475303,
+            "scoreConfidence" : [
+                2267.825775536106,
+                2330.8341805750565
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2297.654423956612,
+                "50.0" : 2299.2315898128927,
+                "90.0" : 2301.103920397239,
+                "95.0" : 2301.103920397239,
+                "99.0" : 2301.103920397239,
+                "99.9" : 2301.103920397239,
+                "99.99" : 2301.103920397239,
+                "99.999" : 2301.103920397239,
+                "99.9999" : 2301.103920397239,
+                "100.0" : 2301.103920397239
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2299.2315898128927,
+                    2301.103920397239,
+                    2297.654423956612
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 570.918809513446,
+            "scoreError" : 26.795766084308646,
+            "scoreConfidence" : [
+                544.1230434291374,
+                597.7145755977547
+            ],
+            "scorePercentiles" : {
+                "0.0" : 569.4475851970205,
+                "50.0" : 570.923737834056,
+                "90.0" : 572.3851055092615,
+                "95.0" : 572.3851055092615,
+                "99.0" : 572.3851055092615,
+                "99.9" : 572.3851055092615,
+                "99.99" : 572.3851055092615,
+                "99.999" : 572.3851055092615,
+                "99.9999" : 572.3851055092615,
+                "100.0" : 572.3851055092615
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    569.4475851970205,
+                    572.3851055092615,
+                    570.923737834056
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.entity_edit",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 124.01705126695771,
+            "scoreError" : 9.81260300038944,
+            "scoreConfidence" : [
+                114.20444826656826,
+                133.82965426734714
+            ],
+            "scorePercentiles" : {
+                "0.0" : 123.69471461143095,
+                "50.0" : 123.71846997367383,
+                "90.0" : 124.63796921576834,
+                "95.0" : 124.63796921576834,
+                "99.0" : 124.63796921576834,
+                "99.9" : 124.63796921576834,
+                "99.99" : 124.63796921576834,
+                "99.999" : 124.63796921576834,
+                "99.9999" : 124.63796921576834,
+                "100.0" : 124.63796921576834
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    123.69471461143095,
+                    124.63796921576834,
+                    123.71846997367383
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.transmuter",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "4096"
+        },
+        "primaryMetric" : {
+            "score" : 11296.828185298007,
+            "scoreError" : 835.8174108858226,
+            "scoreConfidence" : [
+                10461.010774412185,
+                12132.64559618383
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11243.971112102057,
+                "50.0" : 11321.381235818242,
+                "90.0" : 11325.13220797372,
+                "95.0" : 11325.13220797372,
+                "99.0" : 11325.13220797372,
+                "99.9" : 11325.13220797372,
+                "99.99" : 11325.13220797372,
+                "99.999" : 11325.13220797372,
+                "99.9999" : 11325.13220797372,
+                "100.0" : 11325.13220797372
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    11325.13220797372,
+                    11243.971112102057,
+                    11321.381235818242
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.transmuter",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "16384"
+        },
+        "primaryMetric" : {
+            "score" : 2805.501409272036,
+            "scoreError" : 44.269107688505564,
+            "scoreConfidence" : [
+                2761.2323015835304,
+                2849.770516960542
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2803.226025948724,
+                "50.0" : 2805.223097614002,
+                "90.0" : 2808.055104253382,
+                "95.0" : 2808.055104253382,
+                "99.0" : 2808.055104253382,
+                "99.9" : 2808.055104253382,
+                "99.99" : 2808.055104253382,
+                "99.999" : 2808.055104253382,
+                "99.9999" : 2808.055104253382,
+                "100.0" : 2808.055104253382
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    2808.055104253382,
+                    2805.223097614002,
+                    2803.226025948724
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.transmuter",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "65536"
+        },
+        "primaryMetric" : {
+            "score" : 688.4312365521913,
+            "scoreError" : 29.846960497240005,
+            "scoreConfidence" : [
+                658.5842760549513,
+                718.2781970494314
+            ],
+            "scorePercentiles" : {
+                "0.0" : 686.5790582401971,
+                "50.0" : 689.035434554737,
+                "90.0" : 689.6792168616395,
+                "95.0" : 689.6792168616395,
+                "99.0" : 689.6792168616395,
+                "99.9" : 689.6792168616395,
+                "99.99" : 689.6792168616395,
+                "99.999" : 689.6792168616395,
+                "99.9999" : 689.6792168616395,
+                "100.0" : 689.6792168616395
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    689.035434554737,
+                    689.6792168616395,
+                    686.5790582401971
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+    ,
+    {
+        "benchmark" : "com.artemis.TransmuterBenchmark.transmuter",
+        "mode" : "thrpt",
+        "threads" : 1,
+        "forks" : 1,
+        "warmupIterations" : 5,
+        "warmupTime" : "1 s",
+        "measurementIterations" : 3,
+        "measurementTime" : "10 s",
+        "params" : {
+            "entityCount" : "262144"
+        },
+        "primaryMetric" : {
+            "score" : 159.12958830813818,
+            "scoreError" : 22.986041379847936,
+            "scoreConfidence" : [
+                136.14354692829025,
+                182.11562968798611
+            ],
+            "scorePercentiles" : {
+                "0.0" : 157.9424326209483,
+                "50.0" : 158.9948454042007,
+                "90.0" : 160.45148689926552,
+                "95.0" : 160.45148689926552,
+                "99.0" : 160.45148689926552,
+                "99.9" : 160.45148689926552,
+                "99.99" : 160.45148689926552,
+                "99.999" : 160.45148689926552,
+                "99.9999" : 160.45148689926552,
+                "100.0" : 160.45148689926552
+            },
+            "scoreUnit" : "ops/s",
+            "rawData" : [
+                [
+                    158.9948454042007,
+                    157.9424326209483,
+                    160.45148689926552
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
