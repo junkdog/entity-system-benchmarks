@@ -65,6 +65,7 @@
 		<module>common</module>
 		<module>ashley-1.6.0</module>
 		<module>retinazer-0.2.0</module>
+		<module>retinazer-0.3.0</module>
 		<module>artemis-odb-0.4.0</module>
 		<module>artemis-odb-0.9.0</module>
 		<module>artemis-odb-1.0.1</module>

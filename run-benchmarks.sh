@@ -47,6 +47,7 @@ function run_all() {
 	run_bench ashley-1.6.0
 	run_bench gdx-artemis-0.5.0
 	run_bench retinazer-0.2.0
+	run_bench retinazer-0.3.0
 
 	# recompiling with bytecode optimizations
 	mvn -P fast clean install
