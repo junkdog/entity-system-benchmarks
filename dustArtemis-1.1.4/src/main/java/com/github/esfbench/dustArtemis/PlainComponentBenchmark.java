@@ -48,12 +48,15 @@ public class PlainComponentBenchmark extends JmhSettings
 	@Setup
 	public void init ()
 	{
+		// Pass the config file with reasonable size for the benchmark.
+		CfgUtils.setDustArtemisConfig( entityCount );
+		
 		world = World.builder()
 				.componentTypes( PlainPosition.class, PlainStructComponentA.class )
 				.observer( PlainPositionSystem::new, Aspect.all( PlainPosition.class ) )
 				.observer( PlainPositionSystem2::new, Aspect.all( PlainPosition.class ) )
 				.observer( PlainPositionSystem3::new, Aspect.all( PlainPosition.class ) )
-				.observer( () -> new EntityDeleterSystem( JmhSettings.SEED, entityCount ) )
+				.observer( () -> new EntityDeleterSystem( SEED, entityCount ) )
 				.build();
 	}
 

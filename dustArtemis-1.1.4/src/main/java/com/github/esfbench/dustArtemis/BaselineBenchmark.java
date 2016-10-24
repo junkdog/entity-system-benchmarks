@@ -48,13 +48,15 @@ public class BaselineBenchmark extends JmhSettings
 	@Setup
 	public void init ()
 	{
+		// Pass the config file with reasonable size for the benchmark.
+		CfgUtils.setDustArtemisConfig( entityCount );
 
 		world = World.builder()
 				.componentTypes( PlainPosition.class, PlainStructComponentA.class )
 				.observer( BaselinePositionSystem::new, Aspect.all( PlainPosition.class ) )
 				.observer( BaselinePositionSystem2::new, Aspect.all( PlainPosition.class ) )
 				.observer( BaselinePositionSystem3::new, Aspect.all( PlainPosition.class ) )
-				.observer( () -> new EntityDeleterSystem( SEED, ENTITY_COUNT ) )
+				.observer( () -> new EntityDeleterSystem( SEED, entityCount ) )
 				.build();
 	}
 

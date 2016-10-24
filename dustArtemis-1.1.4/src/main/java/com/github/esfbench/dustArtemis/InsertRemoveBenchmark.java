@@ -47,6 +47,9 @@ public class InsertRemoveBenchmark extends JmhSettings
 	@Setup
 	public void init () throws Exception
 	{
+		// Pass the config file with reasonable size for the benchmark.
+		CfgUtils.setDustArtemisConfig( entityCount );
+
 		world = World.builder()
 				.componentTypes(
 						Comp1.class,

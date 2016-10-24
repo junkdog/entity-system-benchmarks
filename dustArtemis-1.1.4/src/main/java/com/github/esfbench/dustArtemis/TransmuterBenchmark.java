@@ -19,6 +19,9 @@ public class TransmuterBenchmark extends JmhSettings
 	@Setup
 	public void init ()
 	{
+		// Pass the config file with reasonable size for the benchmark.
+		CfgUtils.setDustArtemisConfig( entityCount );
+
 		engine = World.builder()
 				.componentType( PlainPosition.class )
 				.observer( BaselinePositionSystem::new, Aspect.all( PlainPosition.class ) )
