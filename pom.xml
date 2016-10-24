@@ -32,7 +32,6 @@
 	
 	<issueManagement>
 		<url>https://github.com/junkdog/artemis-odb/issues</url>
-		<system>GitHub Issues</system>
 	</issueManagement>
 	
 	<dependencies>
@@ -71,6 +70,7 @@
 		<module>artemis-odb-2.0.0-RC1</module>
 		<module>artemis-odb-2.0.0-RC2</module>
 		<module>gdx-artemis-0.5.0</module>
+		<module>dustArtemis-1.1.4</module>
 	</modules>
 	
 	<build>
